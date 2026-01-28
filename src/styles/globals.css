@@ -1,0 +1,6 @@
+@import "@styles/_nullstyle.css";
+@import "@styles/_variables.css";
+
+body {
+  font-family: var(--my-font);
+}
