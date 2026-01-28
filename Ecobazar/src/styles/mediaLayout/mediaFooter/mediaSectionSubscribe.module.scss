@@ -1,0 +1,35 @@
+@media (max-width: 1300px) {
+  #root .sectionSubscribe {
+    width: 95%;
+    grid-template-columns: 34% 40% auto;
+    grid-column-gap: 20px;
+    .sectionSubscribe__innerTitle .sectionSubscribe__subtitle {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .sectionSubscribe {
+    grid-template-columns: auto;
+    grid-column-gap: 0px;
+    grid-template-rows: repeat(3, auto);
+    justify-content: normal;
+    justify-items: center;
+    grid-row-gap: 40px;
+    .sectionSubscribe__innerTitle {
+      width: 70%;
+      justify-items: center;
+      .sectionSubscribe__title {
+        text-align: center;
+      }
+      .sectionSubscribe__subtitle {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .sectionSubscribe .sectionSubscribe__innerTitle {
+    width: 100%;
+  }
+}

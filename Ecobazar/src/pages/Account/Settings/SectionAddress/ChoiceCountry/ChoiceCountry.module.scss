@@ -1,0 +1,140 @@
+@use "@styles/variables.module.scss" as *;
+
+.choiceCountry__containerGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+  align-items: start;
+  justify-items: start;
+  .choiceCountry__column {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 6px;
+    .choiceCountry__subtitle {
+      font-size: 0.875em;
+      color: $dark;
+      font-weight: 500;
+    }
+    .choiceCountry__innerList {
+      outline: none;
+      border: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 14px 16px;
+      display: grid;
+      grid-template-columns: auto 6%;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-items: center;
+      grid-column-gap: 10px;
+      .choiceCountry__selectedCountry {
+        box-sizing: border-box;
+        padding: 5px 5px;
+        border: 1px solid transparent;
+        background-color: white;
+        width: 100%;
+        list-style-type: none;
+        color: #666666;
+        font-size: 1em;
+        font-weight: 500;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+      .choiceCountry__listCountries {
+        width: 100%;
+        height: 100%;
+        height: 30px;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0px 16px;
+        -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+        display: none;
+        z-index: 20;
+        cursor: pointer;
+        list-style-type: none;
+        text-decoration: none;
+        border: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        .choiceCountry__country {
+          box-sizing: border-box;
+          padding: 7px 0px 7px 7px;
+          border: 1px solid $dark;
+          background-color: $dark;
+          width: 100%;
+          display: none;
+          list-style-type: none;
+          color: white;
+          font-size: 1em;
+          font-weight: 500;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+      }
+      .choiceCountry__iconArrow {
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+    .choiceCountry__inputCode {
+      box-sizing: border-box;
+      padding: 14px 16px;
+      background-color: white;
+      width: 100%;
+      color: #666666;
+      font-size: 1em;
+      font-weight: 500;
+      border: 1px solid transparent;
+      border-radius: 8px;
+    }
+    .choiceCountry__inputCode_active {
+      border: 1px solid $light-green;
+    }
+  }
+}
+.choiceCountry__containerGrid .choiceCountry__column .choiceCountry__innerList {
+  .choiceCountry__listCountries_active {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50px;
+    height: 300px;
+    overflow-y: scroll;
+    display: grid;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .choiceCountry__country {
+      display: grid;
+      align-items: center;
+      justify-items: start;
+      &:hover {
+        background-color: white;
+        color: $dark;
+      }
+    }
+  }
+  .choiceCountry__iconArrow_active {
+    transform: rotate(180deg);
+  }
+}

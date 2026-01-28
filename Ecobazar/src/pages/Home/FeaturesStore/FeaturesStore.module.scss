@@ -1,0 +1,48 @@
+@use "@styles/variables.module.scss" as *;
+.features {
+  width: 68.75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-column-gap: 5px;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  padding: 40px 0;
+}
+.features__innerBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% auto;
+  justify-items: start;
+  align-items: center;
+  grid-column-gap: 10px;
+  .features__iconTruck {
+    width: 40px;
+    height: 27px;
+  }
+  .features__iconHeadphones {
+    width: 38px;
+    height: 40px;
+  }
+  .features__iconShoppingBag {
+    width: 32px;
+    height: 40px;
+  }
+  .features__iconPackage {
+    width: 37px;
+    height: 40px;
+  }
+}
+.features__innerTitle {
+  width: 100%;
+}
+.features__title {
+  font-size: 1em;
+  font-weight: 600;
+  color: $dark;
+}
+.features__text {
+  color: $light-gray;
+  font-size: 0.875em;
+}

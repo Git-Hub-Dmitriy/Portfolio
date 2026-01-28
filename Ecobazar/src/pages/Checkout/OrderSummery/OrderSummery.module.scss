@@ -1,0 +1,56 @@
+@use "@styles/variables.module.scss" as *;
+
+.orderSummery {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  justify-items: start;
+  align-items: start;
+  grid-row-gap: 12px;
+  .orderSummery__title {
+    width: 100%;
+    font-size: 1.25em;
+    color: $dark;
+    text-align: start;
+    font-weight: 550;
+    line-height: 150%;
+  }
+  .orderSummery__wrapTotal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 2px;
+    justify-items: center;
+    align-items: center;
+    .orderSummery__wrapSubtitle {
+      box-sizing: border-box;
+      padding: 12px 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: space-between;
+      align-items: center;
+      .orderSummery__subtitle {
+        width: 100%;
+        font-size: 0.875em;
+        color: #4d4d4d;
+        text-align: start;
+        font-weight: 500;
+        line-height: 150%;
+      }
+      .orderSummery__subtitle_bold {
+        width: 100%;
+        font-size: 0.875em;
+        color: $dark;
+        text-align: start;
+        font-weight: 550;
+        line-height: 150%;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@use "@styles/variables.module.scss" as *;
+
+.sectionFeatures {
+  width: 100%;
+  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: 50.625% auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+  .sectionFeatures__innerImg {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .sectionFeatures__img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+  .sectionFeatures__wrapContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 24px;
+    .sectionFeatures__innerTitle {
+      width: 50%;
+      display: grid;
+      grid-row-gap: 20px;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      align-items: center;
+      justify-items: start;
+      .sectionFeatures__title {
+        width: 100%;
+        color: #002603;
+        font-size: 3.5em;
+        font-weight: bold;
+        text-align: center;
+      }
+      .sectionFeatures__text {
+        color: #808080;
+        font-size: 1em;
+        width: 100%;
+        font-weight: 500;
+      }
+    }
+    .sectionFeatures__wrapDescription {
+      display: grid;
+      width: 100%;
+      align-items: center;
+      justify-content: start;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto auto;
+      grid-row-gap: 24px;
+      grid-column-gap: 40px;
+      .sectionFeatures__section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 34px;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: start;
+        .sectionFeatures__icon {
+          width: 37px;
+          height: 50px;
+          padding: 16px 0px 16px 18px;
+        }
+        .sectionFeatures__gridRow {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          grid-row-gap: 8px;
+          align-items: center;
+          justify-items: start;
+          .sectionFeatures__subtitle {
+            font-size: 1.125em;
+            color: $dark;
+            font-weight: bold;
+          }
+          .sectionFeatures__subtext {
+            font-size: 0.875em;
+            color: #808080;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@media (hover: hover) {
+  #root .stocks .stocks__section {
+    .btnShop:hover {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: #ffffff;
+      .btnShop__arrow {
+        stroke: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .stocks .stocks__section {
+    .btnShop:active {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: #ffffff;
+      .btnShop__arrow {
+        stroke: #ffffff;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .stocks .btnShop {
+    height: 60px;
+    .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .stocks .btnShop {
+    height: 70px;
+    .btnShop__arrow {
+      width: 26px;
+      height: 20px;
+    }
+  }
+}
+@media (min-width: 2800px) {
+  #root .stocks .btnShop {
+    height: 80px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .stocks .btnShop {
+    left: 28%;
+    height: 100px;
+    width: 45%;
+    .btnShop__arrow {
+      width: 30px;
+      height: 26px;
+    }
+  }
+}
+@media (min-width: 3500px) {
+  #root .stocks .btnShop {
+    height: 110px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .stocks .btnShop {
+    height: 120px;
+    .btnShop__arrow {
+      width: 34px;
+      height: 30px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .stocks {
+    grid-column-gap: 15px;
+    .stocks__section .btnShop {
+      height: 40px;
+      grid-column-gap: 8px;
+      .btnShop__arrow {
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .stocks {
+    width: 95%;
+  }
+}
+@media (max-width: 900px) {
+  #root .stocks {
+    padding-bottom: 20px;
+    .stocks__section .btnShop {
+      width: 50%;
+      grid-column-gap: 8px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .stocks {
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    .stocks__section {
+      border-radius: 10px;
+      .stocks__image {
+        height: 300px;
+        width: 80%;
+        object-fit: cover;
+        object-position: top center;
+      }
+      .btnShop {
+        width: 40%;
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .stocks .stocks__section .stocks__image {
+    width: 100%;
+  }
+}

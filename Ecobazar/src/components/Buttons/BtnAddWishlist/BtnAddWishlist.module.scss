@@ -1,0 +1,57 @@
+@use "@styles/variables.module.scss" as *;
+
+.btnAddWishlist {
+  justify-items: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  .btnAddWishlist__icon {
+    transition: all 0.3s;
+  }
+}
+.wishlistModal {
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  transition: 0.5s all;
+  opacity: 0;
+  pointer-events: none;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  user-select: none;
+  .wishlistModal__content {
+    box-sizing: border-box;
+    padding: 30px;
+    font-size: 2em;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 50px;
+    color: $dark;
+    opacity: 1;
+    background-color: white;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  .wishlistModal__content_active {
+    transform: scale(1);
+  }
+}
+.wishlistModal_active {
+  opacity: 1;
+  pointer-events: all;
+}

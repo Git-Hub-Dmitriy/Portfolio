@@ -1,0 +1,213 @@
+@media (hover: hover) {
+  #root .login .login__wrap {
+    .login__form {
+      .login__wrapRememberBtn {
+        .login__innerCheckbox:hover {
+          transform: scale(1.1);
+          .login__check {
+            transform: scale(1.1);
+          }
+        }
+        .login__forgot:hover {
+          transform: scale(1.1);
+        }
+      }
+      .login__btn:hover {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .login__innerRegister .login__link:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (hover: none) {
+  #root .login .login__wrap {
+    .login__form {
+      .login__wrapRememberBtn {
+        .login__innerCheckbox:active {
+          transform: scale(1.1);
+          .login__check {
+            transform: scale(1.1);
+          }
+        }
+        .login__forgot:active {
+          transform: scale(1.1);
+        }
+      }
+      .login__btn:active {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .login__innerRegister .login__link:active {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .login {
+    font-size: 1.2em;
+    .login__wrap {
+      grid-row-gap: 40px;
+      .login__form {
+        grid-row-gap: 35px;
+        .login__innerPassword {
+          grid-column-gap: auto 6%;
+          .login__switchPassword {
+            width: 24px;
+            height: 18px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          grid-column-gap: 14px;
+          .login__check {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .login__btn {
+          margin-top: 8px;
+          height: 50px;
+        }
+      }
+      .login__innerRegister {
+        grid-column-gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .login {
+    font-size: 1.4em;
+    .login__wrap .login__form .login__btn {
+      height: 60px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .login {
+    font-size: 1.6em;
+    .login__wrap {
+      grid-row-gap: 50px;
+      margin: 100px 0 100px 0;
+      .login__form {
+        grid-row-gap: 45px;
+        .login__innerPassword {
+          grid-column-gap: auto 8%;
+          .login__switchPassword {
+            width: 28px;
+            height: 22px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          grid-column-gap: 18px;
+          .login__check {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .login__btn {
+          margin-top: 10px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .login {
+    font-size: 1.8em;
+    .login__wrap {
+      grid-row-gap: 60px;
+      margin: 120px 0 120px 0;
+      .login__form {
+        grid-row-gap: 55px;
+        .login__innerPassword {
+          grid-column-gap: auto 9%;
+          .login__switchPassword {
+            width: 30px;
+            height: 25px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox {
+          .login__check {
+            border-radius: 8px;
+          }
+          .login__check[type="checkbox"]:checked::before {
+            border-radius: 8px;
+          }
+        }
+        .login__btn {
+          margin-top: 20px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .login {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .login {
+    font-size: 2.2em;
+    .login__wrap {
+      grid-row-gap: 80px;
+      margin: 140px 0 140px 0;
+      .login__form {
+        grid-row-gap: 75px;
+        .login__innerPassword {
+          grid-column-gap: auto 10%;
+          .login__switchPassword {
+            width: 34px;
+            height: 28px;
+          }
+        }
+        .login__wrapRememberBtn .login__innerCheckbox .login__check {
+          width: 34px;
+          height: 34px;
+        }
+        .login__btn {
+          margin-top: 20px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root .login .login__wrap .login__form .login__btn {
+    height: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  #root .login .login__wrap {
+    width: 35%;
+  }
+}
+@media (max-width: 1300px) {
+  #root .login .login__wrap {
+    width: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  #root .login .login__wrap {
+    margin: 50px 0 50px 0;
+    width: 60%;
+  }
+}
+@media (max-width: 800px) {
+  #root .login .login__wrap {
+    width: 75%;
+  }
+}
+@media (max-width: 700px) {
+  #root .login .login__wrap {
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+}

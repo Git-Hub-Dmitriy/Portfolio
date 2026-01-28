@@ -1,0 +1,126 @@
+@use "@styles/variables.module.scss" as *;
+
+.descriptions {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 49.09% 40.6%;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: space-between;
+  .description__wrapDescribe {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    justify-items: center;
+    align-items: center;
+    .description__innerDescribe {
+      width: 100%;
+      display: grid;
+      justify-items: start;
+      align-items: start;
+      .description__text {
+        color: #808080;
+        font-size: 0.875em;
+        font-weight: 500;
+      }
+    }
+    .description__innerFeatures {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      grid-row-gap: 14px;
+      align-items: center;
+      justify-items: center;
+      .description__feature {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: start;
+        grid-column-gap: 8px;
+        .description__circleGreen {
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          background-color: $light-green;
+          border-radius: 50px;
+          .description__iconMark {
+            width: 10px;
+            height: 8px;
+          }
+        }
+        .description__featureText {
+          color: #808080;
+          font-size: 0.875em;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .descriptions__wrapVideo {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: 230px auto;
+    justify-items: center;
+    align-items: start;
+    .descriptions__video {
+      width: 100%;
+      height: 100%;
+    }
+    .descriptions__wrapFeatures {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-items: center;
+      width: 100%;
+      grid-column-gap: 2%;
+      padding: 24px 20px 24px 20px;
+      box-sizing: border-box;
+      .descriptions__featureShop {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        grid-column-gap: 15px;
+        .descriptions__iconDiscount {
+          width: 25px;
+          height: 32px;
+        }
+        .descriptions__iconLeaf {
+          width: 25px;
+          height: 32px;
+        }
+        .descriptions__innerDiscountText {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          align-items: center;
+          justify-content: start;
+          grid-row-gap: 5px;
+          .descriptions__discountTitle {
+            font-size: 0.875em;
+            color: $dark;
+            font-weight: 550;
+          }
+          .descriptions__discountText {
+            font-size: 0.8125em;
+            color: #808080;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

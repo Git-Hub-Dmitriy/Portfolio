@@ -1,0 +1,134 @@
+@use "@styles/variables.module.scss" as *;
+.sortProduct {
+  width: 68.75%;
+  margin: 0 auto;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  padding: 1.66% 0 1.25% 0;
+  display: grid;
+  justify-items: start;
+  align-items: center;
+  grid-template-columns: 10% auto;
+  grid-template-rows: auto;
+  grid-column-gap: 16%;
+  .sortProduct__buttonFilter {
+    width: 100%;
+    height: 45px;
+    background-color: $light-green;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    border-radius: 43px;
+    cursor: pointer;
+    transition: all 0.3s;
+    .sortProduct__buttonFilterText {
+      color: white;
+      font-size: 1em;
+    }
+    .sortProduct__buttonFilterIcon {
+      width: 20px;
+      height: 17px;
+    }
+  }
+  .sortProduct__wrapSorted {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    .sortProduct__innerSort {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: start;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      grid-column-gap: 24px;
+      .sortProduct__title {
+        color: #808080;
+        font-size: 0.875em;
+        font-weight: 500;
+      }
+      .sortProduct__innerList {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        .sortProduct__listSort {
+          z-index: 20;
+          display: grid;
+          align-items: center;
+          justify-items: start;
+          width: 156px;
+          height: 20px;
+          font-size: 0.875em;
+          list-style-type: none;
+          text-decoration: none;
+          border: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          .sortProduct__point_selected {
+            display: block;
+            color: #4d4d4d;
+            font-size: 1em;
+            padding-left: 6px;
+            width: 100%;
+            transition: all 0.3s;
+          }
+          .sortProduct__point {
+            z-index: 20;
+            display: none;
+            color: #4d4d4d;
+            font-size: 1em;
+            padding: 6px;
+            transition: all 0.2s;
+            width: 100%;
+            &:hover {
+              background-color: #ffffff;
+              color: $dark;
+            }
+          }
+        }
+        .sortProduct__iconArrow {
+          width: 10px;
+          height: 6px;
+          transition: all 0.3s;
+        }
+        .sortProduct__iconArrow_rotate {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .sortProduct__resultFound {
+      span {
+        color: #666666;
+        font-size: 1em;
+      }
+      b {
+        color: black;
+        font-size: 1em;
+      }
+    }
+  }
+}
+.sortProduct
+  .sortProduct__wrapSorted
+  .sortProduct__innerSort
+  .sortProduct__innerList
+  .sortProduct__listSort
+  .sortProduct__point_active {
+  display: block;
+  background-color: $dark;
+  color: white;
+  border: 1px solid $dark;
+}

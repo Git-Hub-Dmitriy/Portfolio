@@ -1,0 +1,126 @@
+@media (hover: hover) {
+  #root .socialMedia {
+    .socialMedia__iconFacebook:hover {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconTwitter:hover {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconPatreon:hover {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconInstagram:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (hover: none) {
+  #root .socialMedia {
+    .socialMedia__iconFacebook:active {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconTwitter:active {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconPatreon:active {
+      transform: scale(1.1);
+    }
+    .socialMedia__iconInstagram:active {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .socialMedia {
+    grid-column-gap: 40px;
+    .socialMedia__iconFacebook {
+      width: 50px;
+      height: 50px;
+    }
+    .socialMedia__iconTwitter {
+      width: 25px;
+      height: 25px;
+    }
+    .socialMedia__iconPatreon {
+      width: 25px;
+      height: 25px;
+    }
+    .socialMedia__iconInstagram {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .socialMedia {
+    grid-column-gap: 40px;
+    .socialMedia__iconFacebook {
+      width: 70px;
+      height: 70px;
+    }
+    .socialMedia__iconTwitter {
+      width: 30px;
+      height: 30px;
+    }
+    .socialMedia__iconPatreon {
+      width: 30px;
+      height: 30px;
+    }
+    .socialMedia__iconInstagram {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .socialMedia {
+    grid-column-gap: 50px;
+    .socialMedia__iconFacebook {
+      width: 80px;
+      height: 80px;
+    }
+    .socialMedia__iconTwitter {
+      width: 35px;
+      height: 35px;
+    }
+    .socialMedia__iconPatreon {
+      width: 35px;
+      height: 35px;
+    }
+    .socialMedia__iconInstagram {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .socialMedia {
+    grid-column-gap: 60px;
+    .socialMedia__iconFacebook {
+      width: 90px;
+      height: 90px;
+    }
+    .socialMedia__iconTwitter {
+      width: 40px;
+      height: 40px;
+    }
+    .socialMedia__iconPatreon {
+      width: 40px;
+      height: 40px;
+    }
+    .socialMedia__iconInstagram {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .socialMedia {
+    width: 40%;
+  }
+}
+@media (max-width: 700px) {
+  #root .socialMedia {
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.advertising {
+  width: 68.75%;
+  margin: 0 auto;
+  padding-bottom: 3.13%;
+  .advertising__wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .advertising__img {
+      border-radius: 4px;
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .btnShop {
+      width: 14.6%;
+      height: 14.24%;
+      font-size: 1em;
+      gap: 16px;
+      top: 64.99%;
+      left: 62.72%;
+      background-color: #00b207;
+      color: #ffffff;
+    }
+  }
+}

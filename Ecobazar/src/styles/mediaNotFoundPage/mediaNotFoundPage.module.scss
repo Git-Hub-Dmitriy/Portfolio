@@ -1,0 +1,119 @@
+@media (hover: hover) {
+  #root .notFoundPage .notFoundPage__main .notFoundPage__btn:hover {
+    transform: scale(1.2);
+    background-color: #1a1a1a;
+  }
+}
+@media (hover: none) {
+  #root .notFoundPage .notFoundPage__main .notFoundPage__btn:active {
+    transform: scale(1.2);
+    background-color: #1a1a1a;
+  }
+}
+@media (min-width: 2000px) {
+  #root .notFoundPage {
+    font-size: 1.2em;
+    .notFoundPage__main .notFoundPage__btn {
+      width: 200px;
+      height: 55px;
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .notFoundPage {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2700px) {
+  #root .notFoundPage {
+    font-size: 1.6em;
+    .notFoundPage__main {
+      .notFoundPage__wrapImg {
+        padding-top: 100px;
+      }
+      .notFoundPage__wrapTitle {
+        padding: 45px 0 35px 0;
+      }
+      .notFoundPage__btn {
+        width: 280px;
+        height: 65px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .notFoundPage {
+    font-size: 1.8em;
+    .notFoundPage__main .notFoundPage__btn {
+      width: 340px;
+      height: 75px;
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .notFoundPage {
+    font-size: 2em;
+    .notFoundPage__main .notFoundPage__btn {
+      width: 380px;
+      height: 95px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .notFoundPage {
+    font-size: 2.2em;
+    .notFoundPage__main .notFoundPage__btn {
+      width: 460px;
+      height: 100px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .notFoundPage .notFoundPage__main {
+    .notFoundPage__wrapImg {
+      width: 40%;
+    }
+    .notFoundPage__wrapTitle .notFoundPage__text {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .notFoundPage .notFoundPage__main {
+    .notFoundPage__wrapImg {
+      width: 50%;
+    }
+    .notFoundPage__btn {
+      width: 140px;
+      height: 40px;
+    }
+    .notFoundPage__wrapTitle .notFoundPage__text {
+      width: 65%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .notFoundPage .notFoundPage__main .notFoundPage__wrapImg {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  #root .notFoundPage .notFoundPage__main .notFoundPage__wrapTitle {
+    .notFoundPage__title {
+      font-size: 1.8em;
+    }
+    .notFoundPage__text {
+      width: 75%;
+    }
+  }
+}
+@media (max-width: 350px) {
+  #root .notFoundPage .notFoundPage__main {
+    .notFoundPage__wrapImg {
+      width: 75%;
+    }
+    .notFoundPage__text {
+      width: 85%;
+    }
+  }
+}

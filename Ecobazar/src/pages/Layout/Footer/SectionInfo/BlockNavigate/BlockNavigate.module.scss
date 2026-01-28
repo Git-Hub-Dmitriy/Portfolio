@@ -1,0 +1,55 @@
+.blockNavigate {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 34% 17% 17% 17% auto;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-items: center;
+  margin: 58px 0;
+  .blockNavigate__innerTitle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    justify-items: start;
+    align-items: start;
+    grid-row-gap: 12px;
+    .active {
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .notActive {
+      color: #999999;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .blockNavigate__title {
+      width: 100%;
+      margin-bottom: 8px;
+      text-align: start;
+      font-size: 1em;
+      font-weight: 550;
+      color: white;
+      line-height: 150%;
+    }
+    .blockNavigate__title_small {
+      width: 100%;
+      text-align: start;
+      font-size: 0.875em;
+      font-weight: 550;
+      color: white;
+      line-height: 150%;
+    }
+    .blockNavigate__subtitle {
+      width: 100%;
+      font-size: 0.875em;
+      text-align: start;
+      font-weight: 500;
+      line-height: 150%;
+      color: #999999;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}

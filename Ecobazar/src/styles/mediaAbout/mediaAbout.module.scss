@@ -1,0 +1,56 @@
+@use "./mediaDescription.module.scss";
+@use "./mediaSectionDeliver.module.scss";
+@use "./mediaSectionFeatures.module.scss";
+@use "./mediaSectionTeam.module.scss";
+
+@media (min-width: 2000px) {
+  #root .about {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .about {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2700px) {
+  #root .about {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 3100px) {
+  #root .about {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3300px) {
+  #root .about {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .about {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 1300px) {
+  #root .about {
+    font-size: 1em;
+    .testimonials {
+      padding: 50px 0 50px 0;
+    }
+    .companiesLogo {
+      padding: 50px 0 50px 0;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .about {
+    .testimonials {
+      padding: 0 0 25px 0;
+    }
+    .companiesLogo {
+      padding: 25px 0 25px 0;
+    }
+  }
+}

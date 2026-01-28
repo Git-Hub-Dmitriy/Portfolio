@@ -1,0 +1,90 @@
+@use "@styles/variables.module.scss" as *;
+@media (min-width: 2100px) {
+  #root .product .product__wrapProduct .sliderImage {
+    .sliderImage__wrapImages {
+      .sliderImage__img {
+        border: 2px solid transparent;
+      }
+      .sliderImage__img_light {
+        border: 2px solid #00b207;
+      }
+    }
+    .sliderImage__innerArrowUp .sliderImage__arrowUp {
+      width: 25px;
+      height: 15px;
+    }
+    .sliderImage__innerArrowDown .sliderImage__arrowDown {
+      width: 25px;
+      height: 15px;
+    }
+  }
+}
+@media (min-width: 3000px) {
+  #root .product .product__wrapProduct .sliderImage {
+    .sliderImage__innerArrowUp .sliderImage__arrowUp {
+      width: 34px;
+      height: 18px;
+    }
+    .sliderImage__innerArrowDown .sliderImage__arrowDown {
+      width: 34px;
+      height: 18px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .product .product__wrapProduct .sliderImage {
+    .sliderImage__innerArrowUp .sliderImage__arrowUp {
+      width: 45px;
+      height: 25px;
+    }
+    .sliderImage__innerArrowDown .sliderImage__arrowDown {
+      width: 45px;
+      height: 25px;
+    }
+  }
+}
+@media (max-width: 1550px) {
+  #root .product .product__wrapProduct .sliderImage {
+    .sliderImage__innerArrowUp .sliderImage__arrowUp {
+      width: 18px;
+      height: 10px;
+    }
+    .sliderImage__innerArrowDown .sliderImage__arrowDown {
+      width: 18px;
+      height: 10px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .product .product__wrapProduct .sliderImage {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    width: 70%;
+    .sliderImage__innerArrowUp {
+      width: 100%;
+      height: auto;
+      .sliderImage__arrowUp {
+        transform: rotate(-90deg);
+      }
+    }
+    .sliderImage__innerArrowDown {
+      width: 100%;
+      height: auto;
+      .sliderImage__arrowDown {
+        transform: rotate(-90deg);
+      }
+    }
+    .sliderImage__wrapImages {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: auto;
+      padding: 0;
+      grid-column-gap: 4px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .product .product__wrapProduct .sliderImage {
+    width: 100%;
+  }
+}

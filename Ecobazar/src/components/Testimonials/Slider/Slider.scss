@@ -1,0 +1,33 @@
+.slider {
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  overflow: hidden;
+  .slider__lineSlide {
+    transition: all 0.5s;
+    display: flex;
+    width: 61.5vw;
+    height: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    grid-column-gap: 2.033%;
+    .slider__card {
+      box-sizing: border-box;
+      margin: 0 1.271% 0 1.271%;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 32%;
+      flex-shrink: 0;
+      height: 100%;
+    }
+  }
+}

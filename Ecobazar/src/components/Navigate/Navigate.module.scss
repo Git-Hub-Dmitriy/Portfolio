@@ -1,0 +1,68 @@
+@use "@styles/variables.module.scss" as *;
+
+.navigate {
+  width: 100%;
+  height: 120px;
+  background-image: url("/public/images/background-navigation.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  .navigate__wrap {
+    width: 68.75%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    .navigate__linkHome {
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      transition: 0.3s;
+      .navigate__iconHouse {
+        width: 16px;
+        height: 17px;
+        transition: 0.2s;
+      }
+    }
+    .navigate__one {
+      font-size: 1em;
+      color: #999999;
+      font-weight: 500;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+    }
+    .navigate__one_green {
+      color: $light-green;
+    }
+    .navigate__two {
+      color: #999999;
+      font-size: 1em;
+      font-weight: 500;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+    }
+    .navigate__two_green {
+      color: $light-green;
+    }
+    .navigate__three {
+      color: $light-green;
+      font-size: 1em;
+      font-weight: 500;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+    }
+    .navigate__iconArrow {
+      width: 8px;
+      height: 6px;
+      transform: rotate(-90deg);
+    }
+  }
+}

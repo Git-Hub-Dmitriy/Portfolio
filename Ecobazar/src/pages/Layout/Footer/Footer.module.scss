@@ -1,0 +1,22 @@
+@use "@styles/variables.module.scss" as *;
+
+.footer {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: repeat(2, auto);
+  font-family: "Poppins", sans-serif;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  .active {
+    color: $light-gray;
+    font-size: 0.87em;
+    transition: all 0.3s;
+  }
+  .noActive {
+    color: $light-gray;
+    font-size: 0.87em;
+    transition: all 0.3s;
+  }
+}

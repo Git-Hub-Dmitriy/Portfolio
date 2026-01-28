@@ -1,0 +1,23 @@
+@media (max-width: 1400px) {
+  #root .description .description__innerTitle .description__title {
+    font-size: 3em;
+  }
+}
+@media (max-width: 1300px) {
+  #root .description {
+    width: 95%;
+    padding: 50px 0 50px 0;
+  }
+}
+@media (max-width: 900px) {
+  #root .description {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    .description__innerTitle {
+      grid-row-gap: 15px;
+      order: 2;
+    }
+  }
+}

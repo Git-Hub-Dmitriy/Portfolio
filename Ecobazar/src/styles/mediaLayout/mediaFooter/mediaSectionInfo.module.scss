@@ -1,0 +1,268 @@
+@media (hover: hover) {
+  #root .sectionInfo .sectionInfo__wrapper .blockNavigate {
+    .blockContact .blockContact__innerLink {
+      .blockContact__tel:hover {
+        transform: scale(1.1);
+      }
+      .blockContact__email:hover {
+        transform: scale(1.1);
+      }
+    }
+    .blockNavigate__innerTitle {
+      .blockNavigate__subtitle:hover {
+        transform: scale(1.1);
+      }
+      .active:hover {
+        transform: scale(1.2);
+      }
+      .noActive:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .sectionInfo .sectionInfo__wrapper .blockNavigate {
+    .blockContact .blockContact__innerLink {
+      .blockContact__tel:active {
+        transform: scale(1.1);
+      }
+      .blockContact__email:active {
+        transform: scale(1.1);
+      }
+    }
+    .blockNavigate__innerTitle {
+      .blockNavigate__subtitle:active {
+        transform: scale(1.1);
+      }
+      .active:active {
+        transform: scale(1.2);
+      }
+      .noActive:active {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate {
+      .blockContact {
+        grid-row-gap: 30px;
+        .blockContact__innerTitle .logo {
+          grid-column-gap: 15px;
+          .logo__icon {
+            width: 40px;
+            height: 36px;
+          }
+        }
+        .blockContact__innerLink {
+          grid-column-gap: 30px;
+        }
+      }
+      .blockNavigate__innerTitle {
+        grid-row-gap: 20px;
+      }
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      grid-column-gap: 15px;
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate .blockContact .blockContact__innerTitle .logo .logo__icon {
+      width: 44px;
+      height: 40px;
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      grid-column-gap: 15px;
+      .sectionInfo__icon {
+        width: 52px;
+        height: 38px;
+      }
+      .sectionInfo__icon_big {
+        width: 74px;
+        height: 38px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate .blockContact {
+      .blockContact__innerLink {
+        .blockContact__tel {
+          border-width: 2px;
+        }
+        .blockContact__email {
+          border-width: 2px;
+        }
+      }
+      .blockContact__innerTitle .logo .logo__icon {
+        width: 55px;
+        height: 48px;
+      }
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      .sectionInfo__icon {
+        width: 60px;
+        height: 44px;
+      }
+      .sectionInfo__icon_big {
+        width: 84px;
+        height: 44px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate .blockContact .blockContact__innerTitle .logo .logo__icon {
+      width: 65px;
+      height: 55px;
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      .sectionInfo__icon {
+        width: 70px;
+        height: 48px;
+      }
+      .sectionInfo__icon_big {
+        width: 92px;
+        height: 48px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate {
+      .blockContact .blockContact__innerTitle {
+        grid-row-gap: 30px;
+        .logo .logo__icon {
+          width: 75px;
+          height: 60px;
+        }
+      }
+      .blockNavigate__innerTitle {
+        grid-row-gap: 30px;
+      }
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      .sectionInfo__icon {
+        width: 80px;
+        height: 54px;
+      }
+      .sectionInfo__icon_big {
+        width: 105px;
+        height: 54px;
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate .blockContact .blockContact__innerTitle .logo .logo__icon {
+      width: 85px;
+      height: 65px;
+    }
+    .sectionInfo__wrapPayment
+      .sectionInfo__innerPayment
+      .sectionInfo__innerIcons {
+      .sectionInfo__icon {
+        width: 85px;
+        height: 58px;
+      }
+      .sectionInfo__icon_big {
+        width: 110px;
+        height: 58px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 900px) {
+  #root .sectionInfo .sectionInfo__wrapper .blockNavigate {
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: auto auto;
+    grid-column-gap: 0;
+    grid-row-gap: 30px;
+    .blockContact {
+      order: 3;
+      grid-row: 2 / 3;
+      grid-column: 1 / 5;
+      .blockContact__innerTitle {
+        justify-items: center;
+        .logo {
+          justify-content: center;
+        }
+      }
+      .blockContact__innerLink {
+        justify-content: center;
+      }
+      .blockContact__subtitle {
+        text-align: center;
+      }
+    }
+    .blockNavigate__innerTitle {
+      justify-items: center;
+      .blockNavigate__title {
+        text-align: center;
+      }
+      .blockNavigate__title_small {
+        text-align: center;
+      }
+      .blockNavigate__subtitle {
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .sectionInfo .sectionInfo__wrapper {
+    .blockNavigate {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: auto auto auto;
+      .blockContact {
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+      }
+    }
+    .sectionInfo__wrapPayment .sectionInfo__innerPayment {
+      grid-template-columns: auto;
+      grid-column-gap: 0;
+      grid-template-rows: auto auto;
+      grid-row-gap: 30px;
+      justify-content: normal;
+      justify-items: center;
+      .sectionInfo__innerIcons {
+        justify-content: center;
+        grid-column-gap: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root
+    .sectionInfo
+    .sectionInfo__wrapper
+    .blockNavigate
+    .blockContact
+    .blockContact__subtitle {
+    width: 100%;
+  }
+}

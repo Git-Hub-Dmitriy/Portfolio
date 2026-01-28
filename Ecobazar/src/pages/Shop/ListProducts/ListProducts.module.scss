@@ -1,0 +1,11 @@
+.listProducts {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 31.707%);
+  grid-template-rows: auto;
+  grid-column-gap: 2.439%;
+  grid-row-gap: 2px;
+  padding-bottom: 4.065%;
+}

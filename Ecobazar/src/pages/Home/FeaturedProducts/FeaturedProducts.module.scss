@@ -1,0 +1,59 @@
+@use "@styles/variables.module.scss" as *;
+
+.featuredProducts {
+  margin: 0 auto;
+  width: 68.75%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding-bottom: 3.125%;
+  grid-row-gap: 32px;
+  .featuredProducts__head {
+    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    .featuredProducts__title {
+      width: 100%;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      color: $dark;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .featuredProducts__innerLink {
+      width: 100%;
+      display: grid;
+      justify-items: end;
+      align-items: center;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      grid-column-gap: 8px;
+      .featuredProducts__textLink {
+        font-size: 1em;
+        color: $light-green;
+        font-weight: 500;
+        transition: all 0.3s;
+      }
+      .featuredProducts__iconArrow {
+        width: 15px;
+        height: 12px;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .featuredProducts__wrapProducts {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 19.878%);
+    grid-template-rows: auto;
+    grid-column-gap: 2px;
+  }
+}

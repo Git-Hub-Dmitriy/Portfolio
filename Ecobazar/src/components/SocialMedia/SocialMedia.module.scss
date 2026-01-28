@@ -1,0 +1,33 @@
+.socialMedia {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto;
+  grid-column-gap: 24px;
+  .socialMedia__iconFacebook {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s;
+  }
+  .socialMedia__iconTwitter {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s;
+  }
+  .socialMedia__iconPatreon {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s;
+  }
+  .socialMedia__iconInstagram {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s;
+  }
+}

@@ -1,0 +1,49 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root .subscribe .subscribe__button:hover {
+    background-color: $dark;
+    transform: scale(1.1);
+  }
+}
+@media (hover: none) {
+  #root .subscribe .subscribe__button:active {
+    background-color: $dark;
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 2300px) {
+  #root .subscribe .subscribe__button {
+    height: 65px;
+  }
+}
+@media (min-width: 2700px) {
+  #root .subscribe .subscribe__button {
+    height: 75px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .subscribe .subscribe__button {
+    height: 85px;
+  }
+}
+@media (min-width: 3400px) {
+  #root .subscribe .subscribe__button {
+    height: 95px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .subscribe .subscribe__button {
+    height: 100px;
+  }
+}
+@media (max-width: 900px) {
+  #root .subscribe {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  #root .subscribe {
+    width: 100%;
+  }
+}

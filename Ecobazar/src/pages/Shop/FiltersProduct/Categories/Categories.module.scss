@@ -1,0 +1,117 @@
+@use "@styles/variables.module.scss" as *;
+
+.categories {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: start;
+  align-items: start;
+  padding-bottom: 14.74%;
+  transition: all 0.3s;
+  .categories__wrapTitle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+    .categories__title {
+      font-size: 1.25em;
+      color: $dark;
+      cursor: pointer;
+    }
+    .categories__iconArrowUp {
+      width: 15px;
+      height: 10px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+  }
+  .categories__wrapButtons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    justify-items: start;
+    align-items: start;
+    grid-row-gap: 20px;
+    transition: all 0.3s;
+    .categories__innerButton {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: start;
+      align-items: center;
+      grid-column-gap: 5px;
+      .categories__button {
+        cursor: pointer;
+        position: relative;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        display: grid;
+        grid-column-gap: 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        color: $dark;
+        font-size: 0.875em;
+        transition: all 0.3s;
+        .categories__radio {
+          cursor: pointer;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: #fff;
+          border: 1px solid $light-green;
+          height: 20px;
+          width: 20px;
+          border-radius: 100%;
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            top: 0;
+          }
+          &:checked::before {
+            border: 2px solid transparent;
+            border-radius: 100%;
+            background: $light-green;
+            margin: 2px;
+          }
+        }
+      }
+      .categories__categoryLength {
+        color: #808080;
+        font-size: 0.875em;
+      }
+    }
+  }
+}
+.categories_active {
+  padding-bottom: 0px;
+  .categories__wrapTitle {
+    .categories__iconArrowUp_rotate {
+      transform: rotate(180deg);
+    }
+  }
+  .categories__wrapButtons_hidden {
+    display: none;
+  }
+}

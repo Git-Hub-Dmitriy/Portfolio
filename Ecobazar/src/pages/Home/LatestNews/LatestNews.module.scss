@@ -1,0 +1,27 @@
+@use "@styles/variables.module.scss" as *;
+
+.latestNews {
+  width: 68.75%;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  padding-bottom: 6.45%;
+  .latestNews__title {
+    font-size: 2em;
+    color: $dark;
+    font-weight: 600;
+  }
+  .latestNews__wrapBannar {
+    padding-top: 2.42%;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 24px;
+  }
+}

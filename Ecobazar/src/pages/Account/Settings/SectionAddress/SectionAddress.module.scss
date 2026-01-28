@@ -1,0 +1,108 @@
+@use "@styles/variables.module.scss" as *;
+
+.sectionAddress {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: start;
+  grid-row-gap: 40px;
+  padding: 18px 0px 24px 24px;
+  .sectionAddress__title {
+    font-size: 1.25em;
+    font-weight: 550;
+    color: $dark;
+  }
+  .sectionAddress__form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 16px;
+    .sectionAddress__wrapAddress {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 6px;
+      align-items: center;
+      justify-items: start;
+      .sectionAddress__subtitle {
+        font-size: 0.875em;
+        color: $dark;
+        font-weight: 500;
+      }
+      .sectionAddress__inputAddress {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 14px 16px;
+        color: $dark;
+        background-color: transparent;
+        outline: none;
+        font-size: 1em;
+        font-weight: 500;
+        border: 1px solid transparent;
+        border-radius: 8px;
+      }
+      .sectionAddress__inputAddress_active {
+        border: 1px solid $light-green;
+      }
+    }
+    .sectionAddress__wrapEmail {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-items: center;
+      align-items: start;
+      grid-column-gap: 16px;
+      .sectionAddress__column {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-items: start;
+        grid-row-gap: 6px;
+        .sectionAddress__subtitle {
+          font-size: 0.875em;
+          color: $dark;
+          font-weight: 500;
+        }
+        .sectionAddress__input {
+          box-sizing: border-box;
+          padding: 14px 16px;
+          background-color: white;
+          width: 100%;
+          color: #666666;
+          font-size: 1em;
+          font-weight: 500;
+          border: 1px solid transparent;
+          border-radius: 8px;
+        }
+        .sectionAddress__input_active {
+          border: 1px solid $light-green;
+        }
+      }
+    }
+    .sectionAddress__btnSaveAddress {
+      width: 17.471%;
+      height: 45px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      background-color: $light-green;
+      color: white;
+      border-radius: 43px;
+      font-size: 0.875em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-top: 8px;
+    }
+  }
+}

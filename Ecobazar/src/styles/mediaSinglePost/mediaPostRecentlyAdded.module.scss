@@ -1,0 +1,149 @@
+@media (min-width: 2000px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postRecentlyAdded {
+    grid-row-gap: 35px;
+    .postRecentlyAdded__wrapPost .postRecentlyAdded__innerPost {
+      height: 130px;
+      .postRecentlyAdded__descriptionPost {
+        grid-row-gap: 15px;
+        .postRecentlyAdded__innerDate {
+          grid-column-gap: 20px;
+          .postRecentlyAdded__icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postRecentlyAdded
+    .postRecentlyAdded__wrapPost
+    .postRecentlyAdded__innerPost {
+    height: 150px;
+    .postRecentlyAdded__wrapImg .postRecentlyAdded__img {
+      width: auto;
+      height: 110px;
+    }
+    .postRecentlyAdded__descriptionPost
+      .postRecentlyAdded__innerDate
+      .postRecentlyAdded__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postRecentlyAdded {
+    grid-row-gap: 40px;
+    .postRecentlyAdded__wrapPost .postRecentlyAdded__innerPost {
+      height: 170px;
+      .postRecentlyAdded__wrapImg .postRecentlyAdded__img {
+        height: 130px;
+      }
+      .postRecentlyAdded__descriptionPost
+        .postRecentlyAdded__innerDate
+        .postRecentlyAdded__icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postRecentlyAdded {
+    grid-row-gap: 40px;
+    .postRecentlyAdded__wrapPost .postRecentlyAdded__innerPost {
+      height: 190px;
+      .postRecentlyAdded__wrapImg .postRecentlyAdded__img {
+        height: 150px;
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postRecentlyAdded {
+    grid-row-gap: 50px;
+    .postRecentlyAdded__wrapPost .postRecentlyAdded__innerPost {
+      height: 210px;
+      .postRecentlyAdded__descriptionPost
+        .postRecentlyAdded__innerDate
+        .postRecentlyAdded__icon {
+        width: 35px;
+        height: 35px;
+      }
+      .postRecentlyAdded__wrapImg .postRecentlyAdded__img {
+        height: 170px;
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postRecentlyAdded
+    .postRecentlyAdded__wrapPost
+    .postRecentlyAdded__innerPost
+    .postRecentlyAdded__wrapImg {
+    height: 80px;
+    .postRecentlyAdded__img {
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postRecentlyAdded
+    .postRecentlyAdded__wrapPost
+    .postRecentlyAdded__innerPost
+    .postRecentlyAdded__wrapImg {
+    height: 70px;
+  }
+}
+@media (max-width: 1200px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postRecentlyAdded
+    .postRecentlyAdded__wrapPost
+    .postRecentlyAdded__innerPost {
+    grid-template-columns: 30% auto;
+    .postRecentlyAdded__descriptionPost .postRecentlyAdded__subtitle {
+      overflow: hidden;
+      display: inline;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postRecentlyAdded
+    .postRecentlyAdded__wrapPost
+    .postRecentlyAdded__innerPost {
+    grid-template-columns: 20% auto;
+    .postRecentlyAdded__wrapImg {
+      max-height: 90px;
+    }
+    .postRecentlyAdded__descriptionPost .postRecentlyAdded__subtitle {
+      overflow: visible;
+      display: inline;
+      text-overflow: auto;
+      white-space: normal;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@media (hover: hover) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn:hover {
+    transform: scale(1.1);
+  }
+}
+@media (hover: none) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn:active {
+    transform: scale(1.1);
+  }
+}
+@media (min-width: 2300px) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn {
+    height: 65px;
+  }
+}
+@media (min-width: 2700px) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn {
+    height: 75px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn {
+    height: 90px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .sectionCoupon .sectionCoupon__form .sectionCoupon__btn {
+    height: 100px;
+  }
+}
+@media (max-width: 1650px) {
+  #root .sectionCoupon {
+    margin: 0;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 5px;
+    .sectionCoupon__form .sectionCoupon__btn {
+      height: 45px;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  #root .sectionCoupon .sectionCoupon__form {
+    grid-template-columns: auto 34%;
+    .sectionCoupon__input {
+      padding: 0px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .sectionCoupon {
+    padding-inline: 0px;
+    grid-column-gap: 30% auto;
+    .sectionCoupon__form .sectionCoupon__btn {
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .sectionCoupon {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #root .sectionCoupon {
+    grid-column-gap: 0;
+    grid-row-gap: 25px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    .sectionCoupon__form .sectionCoupon__input {
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root .sectionCoupon .sectionCoupon__form {
+    grid-template-columns: auto;
+    grid-row-gap: 20px;
+    grid-template-rows: auto auto;
+  }
+}

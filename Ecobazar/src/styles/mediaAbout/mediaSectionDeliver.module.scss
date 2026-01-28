@@ -1,0 +1,191 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a
+    .btnShop:hover {
+    transform: scale(1.1);
+    background-color: #1a1a1a;
+  }
+}
+@media (hover: none) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a
+    .btnShop:active {
+    transform: scale(1.1);
+    background-color: #1a1a1a;
+  }
+}
+@media (min-width: 2000px) {
+  #root .sectionDeliver {
+    grid-template-columns: 39% auto;
+    .sectionDeliver__wrapContent {
+      grid-row-gap: 35px;
+      .sectionDeliver__innerTitle {
+        grid-row-gap: 35px;
+      }
+      .sectionDeliver__wrapBtn {
+        grid-row-gap: 30px;
+        .sectionDeliver__string {
+          grid-column-gap: 20px;
+          .sectionDeliver__iconMark {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+      .sectionDeliver__wrapBtn a .btnShop {
+        font-size: 1em;
+        grid-column-gap: 25px;
+        height: 55px;
+        margin-top: 15px;
+        .btnShop__arrow {
+          width: 18px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a
+    .btnShop {
+    height: 65px;
+    .btnShop__arrow {
+      width: 22px;
+      height: 20px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a
+    .btnShop {
+    height: 75px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .sectionDeliver .sectionDeliver__wrapContent .sectionDeliver__wrapBtn {
+    .sectionDeliver__string {
+      grid-column-gap: 30px;
+      .sectionDeliver__iconMark {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    a .btnShop {
+      height: 85px;
+      .btnShop__arrow {
+        width: 28px;
+        height: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 3300px) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a
+    .btnShop {
+    height: 95px;
+    grid-column-gap: 35px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .sectionDeliver .sectionDeliver__wrapContent .sectionDeliver__wrapBtn {
+    grid-row-gap: 40px;
+    .sectionDeliver__string {
+      grid-column-gap: 40px;
+      .sectionDeliver__iconMark {
+        width: 34px;
+        height: 34px;
+      }
+    }
+    a .btnShop {
+      height: 110px;
+      border-radius: 50px;
+      .btnShop__arrow {
+        width: 34px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 1500px) {
+  #root .sectionDeliver .sectionDeliver__innerImg .sectionDeliver__img {
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+@media (max-width: 1400px) {
+  #root .sectionDeliver {
+    .sectionDeliver__innerImg .sectionDeliver__img {
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      -o-object-position: left top;
+      object-position: left top;
+    }
+    .sectionDeliver__wrapContent {
+      .sectionDeliver__innerTitle .sectionDeliver__title {
+        font-size: 2.8em;
+      }
+      .sectionDeliver__wrapBtn a .btnShop {
+        height: 45px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .sectionDeliver {
+    width: 95%;
+    .sectionDeliver__wrapContent
+      .sectionDeliver__innerTitle
+      .sectionDeliver__title {
+      font-size: 2.7em;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .sectionDeliver {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    .sectionDeliver__wrapContent {
+      order: 2;
+      grid-row-gap: 30px;
+      .sectionDeliver__wrapBtn {
+        grid-row-gap: 25px;
+        a {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root
+    .sectionDeliver
+    .sectionDeliver__wrapContent
+    .sectionDeliver__wrapBtn
+    a {
+    width: 35%;
+  }
+}

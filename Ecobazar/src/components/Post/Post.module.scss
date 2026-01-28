@@ -1,0 +1,156 @@
+@use "@styles/variables.module.scss" as *;
+
+.post {
+  position: relative;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  .post__wrapImage {
+    position: relative;
+    width: 100%;
+    height: auto;
+    .post__innerDate {
+      left: 25px;
+      bottom: 25px;
+      width: 58px;
+      height: 58px;
+      background-color: white;
+      border-radius: 4px;
+      position: absolute;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 50% 50%;
+      justify-items: center;
+      align-items: center;
+      .post__date {
+        display: grid;
+        justify-items: center;
+        align-items: end;
+        font-size: 1.25em;
+        color: $dark;
+        font-weight: 550;
+      }
+      .post__day {
+        display: grid;
+        justify-items: center;
+        align-items: start;
+        font-size: 0.75em;
+        color: #808080;
+        font-weight: 500;
+      }
+    }
+    .post__image {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
+  }
+  .post__wrapContent {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    box-sizing: border-box;
+    padding: 24px 0 24px 24px;
+    grid-row-gap: 8px;
+    .post__innerTag {
+      width: 100%;
+      display: grid;
+      align-items: center;
+      justify-content: start;
+      grid-column-gap: 16px;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto;
+      .post__tag {
+        color: #4d4d4d;
+        font-size: 0.875em;
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-column-gap: 7px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        font-weight: 500;
+        .post__iconTag {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      .post__user {
+        color: #4d4d4d;
+        font-size: 0.875em;
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-column-gap: 7px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        font-weight: 500;
+        .post__iconUser {
+          width: 12px;
+          height: 14px;
+        }
+      }
+      .post__comment {
+        color: #4d4d4d;
+        font-size: 0.875em;
+        display: grid;
+        align-items: center;
+        justify-content: start;
+        grid-column-gap: 7px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        font-weight: 500;
+        .post__iconComment {
+          width: 14px;
+          height: 12px;
+        }
+      }
+    }
+    .post__textContent {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-content: start;
+      color: $dark;
+      font-size: 1.125em;
+      font-weight: 550;
+    }
+    .post__innerBtn {
+      margin-top: 12px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: start;
+      align-items: center;
+      grid-column-gap: 12px;
+      transition: all 0.3s;
+      .post__textBtn {
+        color: $light-green;
+        font-size: 1em;
+        font-weight: 550;
+        transition: all 0.3s;
+      }
+      .post__iconArrowRight {
+        width: 15px;
+        height: 12px;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
+.post_active {
+  .post__wrapContent {
+    .post__textContent {
+      color: #2c742f;
+    }
+  }
+}

@@ -1,0 +1,113 @@
+@media (min-width: 2000px) {
+  #root .account .account__container .orderHistory {
+    .pagination .pagination__wrapper .pagination__innerPage {
+      grid-column-gap: 10px;
+      .pagination__iconArrowLeft,
+      .pagination__iconArrowRight {
+        width: 18px;
+        height: 12px;
+      }
+      .pagination__number,
+      .pagination__number_active {
+        width: 45px;
+        height: 45px;
+      }
+    }
+    .orderHistory__wrapper {
+      grid-row-gap: 30px;
+      .orderHistory__wrapOrders {
+        grid-row-gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .account .account__container .orderHistory {
+    .pagination .pagination__wrapper .pagination__innerPage {
+      grid-column-gap: 20px;
+      .pagination__iconArrowLeft,
+      .pagination__iconArrowRight {
+        width: 24px;
+        height: 16px;
+      }
+      .pagination__number,
+      .pagination__number_active {
+        width: 55px;
+        height: 55px;
+      }
+    }
+    .orderHistory__wrapper {
+      grid-row-gap: 40px;
+      .orderHistory__wrapOrders {
+        grid-row-gap: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .account .account__container .orderHistory {
+    grid-row-gap: 35px;
+    .pagination .pagination__wrapper .pagination__innerPage .pagination__number,
+    .pagination__number_active {
+      width: 65px;
+      height: 65px;
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .account .account__container .orderHistory {
+    .pagination .pagination__wrapper .pagination__innerPage {
+      .pagination__iconArrowLeft,
+      .pagination__iconArrowRight {
+        width: 28px;
+        height: 22px;
+      }
+      .pagination__number,
+      .pagination__number_active {
+        width: 75px;
+        height: 75px;
+      }
+    }
+    .orderHistory__wrapper .orderHistory__wrapOrders {
+      grid-row-gap: 25px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .account .account__container .orderHistory {
+    padding: 0;
+    .orderHistory__wrapper {
+      grid-row-gap: 30px;
+      grid-template-rows: auto auto;
+      .orderHistory__wrapGroups {
+        display: none;
+      }
+      .orderHistory__wrapOrders {
+        grid-template-columns: repeat(3, auto);
+        grid-auto-rows: auto;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        .orderHistory__innerOrder {
+          grid-template-columns: auto;
+          grid-auto-rows: auto;
+          padding: 0;
+          grid-row-gap: 5px;
+          .orderHistory__innerLink {
+            justify-items: start;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .account .account__container .orderHistory .orderHistory__wrapper {
+    .orderHistory__wrapOrders {
+      grid-template-columns: repeat(2, auto);
+      grid-auto-rows: auto;
+      .orderHistory__innerOrder {
+        width: 80%;
+      }
+    }
+  }
+}

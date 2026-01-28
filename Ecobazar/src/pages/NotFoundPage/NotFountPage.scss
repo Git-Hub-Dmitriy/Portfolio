@@ -1,0 +1,64 @@
+@use "@styles/variables.module.scss" as *;
+
+.notFoundPage {
+  font-size: 1em;
+  width: 100%;
+  padding-bottom: 80px;
+  .navigate .navigate__wrap .navigate__one {
+    color: $light-green;
+  }
+  .notFoundPage__main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    .notFoundPage__wrapImg {
+      padding-top: 80px;
+      width: 30.2%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      .notFoundPage__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .notFoundPage__wrapTitle {
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 24px;
+      .notFoundPage__title {
+        font-size: 2.5em;
+        color: $dark;
+        font-weight: bold;
+      }
+      .notFoundPage__text {
+        width: 31.875%;
+        padding-top: 20px;
+        font-size: 1em;
+        color: #808080;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+    .notFoundPage__btn {
+      width: 163px;
+      height: 45px;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      background-color: $light-green;
+      border-radius: 43px;
+      transition: all 0.3s;
+      cursor: pointer;
+      color: white;
+    }
+  }
+}

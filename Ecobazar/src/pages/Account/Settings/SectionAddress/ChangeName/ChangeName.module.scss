@@ -1,0 +1,43 @@
+@use "@styles/variables.module.scss" as *;
+
+.changeName__wrapName {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+  grid-template-rows: auto;
+  grid-column-gap: 16px;
+  align-items: start;
+  justify-items: start;
+  .changeName__innerName {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 6px;
+    .changeName__subtitle {
+      font-size: 0.875em;
+      color: $dark;
+      font-weight: 500;
+      .changeName__span {
+        color: #808080;
+        font-size: 0.875em;
+        font-weight: 500;
+      }
+    }
+    .changeName__inputName {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px 0 14px 16px;
+      font-size: 1em;
+      color: #666666;
+      font-weight: 500;
+      border: 1px solid transparent;
+      border-radius: 8px;
+    }
+    .changeName__inputName_active {
+      border: 1px solid $light-green;
+    }
+  }
+}

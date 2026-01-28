@@ -1,0 +1,31 @@
+@use "@styles/variables.module.scss" as *;
+
+.relatedProducts {
+  width: 68.75%;
+  display: grid;
+  margin: 0 auto;
+  padding-bottom: 4.166%;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-items: center;
+  .relatedProducts__wrapTitle {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    .relatedProducts__title {
+      font-size: 2em;
+      font-weight: 550;
+      color: $dark;
+    }
+  }
+  .relatedProducts__wrapProducts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 23.6%);
+    grid-template-rows: auto;
+    grid-column-gap: 1.81%;
+    padding-top: 32px;
+  }
+}

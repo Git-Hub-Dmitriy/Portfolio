@@ -1,0 +1,21 @@
+.blogSearch {
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0px 16px 0 16px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: start;
+  grid-column-gap: 8px;
+  .blogSearch__icon {
+    width: 15px;
+    height: 15px;
+  }
+  .blogSearch__input {
+    width: 100%;
+    font-size: 1em;
+    color: #999999;
+  }
+}

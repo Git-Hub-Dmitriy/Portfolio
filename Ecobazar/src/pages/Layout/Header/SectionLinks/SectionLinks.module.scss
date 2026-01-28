@@ -1,0 +1,81 @@
+@use "@styles/variables.module.scss" as *;
+
+.active {
+  color: white;
+}
+.notActive {
+  color: $light-gray;
+}
+.sectionLinks {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #333333;
+  .sectionLinks__wrapper {
+    width: 68.75%;
+    box-sizing: border-box;
+    padding: 18px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    .sectionLinks__listLinks {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-template-rows: auto;
+      align-items: center;
+      justify-items: start;
+      grid-column-gap: 52px;
+      .sectionLinks__item {
+        transition: all 0.3s;
+        a {
+          font-size: 0.875em;
+          font-weight: 500;
+          font-style: normal;
+        }
+      }
+    }
+    .sectionLinks__innerPhone {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: end;
+      align-items: center;
+      grid-column-gap: 12px;
+      .sectionBottom__phone {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 12px;
+        justify-items: center;
+        align-items: center;
+        color: white;
+        transition: all 0.3s;
+        .sectionLinks__iconPhone {
+          width: 22px;
+          height: 22px;
+          color: white;
+        }
+      }
+      .sectionLinks__account {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.3s;
+        .sectionLinks__iconUser {
+          width: 20px;
+          height: 20px;
+          color: white;
+        }
+      }
+    }
+  }
+}

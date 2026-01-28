@@ -1,0 +1,321 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root
+    .contact
+    .contact__wrapContent
+    .contact__innerForm
+    .contact__button:hover {
+    transform: scale(1.2);
+    background-color: #1a1a1a;
+  }
+}
+@media (hover: none) {
+  #root
+    .contact
+    .contact__wrapContent
+    .contact__innerForm
+    .contact__button:active {
+    transform: scale(1.2);
+    background-color: #1a1a1a;
+  }
+}
+@media (min-width: 2000px) {
+  #root .contact {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .contact {
+    font-size: 1.4em;
+    .contact__wrapContent {
+      padding: 100px 0 100px 0;
+      .contact__innerContact {
+        padding-inline: 40px;
+        .contact__info {
+          padding: 40px;
+        }
+      }
+      .contact__innerForm {
+        padding: 60px;
+        grid-row-gap: 35px;
+        .contact__innerTitle {
+          grid-row-gap: 25px;
+        }
+        .contact__form {
+          grid-row-gap: 30px;
+          .contact__innerInput {
+            .contact__inputEmail {
+              height: 60px;
+            }
+            .contact__inputEmail {
+              border: 2px solid transparent;
+            }
+            .contact__inputEmail_focused {
+              border: 2px solid $light-green;
+            }
+          }
+          .contact__inputText {
+            height: 60px;
+            border: 2px solid transparent;
+          }
+          .contact__inputText_focused {
+            border: 2px solid $light-green;
+          }
+          .contact__comment {
+            height: 110px;
+            border: 2px solid transparent;
+          }
+          .contact__comment_focused {
+            border: 2px solid $light-green;
+          }
+        }
+        .contact__button {
+          height: 65px;
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .contact {
+    font-size: 1.6em;
+    .contact__wrapContent {
+      .contact__innerContact {
+        padding-inline: 50px;
+        .contact__info {
+          padding: 50px;
+          grid-row-gap: 25px;
+          .contact__icon {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      .contact__innerForm {
+        padding: 70px;
+        grid-row-gap: 45px;
+        .contact__innerTitle {
+          grid-row-gap: 35px;
+        }
+        .contact__form {
+          grid-row-gap: 40px;
+          .contact__innerInput {
+            .contact__inputEmail {
+              height: 70px;
+              border-radius: 10px;
+            }
+          }
+          .contact__inputText {
+            height: 70px;
+            border-radius: 10px;
+          }
+          .contact__comment {
+            height: 130px;
+            border-radius: 10px;
+          }
+        }
+        .contact__button {
+          height: 85px;
+          width: 25%;
+        }
+      }
+    }
+    .contact__map {
+      height: 500px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .contact {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3400px) {
+  #root .contact {
+    font-size: 2em;
+    .contact__wrapContent {
+      .contact__innerContact {
+        padding-inline: 60px;
+        .contact__info {
+          padding: 60px;
+          grid-row-gap: 35px;
+          .contact__icon {
+            width: 60px;
+            height: 60px;
+          }
+        }
+      }
+      .contact__wrapForm {
+        padding: 80px;
+        grid-row-gap: 55px;
+        .contact__innerTitle {
+          grid-row-gap: 45px;
+        }
+        .contact__form {
+          grid-row-gap: 50px;
+          .contact__innerInput {
+            .contact__inputEmail {
+              height: 85px;
+            }
+          }
+          .contact__inputText {
+            height: 85px;
+          }
+          .contact__comment {
+            height: 150px;
+          }
+        }
+        .contact__button {
+          height: 95px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .contact {
+    font-size: 2.2em;
+    .contact__wrapContent {
+      .contact__innerContact {
+        padding-inline: 70px;
+        .contact__info {
+          padding: 70px;
+          grid-row-gap: 45px;
+          .contact__icon {
+            width: 70px;
+            height: 70px;
+          }
+        }
+      }
+      .contact__innerForm {
+        padding: 90px;
+        grid-row-gap: 65px;
+        .contact__innerTitle {
+          grid-row-gap: 55px;
+        }
+        .contact__form {
+          grid-row-gap: 60px;
+          .contact__innerInput {
+            .contact__inputEmail {
+              height: 95px;
+            }
+          }
+          .contact__inputText {
+            height: 95px;
+          }
+          .contact__comment {
+            height: 170px;
+          }
+        }
+        .contact__button {
+          height: 105px;
+        }
+      }
+    }
+    .contact__map {
+      height: 600px;
+    }
+  }
+}
+@media (max-width: 1650px) {
+  #root .contact {
+    .contact__wrapContent {
+      .contact__innerContact .contact__info .contact__icon {
+        width: 35px;
+        height: 35px;
+      }
+      .contact__wrapForm .contact__innerTitle {
+        width: 80%;
+      }
+      .contact__wrapForm .contact__form {
+        .contact__inputText {
+          height: 40px;
+        }
+        .contact__comment {
+          height: 80px;
+        }
+        .contact__innerInput .contact__inputEmail {
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1550px) {
+  #root .contact {
+    .contact__wrapContent .contact__innerForm .contact__button {
+      width: 25%;
+      height: 45px;
+    }
+    .contact__map {
+      height: 350px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .contact {
+    .contact__wrapContent {
+      width: 95%;
+      grid-template-columns: 23.7% 72.8%;
+      grid-column-gap: 3%;
+      .contact__innerContact {
+        padding: 0;
+      }
+      .contact__innerForm {
+        padding-inline: 0;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .contact {
+    .contact__wrapContent {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 15px;
+      justify-content: center;
+      .contact__innerContact {
+        grid-template-columns: repeat(3, 31.5%);
+        grid-template-rows: auto;
+        grid-column-gap: 2.5%;
+      }
+      .contact__innerForm .contact__innerTitle {
+        width: 80%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .contact .contact__wrapContent {
+    .contact__innerContact {
+      grid-template-columns: auto;
+      grid-column-gap: 0px;
+      grid-template-rows: repeat(3, auto);
+      grid-row-gap: 15px;
+    }
+    .contact__innerForm {
+      .contact__button {
+        width: 35%;
+      }
+      .contact__innerTitle {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root
+    .contact
+    .contact__wrapContent
+    .contact__innerForm
+    .contact__form
+    .contact__innerInput {
+    grid-template-columns: auto;
+    grid-column-gap: 0px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 15px;
+  }
+}

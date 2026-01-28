@@ -1,0 +1,6 @@
+@media (max-width: 450px) {
+  #root .header .header__modal .header__modalContent .hidSection {
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+  }
+}

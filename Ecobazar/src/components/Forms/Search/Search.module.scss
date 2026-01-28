@@ -1,0 +1,138 @@
+@use "@styles/variables.module.scss" as *;
+
+.search {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 19.678%;
+  justify-items: start;
+  align-items: center;
+  .search__form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 0 12px 20px;
+    display: grid;
+    grid-template-columns: 5% auto;
+    grid-template-rows: auto;
+    grid-column-gap: 8px;
+    justify-items: start;
+    align-items: center;
+    .search__innerIcon {
+      width: auto;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      .search__icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+    .search__input {
+      width: 100%;
+      border: none;
+      outline: none;
+      padding: 0;
+      font-size: 1em;
+      &::placeholder {
+        font-size: 0.93em;
+        color: #808080;
+      }
+    }
+  }
+  .search__button {
+    width: 100%;
+    height: 45px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 0.875em;
+    color: white;
+    font-weight: 550;
+    background-color: $light-green;
+    border-radius: 0 8px 8px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+  }
+  .search__listProducts {
+    display: none;
+    z-index: 110;
+    background-color: #333333;
+    position: absolute;
+    top: 60px;
+    left: -25%;
+    width: 150%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 12px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: start;
+    grid-row-gap: 15px;
+    height: 400px;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    .search__notProducts {
+      font-size: 1.2em;
+      color: white;
+      font-weight: 550;
+      letter-spacing: 1px;
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::-webkit-scrollbar-track {
+      display: none;
+    }
+    .search__productLink {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: auto;
+      justify-items: start;
+      align-items: center;
+      grid-column-gap: 15px;
+      cursor: pointer;
+      .search__innerProductImage {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        .search__productImg {
+          height: 150px;
+          width: 150px;
+          background-color: white;
+        }
+      }
+      .search__productName {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.2em;
+        color: white;
+        font-weight: 550;
+      }
+      .search__productPrice {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.2em;
+        color: white;
+        font-weight: 550;
+      }
+    }
+  }
+  .search__listProducts_small {
+    display: grid;
+    height: 80px;
+    align-items: center;
+  }
+  .search__listProducts_visible {
+    display: grid;
+  }
+}

@@ -1,0 +1,135 @@
+@media (hover: hover) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll {
+    a:hover {
+      .popularCategories__text {
+        font-size: 1.2em;
+        color: black;
+      }
+      .popularCategories__iconArrow {
+        transform: scale(1.2);
+        stroke: #000000;
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll {
+    a:active {
+      .popularCategories__text {
+        font-size: 1.2em;
+        color: black;
+      }
+      .popularCategories__iconArrow {
+        transform: scale(1.2);
+        stroke: #000000;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll
+    .popularCategories__iconArrow {
+    width: 22px;
+    height: 16px;
+  }
+}
+@media (min-width: 2500px) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll
+    .popularCategories__iconArrow {
+    width: 26px;
+    height: 20px;
+  }
+}
+@media (min-width: 2800px) {
+  #root .popularCategories .popularCategories__sectionCards {
+    grid-row-gap: 3px;
+    .card {
+      .card__img {
+        width: 110%;
+        height: 110%;
+      }
+      border: 2px solid transparent;
+    }
+    .card_active {
+      border: 2px solid #00b207;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll
+    .popularCategories__iconArrow {
+    width: 30px;
+    height: 26px;
+  }
+}
+@media (min-width: 3700px) {
+  #root
+    .popularCategories
+    .popularCategories__sectionTitle
+    .popularCategories__viewAll {
+    .popularCategories__text {
+      margin-right: 25px;
+    }
+    .popularCategories__iconArrow {
+      width: 34px;
+      height: 30px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .popularCategories {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 1300px) {
+  #root .popularCategories {
+    width: 95%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 1000px) {
+  #root .popularCategories .popularCategories__sectionCards {
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: auto auto auto;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 700px) {
+  #root .popularCategories {
+    .popularCategories__sectionTitle
+      .popularCategories__wrapTitle
+      .popularCategories__title {
+      font-size: 1.8em;
+    }
+    .popularCategories__sectionCards {
+      grid-template-columns: 48% 48%;
+      grid-template-rows: repeat(6, auto);
+    }
+    .popularCategories__sectionCards .card .card__title {
+      padding: 10px 0 15px 0;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .popularCategories .popularCategories__sectionCards {
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 15px;
+  }
+}

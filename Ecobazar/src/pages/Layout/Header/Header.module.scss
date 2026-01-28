@@ -1,0 +1,62 @@
+@use "@styles/variables.module.scss" as *;
+
+.header {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  .header__modal {
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: 100;
+    width: 100%;
+    height: 0;
+    transition: all 03s;
+    position: fixed;
+    background-color: #1d1d1f;
+    top: 66px;
+    left: 0;
+    display: grid;
+    transition: all 0.3s;
+    align-items: start;
+    justify-items: center;
+    transition: 0.5s all;
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    overflow-y: scroll;
+    &::-webkit-scrollbar,
+    ::-webkit-scrollbar-track {
+      display: none;
+    }
+    &::-ms-scrollbar,
+    ::-ms-scrollbar-track {
+      display: none;
+    }
+    .header__modalContent {
+      width: 100%;
+      height: 0;
+      display: grid;
+      justify-items: center;
+      align-items: start;
+      opacity: 1;
+      background-color: #1d1d1f;
+      transform: scale(0.5);
+      transition: 0.4s all;
+    }
+    .header__modalContent_active {
+      transform: scale(1);
+    }
+  }
+  .header__modal_active {
+    opacity: 1;
+    pointer-events: all;
+    height: 100%;
+    .header__modalContent {
+      height: 100lvh;
+    }
+  }
+}

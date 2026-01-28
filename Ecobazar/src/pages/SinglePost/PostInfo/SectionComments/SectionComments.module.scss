@@ -1,0 +1,252 @@
+@use "@styles/variables.module.scss" as *;
+
+.sectionComments {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  justify-items: start;
+  grid-row-gap: 40px;
+  .sectionComments__wrapForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 16px;
+    .sectionComments__title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: $dark;
+    }
+    .sectionComments__form {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(4, auto);
+      align-items: center;
+      justify-items: start;
+      grid-row-gap: 16px;
+      .sectionComments__wrapInput {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 49.08% 49.08%;
+        grid-column-gap: 1.8%;
+        align-items: center;
+        justify-items: start;
+        .sectionComments__innerInput {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          align-items: center;
+          justify-items: start;
+          grid-row-gap: 6px;
+          .sectionComments__subtitle {
+            font-size: 0.875em;
+            color: $dark;
+            font-weight: 500;
+          }
+          .sectionComments__nameInput {
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            padding: 14px 16px 14px 16px;
+            color: #666666;
+            font-size: 1em;
+          }
+          .sectionComments__emailInput {
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 6px;
+            outline: none;
+            border: none;
+            padding: 14px 16px 14px 16px;
+            color: $dark;
+            font-size: 1em;
+          }
+        }
+      }
+      .sectionComments__wrapTextArea {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-items: start;
+        grid-row-gap: 6px;
+        .sectionComments__subtitle {
+          font-size: 0.875em;
+          color: $dark;
+          font-weight: 500;
+        }
+        .sectionComments__textarea {
+          box-sizing: border-box;
+          width: 100%;
+          padding: 14px 16px 14px 16px;
+          outline: none;
+          border: none;
+          font-size: 1.2em;
+          color: #666666;
+          resize: none;
+        }
+      }
+      .sectionComments__innerRememberCheck {
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-content: start;
+        grid-column-gap: 8px;
+        .sectionComments__check {
+          width: 20px;
+          height: 20px;
+          border-radius: 50px;
+          background-color: white;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          border: 1px solid #cccccc;
+          cursor: pointer;
+          position: relative;
+        }
+        .sectionComments__check[type="checkbox"]::before {
+          content: "";
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          overflow: hidden;
+          top: 0;
+        }
+        .sectionComments__check[type="checkbox"]:checked::before {
+          height: 100%;
+          width: 100%;
+          background-color: $light-green;
+          content: "";
+          color: white;
+          border-radius: 50px;
+          border: 2px solid white;
+          outline: 1px solid $light-green;
+        }
+        .sectionComments__checkText {
+          font-size: 0.875em;
+          font-weight: 500;
+          color: #666666;
+        }
+      }
+      .sectionComments__btnComment {
+        width: 24.197%;
+        height: 51px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-color: $light-green;
+        color: white;
+        font-size: 1em;
+        font-weight: 550;
+        border-radius: 43px;
+        margin-top: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .sectionComments__wrapComments {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 24px;
+    .sectionComments__title {
+      color: $dark;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .sectionComments__innerComments {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      grid-row-gap: 48px;
+      align-items: center;
+      justify-items: start;
+      .sectionComments__comment {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 12px;
+        align-items: center;
+        justify-content: start;
+        .sectionComments__userPhoto {
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+        }
+        .sectionComments__userInfo {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          align-items: center;
+          justify-items: start;
+          grid-row-gap: 5px;
+          .sectionComments__innerUserName {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            align-items: center;
+            justify-content: start;
+            grid-column-gap: 8px;
+            .sectionComments__userName {
+              font-size: 0.875em;
+              color: $dark;
+              font-weight: bold;
+            }
+            .sectionComments__point {
+              color: $dark;
+              font-size: 1em;
+              font-weight: bold;
+            }
+            .sectionComments__date {
+              color: #999999;
+              font-size: 0.875em;
+              font-weight: 500;
+            }
+          }
+          .sectionComments__userComment {
+            font-size: 0.875em;
+            font-weight: 500;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+  .sectionComments__btn {
+    width: 15.825%;
+    height: 45px;
+    border-radius: 43px;
+    background-color: white;
+    border: 2px solid $light-green;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    color: $light-green;
+    font-size: 0.875em;
+    font-weight: bold;
+  }
+}

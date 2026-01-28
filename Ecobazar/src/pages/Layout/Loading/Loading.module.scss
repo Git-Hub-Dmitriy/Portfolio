@@ -1,0 +1,18 @@
+@use "@styles/variables.module.scss" as *;
+.loading {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin-top: 50px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  .loading__title {
+    font-size: 1.5em;
+    font-weight: 550;
+    text-align: center;
+    color: $dark;
+  }
+}

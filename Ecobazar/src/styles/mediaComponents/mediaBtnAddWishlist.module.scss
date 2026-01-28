@@ -1,0 +1,15 @@
+@media (hover: hover) {
+  #root .btnAddWishlist:hover {
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  #root .btnAddWishlist:active {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 900px) {
+  #root .wishlistModal .wishlistModal__content {
+    width: 95%;
+  }
+}

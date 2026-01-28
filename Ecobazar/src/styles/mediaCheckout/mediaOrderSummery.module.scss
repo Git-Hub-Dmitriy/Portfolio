@@ -1,0 +1,155 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root .orderSummery .sectionPayment {
+    .sectionPayment__wrapPay
+      .sectionPayment__wrapCheckbox
+      .sectionPayment__innerCheckbox:hover {
+      .sectionPayment__radio {
+        transform: scale(1.1);
+      }
+      .sectionPayment__subtitle {
+        transform: scale(1.1);
+      }
+    }
+    .sectionPayment__btnOrder:hover {
+      transform: scale(1.1);
+      background-color: $dark;
+    }
+  }
+}
+@media (hover: none) {
+  #root .orderSummery .sectionPayment {
+    .sectionPayment__wrapPay
+      .sectionPayment__wrapCheckbox
+      .sectionPayment__innerCheckbox:active {
+      .sectionPayment__radio {
+        transform: scale(1.1);
+      }
+      .sectionPayment__subtitle {
+        transform: scale(1.1);
+      }
+    }
+    .sectionPayment__btnOrder:active {
+      transform: scale(1.1);
+      background-color: $dark;
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .orderSummery {
+    grid-row-gap: 20px;
+    .sectionPayment {
+      grid-row-gap: 30px;
+      .sectionPayment__wrapPay {
+        grid-row-gap: 30px;
+        .sectionPayment__wrapCheckbox {
+          grid-row-gap: 20px;
+          .sectionPayment__innerCheckbox .sectionPayment__radio {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+      .sectionPayment__btnOrder {
+        height: 55px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .orderSummery .sectionPayment {
+    .sectionPayment__wrapPay {
+      .sectionPayment__wrapCheckbox .sectionPayment__innerCheckbox {
+        grid-column-gap: 15px;
+        .sectionPayment__radio {
+          width: 30px;
+          height: 30px;
+          &::before {
+            outline: 2px solid $light-green;
+            border: 3px solid white;
+            border-radius: 100%;
+          }
+        }
+      }
+    }
+    .sectionPayment__btnOrder {
+      height: 70px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .orderSummery {
+    grid-row-gap: 50px;
+    .orderSummery__wrapTotal {
+      grid-row-gap: 10px;
+    }
+    .sectionPayment {
+      grid-row-gap: 50px;
+      .sectionPayment__wrapPay {
+        grid-row-gap: 50px;
+        .sectionPayment__wrapCheckbox {
+          grid-row-gap: 30px;
+          .sectionPayment__innerCheckbox .sectionPayment__radio {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+      .sectionPayment__btnOrder {
+        height: 85px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .orderSummery .sectionPayment {
+    .sectionPayment__wrapPay {
+      .sectionPayment__wrapCheckbox
+        .sectionPayment__innerCheckbox
+        .sectionPayment__radio {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    .sectionPayment__btnOrder {
+      height: 90px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .orderSummery .sectionPayment {
+    .sectionPayment__wrapPay {
+      .sectionPayment__wrapCheckbox
+        .sectionPayment__innerCheckbox
+        .sectionPayment__radio {
+        width: 45px;
+        height: 45px;
+        border: 3px solid $light-green;
+        &:checked::before {
+          outline: 3px solid $light-green;
+          border: 4px solid white;
+        }
+      }
+    }
+    .sectionPayment__btnOrder {
+      height: 95px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .orderSummery {
+    padding: 0px;
+    .sectionPayment {
+      justify-items: center;
+      .sectionPayment__btnOrder {
+        width: 60%;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .orderSummery .sectionPayment .sectionPayment__btnOrder {
+    width: 90%;
+  }
+}

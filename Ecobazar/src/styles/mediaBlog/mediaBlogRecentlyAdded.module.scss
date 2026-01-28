@@ -1,0 +1,97 @@
+@media (min-width: 2000px) {
+  .blog .blog__gridContainer {
+    .blog__wrapFilter
+      .recentlyAdded
+      .recentlyAdded__wrapPost
+      .recentlyAdded__innerPost
+      .recentlyAdded__descriptionPost {
+      .recentlyAdded__innerDate .recentlyAdded__icon {
+        width: 18px;
+        height: 18px;
+      }
+      .recentlyAdded__subtitle {
+        height: 80px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  .blog .blog__gridContainer {
+    .blog__wrapFilter
+      .recentlyAdded
+      .recentlyAdded__wrapPost
+      .recentlyAdded__innerPost
+      .recentlyAdded__descriptionPost {
+      .recentlyAdded__innerDate .recentlyAdded__icon {
+        width: 24px;
+        height: 24px;
+      }
+      .recentlyAdded__subtitle {
+        height: 100px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  .blog
+    .blog__gridContainer
+    .blog__wrapFilter
+    .recentlyAdded
+    .recentlyAdded__wrapPost
+    .recentlyAdded__innerPost
+    .recentlyAdded__descriptionPost
+    .recentlyAdded__subtitle {
+    height: 110px;
+  }
+}
+@media (min-width: 3100px) {
+  .blog
+    .blog__gridContainer
+    .blog__wrapFilter
+    .recentlyAdded
+    .recentlyAdded__wrapPost
+    .recentlyAdded__innerPost
+    .recentlyAdded__descriptionPost
+    .recentlyAdded__subtitle {
+    height: 120px;
+  }
+}
+@media (min-width: 3400px) {
+  .blog .blog__gridContainer .blog__wrapFilter .recentlyAdded {
+    padding-top: 35px;
+    .recentlyAdded__wrapPost
+      .recentlyAdded__innerPost
+      .recentlyAdded__descriptionPost
+      .recentlyAdded__subtitle {
+      height: 140px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  .blog
+    .blog__gridContainer
+    .blog__wrapFilter
+    .recentlyAdded
+    .recentlyAdded__wrapPost
+    .recentlyAdded__innerPost
+    .recentlyAdded__descriptionPost
+    .recentlyAdded__subtitle {
+    height: 155px;
+  }
+}
+@media (max-width: 1220px) {
+  .blog .blog__gridContainer {
+    .blog__wrapFilter
+      .recentlyAdded
+      .recentlyAdded__wrapPost
+      .recentlyAdded__innerPost
+      .recentlyAdded__descriptionPost
+      .recentlyAdded__subtitle {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      height: 30px;
+      width: 100%;
+    }
+  }
+}

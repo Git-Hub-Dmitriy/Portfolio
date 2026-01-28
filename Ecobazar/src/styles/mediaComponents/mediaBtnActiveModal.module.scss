@@ -1,0 +1,15 @@
+@media (hover: hover) {
+  #root .btnActiveModal:hover {
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  #root .btnActiveModal:active {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 600px) {
+  #root .btnActiveModal {
+    display: none;
+  }
+}

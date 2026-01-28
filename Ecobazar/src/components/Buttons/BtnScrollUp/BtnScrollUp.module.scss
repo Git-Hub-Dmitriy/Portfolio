@@ -1,0 +1,26 @@
+.btnScrollUp {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  background-color: rgba($color: #2c2c2c, $alpha: 0.5);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: rgb(24, 25, 23);
+    .btnScrollUp__icon {
+      transform: scale(1.2);
+    }
+  }
+  .btnScrollUp__icon {
+    width: 18px;
+    height: 15px;
+    transition: all 0.3s;
+  }
+}

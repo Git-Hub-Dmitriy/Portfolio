@@ -1,0 +1,249 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (min-width: 2000px) {
+  #root
+    .account
+    .account__container
+    .singleOrder
+    .orderProgress
+    .orderProgress__wrapTrack {
+    bottom: 50px;
+  }
+}
+@media (min-width: 2300px) {
+  #root .account .account__container .singleOrder {
+    grid-row-gap: 35px;
+    .singleOrder__wrapTitle .singleOrder__innerTitle {
+      grid-column-gap: 18px;
+    }
+    .addressSection {
+      .addressSection__wrapAddress {
+        grid-column-gap: 15px;
+        .addressSection__innerAddress {
+          grid-row-gap: 15px;
+          .addressSection__innerName,
+          .addressSection__innerInfo {
+            grid-row-gap: 15px;
+          }
+        }
+      }
+      .addressSection__wrapPrice .addressSection__innerPrice {
+        grid-row-gap: 15px;
+      }
+    }
+    .orderProgress {
+      margin: 25px 0px;
+      .orderProgress__wrapTrack {
+        bottom: 70px;
+        .orderProgress__track,
+        .orderProgress__track_green {
+          height: 10px;
+        }
+      }
+      .orderProgress__innerPoint {
+        grid-row-gap: 20px;
+        .orderProgress__circle,
+        .orderProgress__circle_green {
+          width: 50px;
+          height: 50px;
+          .orderProgress__icon {
+            width: 24px;
+            height: 16px;
+          }
+        }
+      }
+    }
+    .orderProducts {
+      grid-row-gap: 25px;
+      .orderProducts__wrapProducts
+        .orderProducts__innerProduct
+        .orderProducts__inerImg {
+        width: 85%;
+        height: 85%;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .account .account__container .singleOrder {
+    .orderProgress {
+      .orderProgress__wrapTrack {
+        bottom: 80px;
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__circle,
+        .orderProgress__circle_green {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .account .account__container .singleOrder {
+    .orderProgress {
+      .orderProgress__wrapTrack {
+        bottom: 90px;
+        .orderProgress__track,
+        .orderProgress__track_green {
+          height: 12px;
+        }
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__circle {
+          width: 65px;
+          height: 65px;
+          border: 3px dashed $light-green;
+        }
+        .orderProgress__circle_green {
+          width: 65px;
+          height: 65px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .account .account__container .singleOrder {
+    .orderProgress {
+      .orderProgress__wrapTrack {
+        bottom: 95px;
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__circle,
+        .orderProgress__circle_green {
+          width: 70px;
+          height: 70px;
+          .orderProgress__icon {
+            width: 28px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .account .account__container .singleOrder {
+    .orderProgress {
+      .orderProgress__wrapTrack {
+        bottom: 105px;
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__circle,
+        .orderProgress__circle_green {
+          width: 85px;
+          height: 85px;
+          .orderProgress__icon {
+            width: 34px;
+            height: 26px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .account .account__container .singleOrder {
+    .singleOrder__wrapTitle {
+      padding: 16px 0 16px 0;
+    }
+    .addressSection {
+      padding: 18px 10px 18px 10px;
+      grid-column-gap: 10px;
+      grid-template-columns: 60% auto;
+    }
+    .orderProducts .orderProducts__wrapProducts {
+      padding: 0;
+      .orderProducts__innerProduct {
+        grid-column-gap: 10px;
+        .orderProducts__inerImg {
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    .orderProgress {
+      width: 95%;
+      grid-template-columns: repeat(4, 18%);
+      .orderProgress__wrapTrack {
+        width: 80%;
+        left: 10%;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  #root .account .account__container .singleOrder {
+    .addressSection {
+      grid-template-columns: auto;
+      grid-column-gap: 0;
+      grid-template-rows: auto auto;
+      grid-row-gap: 20px;
+      .addressSection__wrapAddress {
+        grid-column-gap: 15px;
+      }
+    }
+    .orderProgress {
+      width: 100%;
+      grid-template-columns: repeat(4, 25%);
+      .orderProgress__wrapTrack {
+        bottom: 40px;
+        width: 76%;
+        left: 12%;
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__circle_green,
+        .orderProgress__circle {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .orderProducts {
+      .orderProducts__wrapTitle {
+        padding: 12px 0;
+        grid-template-columns: 48% 18% 20% auto;
+      }
+      .orderProducts__wrapProducts .orderProducts__innerProduct {
+        grid-template-columns: 15% 30% 18% 20% auto;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  #root .account .account__container .singleOrder {
+    .singleOrder__wrapTitle {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 20px;
+      justify-content: baseline;
+      justify-items: start;
+      .singleOrder__btnBack {
+        order: -1;
+      }
+    }
+    .orderProgress {
+      margin: 0;
+      .orderProgress__wrapTrack {
+        bottom: 60px;
+      }
+      .orderProgress__innerPoint {
+        .orderProgress__text,
+        .orderProgress__text_green {
+          height: 40px;
+        }
+      }
+    }
+    .orderProducts {
+      .orderProducts__wrapTitle {
+        padding: 12px 0;
+        grid-template-columns: 38% 18% 20% auto;
+      }
+      .orderProducts__wrapProducts .orderProducts__innerProduct {
+        grid-template-columns: 15% 25% 18% 20% auto;
+      }
+    }
+  }
+}

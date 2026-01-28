@@ -1,0 +1,98 @@
+@use "@styles/variables.module.scss" as *;
+
+.notActiveLink {
+  box-sizing: border-box;
+  border-left: 2px solid transparent;
+  padding: 19px 0 19px 21px;
+  color: #666666;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 500;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: start;
+  grid-column-gap: 13px;
+  transition: all 0.3s;
+  .nav__icon_fill {
+    width: 18px;
+    height: 18px;
+    fill: #b3afaf;
+  }
+  .nav__icon_stroke {
+    width: 18px;
+    height: 18px;
+    stroke: #b3afaf;
+  }
+}
+.nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: start;
+  .nav__title {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: $dark;
+    padding: 24px 0 16px 20px;
+  }
+  .nav__wrapLink {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    align-items: center;
+    justify-items: center;
+    .activeLink {
+      border-left: 2px solid $light-green;
+      box-sizing: border-box;
+      padding: 19px 0 19px 21px;
+      width: 100%;
+      color: $dark;
+      font-size: 1em;
+      font-weight: 500;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: start;
+      grid-column-gap: 13px;
+      transition: all 0.3s;
+      .nav__icon_fill {
+        width: 18px;
+        height: 18px;
+        fill: $dark;
+      }
+      .nav__icon_stroke {
+        width: 18px;
+        height: 18px;
+        stroke: $dark;
+      }
+    }
+    .nav__logOut {
+      box-sizing: border-box;
+      padding: 19px 0 19px 23px;
+      width: 100%;
+      color: #666666;
+      font-size: 1em;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: start;
+      grid-column-gap: 13px;
+      .nav__icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+}

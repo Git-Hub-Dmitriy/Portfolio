@@ -1,0 +1,97 @@
+@media (min-width: 2000px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter {
+    .blogSearch {
+      grid-column-gap: 14px;
+      .blogSearch__icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .blogCategories
+      .blogCategories__wrapCategory
+      .blogCategories__innerCategory
+      .blogCategories__name {
+      padding: 6px 15px 6px 15px;
+    }
+    .blogTags .blogTags__innerTags .blogTags__tag {
+      padding: 8px 18px 8px 18px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter {
+    .blogSearch .blogSearch__icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .blogCategories
+      .blogCategories__wrapCategory
+      .blogCategories__innerCategory
+      .blogCategories__name {
+      padding: 10px 18px 10px 18px;
+    }
+    .blogTags .blogTags__innerTags .blogTags__tag {
+      padding: 10px 20px 10px 20px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter {
+    .blogSearch {
+      grid-column-gap: 20px;
+      .blogSearch__icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .blogCategories
+      .blogCategories__wrapCategory
+      .blogCategories__innerCategory
+      .blogCategories__name {
+      padding: 10px 18px 10px 18px;
+    }
+    .blogTags .blogTags__innerTags .blogTags__tag {
+      padding: 10px 20px 10px 20px;
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter {
+    .blogSearch {
+      grid-column-gap: 30px;
+      .blogSearch__icon {
+        width: 34px;
+        height: 34px;
+      }
+    }
+    .blogCategories {
+      padding: 35px 0 35px 0;
+    }
+    .blogTags {
+      padding: 35px 0 35px 0;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter {
+    .blogTags .blogTags__innerTags {
+      grid-gap: 20px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .blog .blog__gridContainer .blog__wrapFilter .blogCategories {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    grid-gap: 20px;
+    .blogCategories__wrapCategory {
+      width: auto;
+      .blogCategories__innerCategory {
+        justify-content: start;
+        grid-column-gap: 5px;
+      }
+    }
+  }
+}

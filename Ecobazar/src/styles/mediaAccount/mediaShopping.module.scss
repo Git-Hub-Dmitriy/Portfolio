@@ -1,0 +1,111 @@
+@media (hover: hover) {
+  #root
+    .shopping
+    .shopping__container
+    .shopping__innerProduct
+    .shopping__product {
+    .shopping__innerAmount {
+      .shopping__btnMinus:hover {
+        transform: scale(1.2);
+      }
+      .shopping__btnPlus:hover {
+        transform: scale(1.2);
+      }
+    }
+    .shopping__deleteItem:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+@media (hover: none) {
+  #root
+    .shopping
+    .shopping__container
+    .shopping__innerProduct
+    .shopping__product {
+    .shopping__innerAmount {
+      .shopping__btnMinus:active {
+        transform: scale(1.2);
+      }
+      .shopping__btnPlus:active {
+        transform: scale(1.2);
+      }
+    }
+    .shopping__deleteItem:active {
+      transform: scale(1.2);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .shopping .shopping__container .shopping__innerProduct {
+    grid-row-gap: 30px;
+  }
+}
+@media (min-width: 2500px) {
+  #root .shopping .shopping__container .shopping__innerProduct {
+    grid-row-gap: 45px;
+    .shopping__product {
+      .shopping__innerImg {
+        grid-column-gap: 25px;
+        .shopping__img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+      .shopping__innerAmount {
+        grid-column-gap: 25px;
+      }
+    }
+  }
+}
+@media (min-width: 3300px) {
+  #root
+    .shopping
+    .shopping__container
+    .shopping__innerProduct
+    .shopping__product
+    .shopping__innerImg
+    .shopping__img {
+    width: 220px;
+    height: 220px;
+  }
+}
+@media (max-width: 900px) {
+  #root .shopping {
+    .shopping__container {
+      grid-row-gap: 0;
+      grid-template-rows: auto;
+      padding: 0;
+      .shopping__innerTitle {
+        display: none;
+      }
+      .shopping__innerProduct .shopping__product {
+        grid-template-columns: 45% 25% 25% auto;
+      }
+    }
+    .notProducts {
+      width: 80%;
+      .notProducts__title {
+        font-size: 1.6em;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root
+    .shopping
+    .shopping__container
+    .shopping__innerProduct
+    .shopping__product {
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    grid-column-gap: 0;
+    grid-row-gap: 10px;
+    .shopping__innerImg {
+      justify-content: center;
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+    }
+  }
+}

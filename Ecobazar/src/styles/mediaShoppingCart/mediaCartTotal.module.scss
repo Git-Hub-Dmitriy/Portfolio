@@ -1,0 +1,72 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root .cartTotal .cartTotal__btnPayment:hover {
+    transform: scale(1.1);
+    background-color: $dark;
+  }
+}
+@media (hover: none) {
+  #root .cartTotal .cartTotal__btnPayment:active {
+    transform: scale(1.1);
+    background-color: $dark;
+  }
+}
+@media (min-width: 2300px) {
+  #root .cartTotal {
+    grid-row-gap: 35px;
+    .cartTotal__wrapPrice {
+      grid-row-gap: 25px;
+    }
+    .cartTotal__btnPayment {
+      height: 65px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .cartTotal .cartTotal__btnPayment {
+    height: 75px;
+  }
+}
+@media (min-width: 3100px) {
+  #root .cartTotal {
+    grid-row-gap: 45px;
+    .cartTotal__btnPayment {
+      height: 90px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .cartTotal {
+    grid-row-gap: 65px;
+    .cartTotal__wrapPrice {
+      grid-row-gap: 35px;
+    }
+    .cartTotal__btnPayment {
+      height: 100px;
+    }
+  }
+}
+@media (max-width: 1650px) {
+  #root .cartTotal .cartTotal__btnPayment {
+    height: 45px;
+  }
+}
+@media (max-width: 1300px) {
+  #root .cartTotal {
+    .cartTotal__wrapPrice {
+      margin: 0;
+    }
+    .cartTotal__btnPayment {
+      height: 40px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .cartTotal {
+    padding-inline: 0px;
+    .cartTotal__btnPayment {
+      width: 60%;
+    }
+  }
+}

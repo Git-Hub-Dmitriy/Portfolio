@@ -1,0 +1,14 @@
+.about {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(6, auto);
+  align-items: center;
+  justify-items: center;
+  .testimonials {
+    padding: 100px 0 100px 0;
+  }
+  .companiesLogo {
+    padding: 80px 0 80px 0;
+  }
+}

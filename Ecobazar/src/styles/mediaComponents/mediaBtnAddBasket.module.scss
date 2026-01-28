@@ -1,0 +1,15 @@
+@media (hover: hover) {
+  #root .btnAddBasket:hover {
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  #root .btnAddBasket:active {
+    transform: scale(1.2);
+  }
+}
+@media (max-width: 900px) {
+  #root .addBasketModal .addBasketModal__content {
+    width: 90%;
+  }
+}

@@ -1,0 +1,8 @@
+.filterProducts {
+  width: 100%;
+  display: grid;
+  justify-items: start;
+  align-items: start;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(5, auto);
+}

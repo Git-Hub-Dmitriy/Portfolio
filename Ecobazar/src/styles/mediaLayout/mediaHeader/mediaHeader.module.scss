@@ -1,0 +1,36 @@
+@use "./mediaSectionCurrency.module.scss";
+@use "./mediaSectionLinks.module.scss";
+@use "./mediaSectionSearch.module.scss";
+@use "./mediaSectionBurger.module.scss";
+@use "./mediaHidSection.module.scss";
+
+@media (min-width: 2000px) {
+  #root .header {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .header {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2700px) {
+  #root .header {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 3100px) {
+  #root .header {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3400px) {
+  #root .header {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .header {
+    font-size: 2.2em;
+  }
+}

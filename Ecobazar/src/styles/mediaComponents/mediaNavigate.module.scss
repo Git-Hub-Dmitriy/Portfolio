@@ -1,0 +1,107 @@
+@media (hover: hover) {
+  #root .navigate .navigate__wrap .navigate__linkHome:hover {
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  #root .navigate .navigate__wrap .navigate__linkHome:active {
+    transform: scale(1.2);
+  }
+}
+@media (min-width: 2000px) {
+  #root .navigate {
+    height: 140px;
+    .navigate__wrap {
+      .navigate__linkHome .navigate__iconHouse {
+        width: 20px;
+        height: 21px;
+      }
+      .navigate__iconArrow {
+        width: 12px;
+        height: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .navigate .navigate__wrap {
+    .navigate__linkHome .navigate__iconHouse {
+      width: 24px;
+      height: 24px;
+    }
+    .navigate__iconArrow {
+      width: 16px;
+      height: 12px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .navigate .navigate__wrap {
+    .navigate__linkHome .navigate__iconHouse {
+      width: 30px;
+      height: 30px;
+    }
+    .navigate__iconArrow {
+      width: 18px;
+      height: 14px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .navigate {
+    height: 160px;
+    .navigate__wrap {
+      .navigate__linkHome .navigate__iconHouse {
+        width: 34px;
+        height: 34px;
+      }
+      .navigate__iconArrow {
+        width: 20px;
+        height: 18px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .navigate {
+    height: 180px;
+    .navigate__wrap {
+      .navigate__linkHome .navigate__iconHouse {
+        width: 36px;
+        height: 36px;
+      }
+      .navigate__iconArrow {
+        width: 22px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .navigate {
+    height: 240px;
+    .navigate__wrap {
+      .navigate__linkHome .navigate__iconHouse {
+        width: 40px;
+        height: 40px;
+      }
+      .navigate__iconArrow {
+        width: 26px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .navigate {
+    height: 100px;
+    .navigate__wrap {
+      width: 95%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #root .navigate {
+    height: 90px;
+  }
+}

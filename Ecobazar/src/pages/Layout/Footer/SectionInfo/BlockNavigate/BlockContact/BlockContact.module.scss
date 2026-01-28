@@ -1,0 +1,77 @@
+@use "@styles/variables.module.scss" as *;
+
+.blockContact {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 12px;
+  justify-items: center;
+  align-items: center;
+  .blockContact__innerTitle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    justify-items: start;
+    align-items: center;
+    .blockContact__subtitle {
+      width: 75%;
+      text-align: start;
+      font-size: 0.875em;
+      font-weight: 500;
+      line-height: 150%;
+      color: #808080;
+    }
+  }
+  .blockContact__innerLink {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: center;
+    grid-column-gap: 16px;
+    .blockContact__tel {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 0;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      color: white;
+      font-size: 0.875em;
+      letter-spacing: 0.5px;
+      font-weight: 500;
+      line-height: 150%;
+      border-bottom: 1px solid $light-green;
+    }
+    .blockContact__span {
+      width: 100%;
+      font-size: 1em;
+      color: #808080;
+      line-height: 150%;
+      text-align: center;
+      font-weight: 500;
+    }
+    .blockContact__email {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 8px 0;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      letter-spacing: 0.5px;
+      color: white;
+      font-size: 0.875em;
+      font-weight: 500;
+      line-height: 150%;
+      border-bottom: 1px solid $light-green;
+    }
+  }
+}

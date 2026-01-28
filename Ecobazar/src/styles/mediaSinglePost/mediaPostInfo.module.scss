@@ -1,0 +1,452 @@
+@use "@styles/variables.module.scss" as *;
+@media (min-width: 2000px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__innerTag {
+      grid-column-gap: 35px;
+      .postInfo__tag,
+      .postInfo__author,
+      .postInfo__comment {
+        grid-column-gap: 10px;
+        .postInfo__icon,
+        .postInfo__icon,
+        .postInfo__icon {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .editor {
+      .editor__inner {
+        grid-column-gap: 25px;
+        .editor__img {
+          width: 100%;
+          height: 100%;
+        }
+        .editor__innerName {
+          grid-row-gap: 8px;
+        }
+      }
+      .postInfo__innerSocial {
+        grid-column-gap: 15px;
+        .postInfo__social {
+          width: 50px;
+          height: 50px;
+          .postInfo__iconSocial {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+    .postInfo__advertising .btnShop {
+      font-size: 1em;
+      height: 50px;
+      .btnShop__arrow {
+        width: 18px;
+        height: 15px;
+      }
+    }
+    .sectionComments {
+      .sectionComments__wrapForm
+        .sectionComments__form
+        .sectionComments__innerRememberCheck {
+        grid-column-gap: 25px;
+        .sectionComments__check {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .sectionComments__wrapComments
+        .sectionComments__innerComments
+        .sectionComments__comment {
+        grid-column-gap: 25px;
+        .sectionComments__userPhoto {
+          width: auto;
+          height: 60px;
+        }
+        .sectionComments__userInfo {
+          grid-row-gap: 12px;
+          .sectionComments__innerUserName {
+            grid-column-gap: 20px;
+          }
+        }
+      }
+      .sectionComments__btn {
+        height: 50px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__advertising .btnShop {
+      height: 60px;
+      bottom: 30%;
+    }
+    .sectionComments {
+      .sectionComments__wrapForm
+        .sectionComments__form
+        .sectionComments__btnComment {
+        height: 60px;
+      }
+      .sectionComments__btn {
+        height: 60px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__innerTag {
+      grid-column-gap: 45px;
+      .postInfo__tag,
+      .postInfo__author,
+      .postInfo__comment {
+        grid-column-gap: 20px;
+        .postInfo__icon,
+        .postInfo__icon,
+        .postInfo__icon {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .editor {
+      .editor__inner {
+        grid-column-gap: 35px;
+        .editor__innerName .editor__innerDate {
+          grid-column-gap: 15px;
+        }
+      }
+      .postInfo__innerSocial {
+        grid-column-gap: 40px;
+        .postInfo__social {
+          width: 60px;
+          height: 60px;
+          .postInfo__iconSocial {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+    .postInfo__advertising .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 22px;
+        height: 20px;
+      }
+    }
+    .sectionComments {
+      .sectionComments__wrapForm {
+        grid-row-gap: 25px;
+        .sectionComments__form {
+          grid-row-gap: 25px;
+          .sectionComments__innerRememberCheck .sectionComments__check {
+            width: 35px;
+            height: 35px;
+          }
+          .sectionComments__btnComment {
+            height: 70px;
+          }
+        }
+      }
+      .sectionComments__wrapComments
+        .sectionComments__innerComments
+        .sectionComments__comment {
+        grid-column-gap: 30px;
+        .sectionComments__userPhoto {
+          width: auto;
+          height: 80px;
+        }
+      }
+      .sectionComments__btn {
+        height: 70px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__innerTag {
+      padding: 45px 0 20px 0;
+      .postInfo__tag,
+      .postInfo__author,
+      .postInfo__comment {
+        .postInfo__icon,
+        .postInfo__icon,
+        .postInfo__icon {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+    .editor {
+      .editor__inner {
+        grid-column-gap: 35px;
+        .editor__innerName .editor__innerDate {
+          grid-column-gap: 25px;
+        }
+      }
+      .postInfo__innerSocial {
+        grid-column-gap: 45px;
+        .postInfo__social {
+          width: 70px;
+          height: 70px;
+          .postInfo__iconSocial {
+            width: 35px;
+            height: 35px;
+          }
+        }
+      }
+    }
+    .postInfo__subtitle {
+      padding-bottom: 22px;
+    }
+    .postInfo__advertising .btnShop {
+      height: 75px;
+      grid-column-gap: 18px;
+      .btnShop__arrow {
+        width: 25px;
+        height: 22px;
+      }
+    }
+    .sectionComments {
+      grid-row-gap: 50px;
+      .sectionComments__wrapForm {
+        grid-row-gap: 40px;
+        .sectionComments__form {
+          grid-row-gap: 40px;
+          .sectionComments__innerRememberCheck {
+            .sectionComments__check {
+              width: 40px;
+              height: 40px;
+            }
+            .sectionComments__check[type="checkbox"]:checked::before {
+              border: 3px solid white;
+              outline: 2px solid $light-green;
+            }
+          }
+          .sectionComments__wrapInput .sectionComments__innerInput {
+            grid-row-gap: 25px;
+          }
+          .sectionComments__btnComment {
+            height: 80px;
+          }
+        }
+      }
+      .sectionComments__wrapComments {
+        grid-row-gap: 35px;
+      }
+      .sectionComments__btn {
+        height: 80px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__advertising .btnShop {
+      height: 80px;
+      grid-column-gap: 22px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .postInfo__innerTag {
+      grid-column-gap: 65px;
+      .postInfo__tag,
+      .postInfo__author,
+      .postInfo__comment {
+        .postInfo__icon,
+        .postInfo__icon,
+        .postInfo__icon {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+    .postInfo__title {
+      padding-bottom: 40px;
+    }
+    .editor {
+      padding-bottom: 60px;
+      .editor__inner {
+        grid-column-gap: 45px;
+        .editor__innerName .editor__innerDate {
+          grid-column-gap: 35px;
+        }
+      }
+      .postInfo__innerSocial {
+        grid-column-gap: 50px;
+        .postInfo__social {
+          width: 90px;
+          height: 90px;
+          .postInfo__iconSocial {
+            width: 38px;
+            height: 38px;
+          }
+        }
+      }
+    }
+    .postInfo__subtitle {
+      padding-bottom: 35px;
+    }
+    .postInfo__innerOtherImg {
+      padding: 35px 0 35px 0;
+    }
+    .postInfo__advertising {
+      padding: 40px 0 40px 0;
+      .btnShop {
+        height: 90px;
+        grid-column-gap: 25px;
+        .btnShop__arrow {
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+    .sectionComments {
+      grid-row-gap: 65px;
+      .sectionComments__wrapForm {
+        grid-row-gap: 50px;
+        .sectionComments__form {
+          grid-row-gap: 60px;
+          .sectionComments__innerRememberCheck .sectionComments__check {
+            width: 50px;
+            height: 50px;
+          }
+          .sectionComments__wrapInput .sectionComments__innerInput {
+            grid-row-gap: 35px;
+          }
+          .sectionComments__wrapTextArea {
+            grid-row-gap: 35px;
+          }
+          .sectionComments__btnComment {
+            height: 100px;
+            margin-top: 20px;
+          }
+        }
+      }
+      .sectionComments__wrapComments {
+        grid-row-gap: 45px;
+        .sectionComments__innerComments {
+          grid-row-gap: 75px;
+          .sectionComments__comment {
+            grid-column-gap: 40px;
+            .sectionComments__userPhoto {
+              height: 100px;
+            }
+            .sectionComments__userInfo {
+              grid-row-gap: 20px;
+              .sectionComments__innerUserName {
+                grid-column-gap: 40px;
+              }
+            }
+          }
+        }
+      }
+      .sectionComments__btn {
+        height: 90px;
+        border: 2px solid #00b207;
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .postInfo__wrapPost
+    .postInfo__advertising
+    .btnShop {
+    width: 20%;
+    bottom: 30%;
+    height: 40px;
+  }
+}
+@media (max-width: 1300px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .postInfo__wrapPost
+    .sectionComments {
+    .sectionComments__wrapForm
+      .sectionComments__form
+      .sectionComments__btnComment {
+      width: 25%;
+      height: 45px;
+    }
+    .sectionComments__btn {
+      height: 40px;
+      width: 18%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .sectionComments {
+      .sectionComments__wrapForm
+        .sectionComments__form
+        .sectionComments__btnComment {
+        width: 28%;
+        font-size: 0.9em;
+      }
+      .sectionComments__btn {
+        width: 20%;
+      }
+    }
+    .postInfo__advertising .btnShop {
+      width: 28%;
+      left: 6%;
+      bottom: 28%;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .postInfo__wrapPost
+    .postInfo__advertising
+    .btnShop {
+    width: 25%;
+  }
+}
+@media (max-width: 900px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .postInfo__wrapPost
+    .editor
+    .postInfo__innerSocial {
+    grid-column-gap: 7px;
+    .postInfo__social {
+      width: 30px;
+      height: 30px;
+      .postInfo__iconSocial {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .singlePost .singlePost__container .postInfo__wrapPost {
+    .editor {
+      grid-column-gap: 0px;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 25px;
+      justify-content: center;
+    }
+    .sectionComments .sectionComments__btn {
+      width: 25%;
+      height: 35px;
+    }
+    .postInfo__advertising .btnShop {
+      height: 35px;
+    }
+  }
+}

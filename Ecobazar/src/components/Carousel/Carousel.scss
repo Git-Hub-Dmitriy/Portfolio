@@ -1,0 +1,53 @@
+.carousel {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 68.8vw;
+  height: 100%;
+  grid-template-columns: 1vw auto 1vw;
+  grid-template-rows: auto;
+  overflow: hidden;
+  grid-column-gap: 32px;
+  .carousel__innerArrow {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    .carousel__arrow {
+      width: 15px;
+      height: 12px;
+    }
+  }
+  .carousel__wrapper {
+    width: 61.3vw;
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 10px 0 10px;
+    .carousel__slider {
+      box-sizing: border-box;
+      transition: all 0.3s;
+      display: flex;
+      height: 100%;
+      width: 60.22vw;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center;
+      .carousel__wrapCard {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        height: 100%;
+      }
+    }
+  }
+}

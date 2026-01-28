@@ -1,0 +1,33 @@
+@use "@styles/variables.module.scss" as *;
+
+.blockAddress {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 8px;
+  justify-items: start;
+  align-items: center;
+  .blockAddress__title {
+    width: 100%;
+    font-size: 0.875em;
+    color: $dark;
+    font-weight: 500;
+    text-align: start;
+    line-height: 150%;
+  }
+  .blockAddress__input {
+    width: 100%;
+    text-align: start;
+    color: $dark;
+    font-size: 1em;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    &::placeholder {
+      font-size: 1em;
+      color: #999999;
+      font-weight: 500;
+    }
+  }
+}

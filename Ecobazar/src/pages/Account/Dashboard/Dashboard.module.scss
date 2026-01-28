@@ -1,0 +1,183 @@
+@use "@styles/variables.module.scss" as *;
+
+.dashboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 24px;
+  align-items: center;
+  justify-items: center;
+  .dashboard__gridRow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 54.471% auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-items: center;
+    grid-column-gap: 24px;
+    .dashboard__wrapImg {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      align-items: center;
+      justify-items: center;
+      box-sizing: border-box;
+      padding: 32px 0 32px 0;
+      grid-row-gap: 8px;
+      .dashboard__innerImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 50px;
+        .dashboard__userPhoto {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .dashboard__innerUserName {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        align-items: center;
+        justify-items: center;
+        grid-row-gap: 6px;
+        .dashboard__userName {
+          font-size: 1.25em;
+          color: $dark;
+          font-weight: bold;
+        }
+        .dashboard__userGroup {
+          color: #808080;
+          font-weight: 500;
+          font-size: 0.875em;
+        }
+        .dashboard__linkSettings {
+          color: $light-green;
+          font-size: 1em;
+          font-weight: 550;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+      }
+    }
+    .dashboard__wrapInfo {
+      box-sizing: border-box;
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(6, auto);
+      align-items: center;
+      justify-items: start;
+      grid-row-gap: 8px;
+      padding: 32px;
+      .dashboard__text {
+        font-size: 0.875em;
+        color: #999999;
+        font-weight: 500;
+      }
+      .dashboard__name {
+        margin-top: 10px;
+        font-size: 1.125em;
+        color: $dark;
+        font-weight: bold;
+      }
+      .dashboard__text_dark {
+        font-size: 1em;
+        font-weight: 500;
+        color: $dark;
+      }
+      .dashboard__linkSettings {
+        margin-top: 11px;
+        font-size: 1em;
+        color: $light-green;
+        font-weight: 550;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .dashboard__wrapRecenOrder {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 16px;
+    box-sizing: border-box;
+    padding: 24px;
+    align-items: center;
+    justify-items: start;
+    .dashboard__innerTitle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: space-between;
+      .dashboard__title {
+        font-size: 1.25em;
+        font-weight: bold;
+        color: $dark;
+      }
+      .dashboard__linkHistory {
+        font-size: 1em;
+        font-weight: 500;
+        color: $light-green;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+    .dashboard__innerSubtitles {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 22% 25% 28% 15% auto;
+      grid-template-rows: auto;
+      box-sizing: border-box;
+      padding: 12px 0 12px 0;
+      align-items: center;
+      justify-items: start;
+      .dashboard__subtitle {
+        font-size: 0.75em;
+        font-weight: 500;
+        color: #4d4d4d;
+      }
+    }
+    .dashboard__wrapOrders {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(6, auto);
+      align-items: center;
+      justify-items: center;
+      .dashboard__innerOrder {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 0 12px 0;
+        display: grid;
+        grid-template-columns: 20% 22% 26% 15% auto;
+        grid-template-rows: auto;
+        align-items: center;
+        justify-items: start;
+        .dashboard__orderInfo {
+          font-size: 0.875em;
+          color: #333333;
+          font-weight: 500;
+        }
+        .dashboard__innerLink {
+          width: 100%;
+          display: grid;
+          align-items: center;
+          justify-items: end;
+          .dashboard__orderLink {
+            font-size: 0.875em;
+            color: $light-green;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

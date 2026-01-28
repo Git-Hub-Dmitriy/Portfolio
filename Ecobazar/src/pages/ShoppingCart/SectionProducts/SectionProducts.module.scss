@@ -1,0 +1,171 @@
+@use "@styles/variables.module.scss" as *;
+
+.sectionProducts {
+  box-sizing: border-box;
+  padding: 16px 20px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 28px;
+  .sectionProducts__innerTitle {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 16% 21% auto;
+    grid-template-rows: auto;
+    justify-items: start;
+    align-items: center;
+    .sectionProducts__title {
+      width: 100%;
+      text-align: start;
+      font-size: 0.875em;
+      letter-spacing: 3%;
+      font-weight: 500;
+      color: #808080;
+    }
+  }
+  .sectionProducts__innerProduct {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    grid-row-gap: 24px;
+    justify-items: center;
+    align-items: center;
+    .sectionProducts__product {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 45% 16% 21% 15% auto;
+      grid-template-rows: auto;
+      justify-items: start;
+      align-items: center;
+      .sectionProducts__innerImg {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: start;
+        align-items: center;
+        grid-row-gap: 12px;
+        .sectionProducts__img {
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+        }
+        .sectionProducts__name {
+          width: 100%;
+          color: $dark;
+          font-size: 1em;
+          font-weight: 500;
+          line-height: 150%;
+          display: grid;
+          justify-content: start;
+          align-items: center;
+        }
+      }
+      .sectionProducts__price {
+        width: 100%;
+        color: $dark;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 150%;
+        display: grid;
+        justify-content: start;
+        align-items: center;
+      }
+      .sectionProducts__innerAmount {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto;
+        justify-content: start;
+        align-items: center;
+        .sectionProducts__btnPlus {
+          width: 34px;
+          height: 34px;
+          font-size: 1.2em;
+          color: $dark;
+          cursor: pointer;
+          font-weight: 500;
+          background-color: transparent;
+          transition: all 0.3s;
+        }
+        .sectionProducts__amount {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          width: 40px;
+          height: 34px;
+          font-size: 1em;
+          color: $dark;
+          font-weight: 500;
+          line-height: 150%;
+        }
+        .sectionProducts__btnMinus {
+          width: 34px;
+          height: 34px;
+          font-size: 1.2em;
+          color: $dark;
+          cursor: pointer;
+          font-weight: 500;
+          background-color: transparent;
+          transition: all 0.3s;
+        }
+      }
+      .sectionProducts__subtotal {
+        width: 100%;
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        color: $dark;
+        line-height: 150%;
+        font-size: 1em;
+        font-weight: 550;
+      }
+      .sectionProducts__deleteItem {
+        width: 20px;
+        font-size: 1.3em;
+        color: #666666;
+        cursor: pointer;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        background-color: transparent;
+        transition: all 0.3s;
+      }
+    }
+  }
+  .sectionProducts__innerReturnShop {
+    margin-top: 4px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    .sectionProducts__returnShop {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px 32px;
+      color: #4d4d4d;
+      font-size: 0.875em;
+      line-height: 120%;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .sectionProducts__btnUpdate {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px 32px;
+      color: #4d4d4d;
+      font-size: 0.875em;
+      line-height: 120%;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+}

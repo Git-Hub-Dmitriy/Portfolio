@@ -1,0 +1,35 @@
+@use "@styles/variables.module.scss" as *;
+
+.amountProduct {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  grid-column-gap: 24px;
+  background-color: transparent;
+  .amountProduct__minus {
+    transition: all 0.2s;
+    color: $dark;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .amountProduct__number {
+    color: $dark;
+    font-weight: 600;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .amountProduct__plus {
+    transition: all 0.2s;
+    color: $dark;
+    cursor: pointer;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+}

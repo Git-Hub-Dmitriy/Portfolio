@@ -1,0 +1,86 @@
+@media (min-width: 2500px) {
+  #root
+    .instagramSection
+    .instagramSection__wrapContent
+    .instagramSection__wrapImage
+    .instagramSection__background
+    .instagramSection__iconInstagram {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (min-width: 3100px) {
+  #root
+    .instagramSection
+    .instagramSection__wrapContent
+    .instagramSection__wrapImage
+    .instagramSection__background
+    .instagramSection__iconInstagram {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media (min-width: 3300px) {
+  #root
+    .instagramSection
+    .instagramSection__wrapContent
+    .instagramSection__wrapImage
+    .instagramSection__background
+    .instagramSection__iconInstagram {
+    width: 55px;
+    height: 55px;
+  }
+}
+@media (min-width: 3700px) {
+  #root
+    .instagramSection
+    .instagramSection__wrapContent
+    .instagramSection__wrapImage
+    .instagramSection__background
+    .instagramSection__iconInstagram {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 1400px) {
+  #root .instagramSection {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 1200px) {
+  #root .instagramSection .instagramSection__title {
+    font-size: 1.8em;
+  }
+}
+@media (max-width: 1000px) {
+  #root .instagramSection {
+    width: 95%;
+  }
+}
+@media (max-width: 760px) {
+  #root .instagramSection {
+    .instagramSection__title {
+      padding-bottom: 8px;
+    }
+    .instagramSection__wrapContent {
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto;
+      grid-gap: 20px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root .instagramSection .instagramSection__wrapContent {
+    grid-gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  #root .instagramSection {
+    .instagramSection__title {
+      font-size: 1.5em;
+    }
+    .instagramSection__wrapContent {
+      grid-gap: 10px;
+    }
+  }
+}

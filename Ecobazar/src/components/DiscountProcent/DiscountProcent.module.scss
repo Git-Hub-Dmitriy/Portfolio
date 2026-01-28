@@ -1,0 +1,14 @@
+.discountProcentSale_hidden {
+  display: none;
+}
+.discountProcentSale {
+  z-index: 10;
+  position: absolute;
+  background-color: #ea4b48;
+  color: white;
+  font-size: 0.875em;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-weight: 500;
+}

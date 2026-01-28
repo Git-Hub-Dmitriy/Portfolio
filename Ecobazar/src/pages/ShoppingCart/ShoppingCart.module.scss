@@ -1,0 +1,41 @@
+@use "@styles/variables.module.scss" as *;
+
+.shoppingCart {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  .shoppingCart__wrapper {
+    width: 68.75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    .shoppingCart__title {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      line-height: 120%;
+      color: $dark;
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .shoppingCart__wrapContent {
+      margin-top: 32px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 66.06% auto;
+      grid-template-rows: auto;
+      grid-column-gap: 24px;
+      justify-items: center;
+      align-items: start;
+    }
+  }
+}

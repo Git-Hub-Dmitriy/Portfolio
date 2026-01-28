@@ -1,0 +1,72 @@
+@media (max-width: 1200px) {
+  #root .btnScrollUp {
+    width: 45px;
+    height: 45px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+@media (min-width: 2000px) {
+  #root .btnScrollUp {
+    width: 60px;
+    height: 60px;
+    right: 45px;
+    bottom: 45px;
+    .btnScrollUp__icon {
+      width: 20px;
+      height: 15px;
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .btnScrollUp {
+    width: 70px;
+    height: 70px;
+    .btnScrollUp__icon {
+      width: 24px;
+      height: 18px;
+    }
+  }
+}
+@media (min-width: 2800px) {
+  #root .btnScrollUp {
+    width: 75px;
+    height: 75px;
+    .btnScrollUp__icon {
+      width: 28px;
+      height: 22px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .btnScrollUp {
+    width: 85px;
+    height: 85px;
+    right: 55px;
+    bottom: 55px;
+    .btnScrollUp__icon {
+      width: 32px;
+      height: 26px;
+    }
+  }
+}
+@media (min-width: 3500px) {
+  #root .btnScrollUp {
+    width: 95px;
+    height: 95px;
+    .btnScrollUp__icon {
+      width: 36px;
+      height: 30px;
+    }
+  }
+}
+@media (min-width: 3800px) {
+  #root .btnScrollUp {
+    width: 105px;
+    height: 105px;
+    .btnScrollUp__icon {
+      width: 40px;
+      height: 36px;
+    }
+  }
+}

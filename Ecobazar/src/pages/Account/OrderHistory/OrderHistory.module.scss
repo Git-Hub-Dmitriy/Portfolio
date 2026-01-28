@@ -1,0 +1,86 @@
+@use "@styles/variables.module.scss" as *;
+
+.orderHistory {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 24px 32px 24px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-content: space-between;
+  justify-items: center;
+  height: 100%;
+  grid-row-gap: 24px;
+  .orderHistory__wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+    justify-items: start;
+    grid-row-gap: 12px;
+    .orderHistory__title {
+      font-size: 1.25em;
+      color: $dark;
+      font-weight: 550;
+    }
+    .orderHistory__wrapGroups {
+      width: 100%;
+      display: grid;
+      margin-top: 4px;
+      grid-template-columns: 19% 19% 30% 16% auto;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-items: start;
+      .orderHistory__subtitle {
+        width: 100%;
+        box-sizing: border-box;
+        color: #4d4d4d;
+        font-size: 0.75em;
+        font-weight: 550;
+        padding: 12px 0 12px 0px;
+      }
+    }
+    .orderHistory__wrapOrders {
+      width: 100%;
+      margin-bottom: 12px;
+      display: grid;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      align-items: center;
+      justify-items: center;
+      .orderHistory__innerOrder {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 12px 0 12px 0;
+        display: grid;
+        grid-template-columns: 19% 19% 30% 16% auto;
+        grid-template-rows: auto;
+        .orderHistory__text {
+          color: #333333;
+          font-size: 0.875em;
+          font-weight: 500;
+        }
+        .orderHistory__innerLink {
+          width: 100%;
+          display: grid;
+          align-items: center;
+          justify-items: end;
+          .orderHistory__linkDetail {
+            color: $light-green;
+            font-size: 0.875em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    .pagination__wrapper {
+      padding: 0px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@use "@styles/variables.module.scss" as *;
+
+.btnShop {
+  background-color: white;
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  border-radius: 50px;
+  cursor: pointer;
+  color: $light-green;
+  font-weight: 550;
+  transition: all 0.3s;
+  .btnShop__arrow {
+    width: 15px;
+    height: 12px;
+    transition: all 0.3s;
+  }
+}

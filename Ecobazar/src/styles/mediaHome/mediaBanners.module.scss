@@ -1,0 +1,229 @@
+@media (hover: hover) {
+  #root .banners {
+    .banners__bannar .btnShop:hover {
+      transform: scale(1.1);
+      background-color: #1a1a1a;
+      color: white;
+      .btnShop__arrow {
+        stroke: white;
+      }
+    }
+    .banners__bannarOne .btnShop:hover {
+      transform: scale(1.1);
+      color: #1a1a1a;
+      .btnShop__arrow {
+        stroke: #1a1a1a;
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .banners {
+    .banners__bannar .btnShop:active {
+      transform: scale(1.1);
+      color: white;
+      background-color: #1a1a1a;
+      .btnShop__arrow {
+        stroke: white;
+      }
+    }
+    .banners__bannarOne .btnShop:active {
+      transform: scale(1.1);
+      color: black;
+      .btnShop__arrow {
+        stroke: #000000;
+      }
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .banners .banners__bannarOne .btnShop {
+    width: 30%;
+  }
+}
+@media (min-width: 2300px) {
+  #root .banners {
+    .banners__bannar .btnShop .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+    .banners__bannarOne .btnShop .btnShop__arrow {
+      width: 22px;
+      height: 16px;
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .banners {
+    max-height: 800px;
+    .banners__bannar .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 26px;
+        height: 20px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 65px;
+      .btnShop__arrow {
+        width: 26px;
+        height: 20px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      height: 80px;
+      .btnShop__arrow {
+        width: 28px;
+        height: 22px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 28px;
+        height: 22px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .banners {
+    max-height: 1000px;
+    .banners__bannar .btnShop {
+      height: 100px;
+      .btnShop__arrow {
+        width: 30px;
+        height: 26px;
+      }
+    }
+    .banners__bannarOne .btnShop {
+      height: 70px;
+      .btnShop__arrow {
+        width: 30px;
+        height: 26px;
+      }
+    }
+  }
+}
+@media (min-width: 3500px) {
+  #root .banners {
+    max-height: 1100px;
+    .banners__bannar .btnShop {
+      height: 120px;
+      .btnShop__arrow {
+        width: 34px;
+        height: 30px;
+      }
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .banners {
+    max-height: 1300px;
+    .banners__bannar .btnShop .btnShop__arrow {
+      width: 36px;
+      height: 32px;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root .banners .banners__bannarOne .btnShop {
+    width: 38%;
+  }
+}
+@media (max-width: 1300px) {
+  #root .banners {
+    width: 95%;
+  }
+}
+@media (max-width: 1100px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      width: 25%;
+    }
+    .banners__bannarOne .btnShop {
+      width: 45%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .banners {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 25px;
+    grid-column-gap: 0;
+    max-height: none;
+    height: auto;
+    padding: 0;
+    margin-bottom: 25px;
+    .banners__bannar {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      .banners__img {
+        -o-object-position: 0% 20%;
+        object-position: 0% 20%;
+        height: 250px;
+      }
+      .btnShop {
+        top: auto;
+        left: auto;
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+    .banners__bannarOne {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      .banners__img {
+        -o-object-position: 0% 20%;
+        object-position: 0% 20%;
+        height: 250px;
+      }
+      .btnShop {
+        background-color: white;
+        width: 25%;
+        height: 51px;
+        justify-content: center;
+        top: auto;
+        left: auto;
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+    .banners__bannarTwo {
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+      .banners__img {
+        -o-object-position: 0% 33%;
+        object-position: 0% 33%;
+        height: 250px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      width: 35%;
+    }
+    .banners__bannarOne .btnShop {
+      width: 35%;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root .banners {
+    .banners__bannar .btnShop {
+      width: 45%;
+      height: 45px;
+    }
+    .banners__bannarOne .btnShop {
+      width: 45%;
+      height: 45px;
+    }
+  }
+}

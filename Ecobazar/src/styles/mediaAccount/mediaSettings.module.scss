@@ -1,0 +1,470 @@
+@use "@styles/variables.module.scss" as *;
+@media (min-width: 2000px) {
+  #root .account .settings {
+    grid-row-gap: 10px;
+    .sectionUser .sectionUser__wrapForm {
+      .sectionUser__form {
+        grid-row-gap: 30px;
+        .sectionUser__innerField {
+          grid-row-gap: 10px;
+        }
+        .sectionUser__changeNameBtn {
+          height: 52px;
+        }
+      }
+      .sectionUser__wrapChangeImg .sectionUser__changeImgBtn {
+        height: 52px;
+      }
+    }
+    .sectionAddress .sectionAddress__form {
+      grid-row-gap: 30px;
+      .changeName__wrapName .changeName__innerName {
+        grid-row-gap: 10px;
+      }
+      .sectionAddress__wrapAddress {
+        grid-row-gap: 10px;
+      }
+      .choiceCountry__containerGrid .choiceCountry__column {
+        grid-row-gap: 10px;
+      }
+      .sectionAddress__wrapEmail .sectionAddress__column {
+        grid-row-gap: 10px;
+      }
+      .sectionAddress__btnSaveAddress {
+        height: 52px;
+      }
+    }
+    .sectionPass .sectionPass__form {
+      grid-row-gap: 30px;
+      .sectionPass__wrapPass {
+        grid-row-gap: 10px;
+        .sectionPass__innerInput {
+          grid-template-columns: auto 30px;
+          .sectionPass__iconEye {
+            width: 22px;
+            height: 16px;
+          }
+        }
+      }
+      .sectionPass__wrapNewPass .sectionPass__column {
+        grid-row-gap: 10px;
+        .sectionPass__innerInput {
+          grid-template-columns: auto 30px;
+          .sectionPass__iconEye {
+            width: 22px;
+            height: 16px;
+          }
+        }
+      }
+      .sectionPass__btnSavePass {
+        height: 52px;
+      }
+    }
+  }
+}
+@media (min-width: 2500px) {
+  #root .account .settings {
+    .sectionUser .sectionUser__wrapForm {
+      .sectionUser__form .sectionUser__changeNameBtn {
+        height: 60px;
+      }
+      .sectionUser__wrapChangeImg .sectionUser__changeImgBtn {
+        height: 60px;
+      }
+    }
+    .sectionAddress .sectionAddress__form {
+      .choiceCountry__containerGrid
+        .choiceCountry__column
+        .choiceCountry__innerList
+        .choiceCountry__iconArrow {
+        width: 20px;
+        height: 16px;
+      }
+      .sectionAddress__btnSaveAddress {
+        height: 60px;
+      }
+    }
+    .sectionPass .sectionPass__form .sectionPass__btnSavePass {
+      height: 60px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .account .settings {
+    grid-row-gap: 30px;
+    .sectionUser .sectionUser__wrapForm {
+      .sectionUser__form {
+        .sectionUser__innerField {
+          .sectionUser__input {
+            border: 2px solid transparent;
+            padding: 18px;
+            border-radius: 10px;
+          }
+          .sectionUser__input_active {
+            border: 2px solid $light-green;
+          }
+        }
+        .sectionUser__changeNameBtn {
+          height: 75px;
+        }
+      }
+      .sectionUser__wrapChangeImg {
+        .sectionUser__innerImg {
+          height: 250px;
+        }
+        .sectionUser__changeImgBtn {
+          height: 75px;
+        }
+      }
+    }
+    .sectionAddress .sectionAddress__form {
+      .changeName__wrapName {
+        grid-template-columns: repeat(3, 32%);
+        grid-column-gap: 2%;
+        .changeName__innerName {
+          .changeName__inputName {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 18px;
+          }
+          .changeName__inputName_active {
+            border: 2px solid $light-green;
+          }
+        }
+      }
+      .sectionAddress__wrapAddress {
+        .sectionAddress__inputAddress {
+          border: 2px solid transparent;
+          border-radius: 10px;
+          padding: 18px;
+        }
+        .sectionAddress__inputAddress_active {
+          border: 2px solid $light-green;
+        }
+      }
+      .choiceCountry__containerGrid {
+        grid-template-columns: repeat(3, 32%);
+        grid-column-gap: 2%;
+        .choiceCountry__column {
+          .choiceCountry__innerList {
+            .choiceCountry__selectedCountry {
+              padding: 10px;
+            }
+            .choiceCountry__listCountries_active {
+              top: 70px;
+              height: 450px;
+              .choiceCountry__country {
+                padding: 10px;
+              }
+            }
+          }
+          .choiceCountry__inputCode {
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 18px;
+          }
+          .choiceCountry__inputCode_active {
+            border: 2px solid $light-green;
+          }
+        }
+      }
+      .sectionAddress__wrapEmail .sectionAddress__column {
+        .sectionAddress__input {
+          border: 2px solid transparent;
+          border-radius: 10px;
+          padding: 18px;
+        }
+        .sectionAddress__input_active {
+          border: 2px solid $light-green;
+        }
+      }
+      .sectionAddress__btnSaveAddress {
+        height: 75px;
+      }
+    }
+    .sectionPass .sectionPass__form {
+      .sectionPass__wrapPass {
+        .sectionPass__innerInput {
+          grid-template-columns: auto 35px;
+          border: 2px solid transparent;
+          border-radius: 10px;
+          padding-right: 18px;
+          .sectionPass__iconEye {
+            width: 25px;
+            height: 20px;
+          }
+          .sectionPass__input {
+            padding: 18px;
+          }
+        }
+        .sectionPass__innerInput_active {
+          border: 2px solid $light-green;
+        }
+      }
+      .sectionPass__wrapNewPass .sectionPass__column {
+        .sectionPass__innerInput {
+          grid-template-columns: auto 35px;
+          border: 2px solid transparent;
+          border-radius: 10px;
+          padding-right: 18px;
+          .sectionPass__iconEye {
+            width: 25px;
+            height: 20px;
+          }
+          .sectionPass__input {
+            padding: 18px;
+          }
+        }
+        .sectionPass__innerInput_active {
+          border: 2px solid $light-green;
+        }
+      }
+      .sectionPass__btnSavePass {
+        height: 75px;
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .account .settings {
+    .sectionUser .sectionUser__wrapForm {
+      grid-column-gap: 40px;
+      .sectionUser__wrapChangeImg .sectionUser__innerImg {
+        height: 280px;
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .account .settings {
+    grid-row-gap: 50px;
+    .sectionUser {
+      grid-row-gap: 50px;
+      .sectionUser__wrapForm {
+        .sectionUser__form {
+          margin: 0px;
+          grid-row-gap: 50px;
+          .sectionUser__changeNameBtn {
+            height: 90px;
+          }
+        }
+        .sectionUser__wrapChangeImg {
+          .sectionUser__innerImg {
+            height: 320px;
+          }
+          .sectionUser__changeImgBtn {
+            height: 90px;
+          }
+        }
+      }
+    }
+    .sectionAddress {
+      grid-row-gap: 50px;
+      .sectionAddress__form {
+        grid-row-gap: 50px;
+        .choiceCountry__containerGrid
+          .choiceCountry__column
+          .choiceCountry__innerList {
+          .choiceCountry__selectedCountry {
+            padding: 15px;
+          }
+          .choiceCountry__listCountries_active {
+            top: 90px;
+            height: 550px;
+            .choiceCountry__country {
+              padding: 15px;
+            }
+          }
+          .choiceCountry__iconArrow {
+            width: 28px;
+            height: 22px;
+          }
+        }
+        .sectionAddress__btnSaveAddress {
+          height: 90px;
+        }
+      }
+    }
+    .sectionPass {
+      grid-row-gap: 50px;
+      .sectionPass__form {
+        grid-row-gap: 50px;
+        .sectionPass__wrapPass .sectionPass__innerInput .sectionPass__iconEye {
+          width: 30px;
+          height: 24px;
+        }
+        .sectionPass__wrapNewPass {
+          grid-column-gap: 35px;
+          .sectionPass__column .sectionPass__innerInput .sectionPass__iconEye {
+            width: 30px;
+            height: 24px;
+          }
+        }
+        .sectionPass__btnSavePass {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root
+    .account
+    .settings
+    .sectionAddress
+    .sectionAddress__form
+    .sectionAddress__wrapEmail
+    .sectionAddress__column
+    .sectionAddress__input {
+    line-height: 1.2;
+  }
+}
+@media (max-width: 1300px) {
+  #root .account .settings {
+    .sectionUser {
+      padding-left: 0px;
+      .sectionUser__wrapForm {
+        grid-template-columns: 65% 25%;
+        grid-column-gap: 0;
+        justify-content: space-between;
+        .sectionUser__wrapChangeImg .sectionUser__changeImgBtn {
+          width: 100%;
+        }
+        .sectionUser__form .sectionUser__changeNameBtn {
+          width: 36.2%;
+        }
+      }
+    }
+    .sectionAddress {
+      padding-left: 0px;
+      .sectionAddress__form .sectionAddress__btnSaveAddress {
+        width: 23.5%;
+      }
+    }
+    .sectionPass {
+      padding-inline: 0px;
+      .sectionPass__form .sectionPass__btnSavePass {
+        width: 23.5%;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  #root .account .settings {
+    .sectionUser .sectionUser__wrapForm {
+      .sectionUser__wrapChangeImg .sectionUser__changeImgBtn {
+        width: 80%;
+      }
+      .sectionUser__form .sectionUser__changeNameBtn {
+        width: 30%;
+      }
+    }
+    .sectionAddress .sectionAddress__form .sectionAddress__btnSaveAddress {
+      width: 19.5%;
+    }
+    .sectionPass .sectionPass__form .sectionPass__btnSavePass {
+      width: 19.5%;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .account .settings {
+    .sectionAddress .sectionAddress__form .changeName__wrapName {
+      grid-template-columns: repeat(3, 32%);
+      grid-column-gap: 2%;
+    }
+    .sectionPass .sectionPass__form .sectionPass__btnSavePass {
+      width: 25%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  #root .account .settings {
+    .sectionUser {
+      grid-row-gap: 20px;
+      .sectionUser__wrapForm {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        justify-content: stretch;
+        justify-items: center;
+        grid-template-rows: auto auto;
+        grid-row-gap: 20px;
+        .sectionUser__wrapChangeImg {
+          order: -1;
+          .sectionUser__innerImg {
+            width: 30%;
+            height: 150px;
+          }
+          .sectionUser__changeImgBtn {
+            width: 30%;
+          }
+        }
+        .sectionUser__form .sectionUser__changeNameBtn {
+          width: 32.5%;
+        }
+      }
+    }
+    .sectionAddress .sectionAddress__form {
+      grid-row-gap: 20px;
+      .changeName__wrapName {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 15px;
+      }
+      .choiceCountry__containerGrid {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 15px;
+      }
+      .sectionAddress__wrapEmail {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 15px;
+      }
+      .sectionAddress__btnSaveAddress {
+        width: 32.5%;
+      }
+    }
+    .sectionPass .sectionPass__form {
+      grid-row-gap: 20px;
+      .sectionPass__wrapPass .sectionPass__innerInput {
+        grid-template-columns: auto 4%;
+      }
+      .sectionPass__wrapNewPass {
+        grid-template-columns: auto;
+        grid-column-gap: 0px;
+        grid-template-rows: auto auto;
+        grid-row-gap: 15px;
+      }
+      .sectionPass__btnSavePass {
+        width: 32.5%;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root .account .settings {
+    .sectionUser .sectionUser__wrapForm {
+      .sectionUser__wrapChangeImg {
+        .sectionUser__innerImg {
+          width: 45%;
+        }
+        .sectionUser__changeImgBtn {
+          width: 45%;
+        }
+      }
+      .sectionUser__form .sectionUser__changeNameBtn {
+        width: 40%;
+      }
+    }
+    .sectionAddress .sectionAddress__form .sectionAddress__btnSaveAddress {
+      width: 40%;
+    }
+    .sectionPass .sectionPass__form .sectionPass__btnSavePass {
+      width: 40%;
+    }
+  }
+}

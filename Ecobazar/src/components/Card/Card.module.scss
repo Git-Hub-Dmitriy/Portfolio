@@ -1,0 +1,130 @@
+@use "@styles/variables.module.scss" as *;
+
+.card {
+  position: relative;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  .card__wrapImg {
+    padding-bottom: 23px;
+    width: 100%;
+    height: auto;
+    .card__img {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .card__wrapContent {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: start;
+    align-items: center;
+    padding: 16px 0 16px 16px;
+    grid-row-gap: 8px;
+    .card__title {
+      font-size: 0.875em;
+      font-weight: 500;
+      color: #4d4d4d;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+      transition: 0.3s;
+    }
+    .card__innerPrice {
+      width: 100%;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+      grid-column-gap: 4px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      .card__price {
+        font-size: 1em;
+        font-weight: 550;
+        color: $dark;
+      }
+      .card__oldPrice {
+        font-size: 1em;
+        font-weight: 550;
+        color: #999999;
+      }
+    }
+  }
+  .discountProcentSale {
+    left: 15px;
+    top: 15px;
+    border-radius: 6px;
+    width: 30.303%;
+    height: 25px;
+  }
+  .btnAddWishlist {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50px;
+    cursor: pointer;
+    .btnAddWishlist__icon {
+      transition: all 0.3s;
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .btnActiveModal {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    right: 20px;
+    display: none;
+    border-radius: 50px;
+    cursor: pointer;
+    .btnActiveModal__icon {
+      width: 18px;
+      height: 13px;
+    }
+  }
+  .btnAddBasket {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    .btnAddBasket__title {
+      display: none;
+    }
+    .btnAddBasket__icon {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}
+.card_active {
+  border: 1px solid $light-green;
+  border-radius: 10px;
+  .card__wrapContent .card__title {
+    color: $light-green;
+  }
+  .btnAddWishlist {
+    display: grid;
+  }
+  .btnActiveModal {
+    display: grid;
+  }
+  .btnAddBasket {
+    background-color: $light-green;
+  }
+}

@@ -1,0 +1,208 @@
+@media (hover: hover) {
+  #root .register .register__container {
+    .register__form {
+      .register__wrapInputs {
+        .register__innerInput .register__iconEye:hover {
+          transform: scale(1.1);
+        }
+      }
+      .register__innerCheckbox:hover {
+        transform: scale(1.05);
+      }
+      .register__button:hover {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .register__innerLink .register__link:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (hover: none) {
+  #root .register .register__container {
+    .register__form {
+      .register__wrapInputs {
+        .register__innerInput .register__iconEye:active {
+          transform: scale(1.1);
+        }
+      }
+      .register__innerCheckbox:active {
+        transform: scale(1.05);
+      }
+      .register__button:active {
+        transform: scale(1.05);
+        background-color: #1a1a1a;
+      }
+    }
+    .register__innerLink .register__link:active {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .register {
+    font-size: 1.2em;
+    .register__container {
+      grid-row-gap: 40px;
+      .register__form {
+        grid-row-gap: 35px;
+        .register__wrapInputs {
+          grid-row-gap: 35px;
+          .register__innerInput {
+            grid-column-gap: auto 6%;
+            .register__iconEye {
+              width: 24px;
+              height: 18px;
+            }
+          }
+        }
+        .register__innerCheckbox {
+          grid-column-gap: 14px;
+          .register__checkbox {
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .register__button {
+          height: 50px;
+        }
+      }
+      .register__innerLink {
+        grid-column-gap: 10px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .register {
+    font-size: 1.4em;
+    .register__container .register__form .register__button {
+      height: 60px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .register {
+    font-size: 1.6em;
+    .register__container {
+      grid-row-gap: 50px;
+      margin: 100px 0 100px 0;
+      .register__form {
+        grid-row-gap: 45px;
+        .register__wrapInputs {
+          grid-row-gap: 45px;
+          .register__innerInput {
+            grid-column-gap: auto 8%;
+            .register__iconEye {
+              width: 28px;
+              height: 22px;
+            }
+          }
+        }
+        .register__innerCheckbox {
+          grid-column-gap: 18px;
+          .register__checkbox {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        .register__button {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .register {
+    font-size: 1.8em;
+    .register__container {
+      grid-row-gap: 60px;
+      margin: 120px 0 120px 0;
+      .register__form {
+        grid-row-gap: 55px;
+        .register__wrapInputs {
+          grid-row-gap: 55px;
+          .register__innerInput {
+            grid-column-gap: auto 9%;
+            .register__iconEye {
+              width: 30px;
+              height: 25px;
+            }
+          }
+        }
+        .register__innerCheckbox {
+          .register__checkbox {
+            border-radius: 8px;
+          }
+          .register__checkbox[type="checkbox"]:checked::before {
+            border-radius: 8px;
+          }
+        }
+        .register__button {
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root .register {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .register {
+    font-size: 2.2em;
+    .register__container {
+      grid-row-gap: 80px;
+      margin: 140px 0 140px 0;
+      .register__form {
+        grid-row-gap: 75px;
+        .register__wrapInputs {
+          grid-row-gap: 75px;
+          .register__innerInput {
+            grid-column-gap: auto 10%;
+            .register__iconEye {
+              width: 34px;
+              height: 28px;
+            }
+          }
+        }
+        .register__innerCheckbox {
+          .register__checkbox {
+            width: 34px;
+            height: 34px;
+          }
+        }
+        .register__button {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1600px) {
+  #root .register .register__container .register__form .register__button {
+    height: 40px;
+  }
+}
+@media (max-width: 1400px) {
+  #root .register .register__container {
+    width: 35%;
+  }
+}
+@media (max-width: 1300px) {
+  #root .register .register__container {
+    width: 70%;
+    .register__form .register__button {
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 800px) {
+  #root .register .register__container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,108 @@
+@use "@styles/variables.module.scss" as *;
+
+.sales {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-items: start;
+  align-items: start;
+  .sales__wrapBannar {
+    position: relative;
+    width: 100%;
+    .sales__img {
+      width: 100%;
+      height: auto;
+    }
+    .btnShop {
+      top: 35%;
+      left: 32.79%;
+      grid-column-gap: 12px;
+      font-size: 1em;
+      .btnShop__arrow {
+        stroke: $light-green;
+        width: 15px;
+        height: 12px;
+      }
+    }
+  }
+  .sales__wrapSaleProduct {
+    width: 100%;
+    padding-top: 20px;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    .sales__title {
+      padding-bottom: 12px;
+      color: $dark;
+      font-size: 1.25em;
+      font-weight: 550;
+    }
+    .sales__saleProducts {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: repeat(3, auto);
+      justify-items: start;
+      align-items: start;
+      grid-row-gap: 16px;
+      .sales__card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 35.89% auto;
+        grid-template-rows: auto;
+        justify-items: start;
+        align-items: center;
+        border-radius: 6px;
+        .sales__cardWrapImage {
+          width: 100%;
+          height: 112px;
+          .sales__cardImage {
+            width: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+          }
+        }
+        .sales__innerContent {
+          width: 100%;
+          display: grid;
+          justify-items: start;
+          align-items: center;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(3, auto);
+          grid-row-gap: 8px;
+          padding-left: 12px;
+          .sales__cardTitle {
+            font-size: 0.875em;
+            color: #4d4d4d;
+          }
+          .sales__innerPrice {
+            width: 100%;
+            display: grid;
+            justify-content: start;
+            align-items: center;
+            grid-column-gap: 6px;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            .sales__cardPrice {
+              color: $dark;
+              font-size: 1em;
+              font-weight: 550;
+            }
+            .sales__cardOldPrice {
+              color: #999999;
+              text-decoration: line-through;
+              font-size: 1em;
+              font-weight: 550;
+            }
+          }
+        }
+      }
+      .sales__card_active {
+        outline: 1px solid $light-green;
+      }
+    }
+  }
+}

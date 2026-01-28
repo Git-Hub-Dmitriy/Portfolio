@@ -1,0 +1,61 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root .header .sectionBurger {
+    .sectionBurger__burger:hover {
+      transform: scale(1.1);
+    }
+    .sectionBurger__wrapLanguage {
+      .sectionBurger__innerLanguage {
+        .sectionBurger__selectedLang:hover {
+          transform: scale(1.1);
+        }
+        .sectionBurger__listLang .sectionBurger__langItem:hover {
+          background-color: white;
+          color: $dark;
+        }
+      }
+      .sectionBurger__innerCurrency {
+        .sectionBurger__selectedCurrency:hover {
+          transform: scale(1.1);
+        }
+        .sectionBurger__listCurrency .sectionBurger__currencyItem:hover {
+          background-color: white;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .header .sectionBurger__container {
+    .sectionBurger__burger:active {
+      transform: scale(1.1);
+    }
+    .sectionBurger__wrapLanguage {
+      .sectionBurger__innerLanguage {
+        .sectionBurger__selectedLang:active {
+          transform: scale(1.1);
+        }
+        .sectionBurger__listLang .sectionBurger__langItem:active {
+          background-color: white;
+          color: $dark;
+        }
+      }
+      .sectionBurger__innerCurrency {
+        .sectionBurger__selectedCurrency:active {
+          transform: scale(1.1);
+        }
+        .sectionBurger__listCurrency .sectionBurger__currencyItem:active {
+          background-color: white;
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  #root .header .sectionBurger {
+    display: grid;
+  }
+}

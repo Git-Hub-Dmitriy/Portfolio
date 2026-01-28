@@ -1,0 +1,96 @@
+@media (min-width: 2300px) {
+  #root .features .features__innerBox {
+    .features__iconTruck {
+      width: 55px;
+      height: 45px;
+    }
+    .features__iconHeadphones {
+      width: 55px;
+      height: 45px;
+    }
+    .features__iconShoppingBag {
+      width: 55px;
+      height: 45px;
+    }
+    .features__iconPackage {
+      width: 55px;
+      height: 45px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .features .features__innerBox {
+    .features__iconTruck {
+      width: 75px;
+      height: 65px;
+    }
+    .features__iconHeadphones {
+      width: 75px;
+      height: 65px;
+    }
+    .features__iconShoppingBag {
+      width: 75px;
+      height: 65px;
+    }
+    .features__iconPackage {
+      width: 75px;
+      height: 65px;
+    }
+  }
+}
+@media (min-width: 3300px) {
+  #root .features .features__innerBox {
+    .features__iconTruck {
+      width: 90px;
+      height: 80px;
+    }
+    .features__iconHeadphones {
+      width: 90px;
+      height: 80px;
+    }
+    .features__iconShoppingBag {
+      width: 90px;
+      height: 80px;
+    }
+    .features__iconPackage {
+      width: 90px;
+      height: 80px;
+    }
+  }
+}
+@media (max-width: 1500px) {
+  #root .features {
+    font-size: 0.9em;
+    .features__innerBox {
+      grid-column-gap: 6px;
+      .features__iconTruck,
+      .features__iconHeadphones,
+      .features__iconShoppingBag,
+      .features__iconPackage {
+        width: 30px;
+        height: 35px;
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .features {
+    width: 98%;
+  }
+}
+@media (max-width: 900px) {
+  #root .features {
+    width: 95%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 500px) {
+  #root .features {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+  }
+}

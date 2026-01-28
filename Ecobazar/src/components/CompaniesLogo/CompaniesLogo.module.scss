@@ -1,0 +1,23 @@
+.companiesLogo {
+  width: 68.75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.125%;
+  .companiesLogo__column {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    .companiesLogo__img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+  }
+}

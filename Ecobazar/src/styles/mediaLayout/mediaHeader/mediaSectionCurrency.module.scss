@@ -1,0 +1,215 @@
+@use "@styles/variables.module.scss" as *;
+
+@media (hover: hover) {
+  #root .sectionCurrency .sectionCurrency__wrapCurrency {
+    .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage:hover {
+        .sectionCurrency__selectedLanguage {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listLanguage .sectionCurrency__item:hover {
+          background-color: white;
+          color: $dark;
+        }
+      }
+      .sectionCurrency__innerCurrency:hover {
+        .sectionCurrency__selectedCurrency {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listCurrency .sectionCurrency__item:hover {
+          background-color: white;
+          color: $dark;
+        }
+      }
+    }
+    .sectionCurrency__innerLinkLogin:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (hover: none) {
+  #root .sectionCurrency .sectionCurrency__wrapCurrency {
+    .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage:active {
+        .sectionCurrency__selectedLanguage {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listLanguage .sectionCurrency__item:active {
+          background-color: white;
+          color: $dark;
+        }
+      }
+      .sectionCurrency__innerCurrency:active {
+        .sectionCurrency__selectedCurrency {
+          transform: scale(1.1);
+        }
+        .sectionCurrency__listCurrency .sectionCurrency__item:active {
+          background-color: white;
+          color: $dark;
+        }
+      }
+    }
+    .sectionCurrency__innerLinkLogin:active {
+      transform: scale(1.1);
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress {
+      grid-column-gap: 15px;
+      .sectionCurrency__iconPoint {
+        width: 18px;
+        height: 22px;
+      }
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage {
+        grid-column-gap: 10px;
+        .sectionCurrency__iconArrowDown {
+          width: 12px;
+          height: 10px;
+        }
+        .sectionCurrency__listLanguage {
+          max-height: 135px;
+        }
+      }
+      .sectionCurrency__innerCurrency {
+        grid-column-gap: 10px;
+        .sectionCurrency__iconArrowDown {
+          width: 12px;
+          height: 10px;
+        }
+        .sectionCurrency__listCurrency {
+          max-height: 135px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 22px;
+      height: 26px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+        max-height: 150px;
+      }
+      .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+        max-height: 150px;
+      }
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 26px;
+      height: 30px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+        max-height: 188px;
+        .sectionCurrency__item {
+          padding: 10px 4px;
+          border-radius: 12px;
+        }
+      }
+      .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+        max-height: 188px;
+        .sectionCurrency__item {
+          padding: 10px 4px;
+          border-radius: 12px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 30px;
+      height: 32px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      grid-column-gap: 35px;
+      .sectionCurrency__innerLanguage {
+        grid-column-gap: 15px;
+        .sectionCurrency__listLanguage {
+          top: 40px;
+          border-radius: 12px;
+          max-height: 203px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 18px;
+          height: 14px;
+        }
+      }
+      .sectionCurrency__innerCurrency {
+        grid-column-gap: 15px;
+        .sectionCurrency__listCurrency {
+          top: 40px;
+          border-radius: 12px;
+          max-height: 203px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 18px;
+          height: 14px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root
+    .sectionCurrency
+    .sectionCurrency__wrapCurrency
+    .sectionCurrency__wrapLanguage {
+    .sectionCurrency__innerLanguage .sectionCurrency__listLanguage {
+      max-height: 217px;
+    }
+    .sectionCurrency__innerCurrency .sectionCurrency__listCurrency {
+      max-height: 217px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root .sectionCurrency {
+    .sectionCurrency__innerAddress .sectionCurrency__iconPoint {
+      width: 40px;
+      height: 38px;
+    }
+    .sectionCurrency__wrapCurrency .sectionCurrency__wrapLanguage {
+      .sectionCurrency__innerLanguage {
+        .sectionCurrency__listLanguage {
+          max-height: 233px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 22px;
+          height: 16px;
+        }
+      }
+      .sectionCurrency__innerCurrency {
+        .sectionCurrency__listCurrency {
+          max-height: 233px;
+        }
+        .sectionCurrency__iconArrowDown {
+          width: 22px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .sectionCurrency {
+    width: 95%;
+  }
+}
+@media (max-width: 700px) {
+  #root .sectionCurrency {
+    display: none;
+  }
+}

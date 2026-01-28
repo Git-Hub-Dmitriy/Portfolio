@@ -1,0 +1,103 @@
+@media (min-width: 2000px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    padding: 0px;
+    grid-column-gap: 15px;
+    .postSearch__input {
+      width: 350px;
+    }
+    .postSearch__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+@media (min-width: 2700px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    grid-column-gap: 20px;
+    .postSearch__input {
+      width: 450px;
+    }
+    .postSearch__icon {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    grid-column-gap: 30px;
+    .postSearch__input {
+      width: 540px;
+    }
+    .postSearch__icon {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+@media (min-width: 3400px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postSearch
+    .postSearch__input {
+    width: 600px;
+  }
+}
+@media (min-width: 3700px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    .postSearch__icon {
+      width: 40px;
+      height: 40px;
+    }
+    .postSearch__input {
+      width: 700px;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postSearch
+    .postSearch__input {
+    width: 200px;
+  }
+}
+@media (max-width: 900px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    justify-content: center;
+    padding: 0px;
+    .postSearch__input {
+      width: 600px;
+    }
+  }
+}
+@media (max-width: 680px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    justify-content: start;
+    .postSearch__input {
+      width: 400px;
+    }
+  }
+}
+@media (max-width: 480px) {
+  #root .singlePost .singlePost__container .singlePost__nav .postSearch {
+    justify-content: start;
+    .postSearch__input {
+      width: 300px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  #root
+    .singlePost
+    .singlePost__container
+    .singlePost__nav
+    .postSearch
+    .postSearch__input {
+    width: 250px;
+  }
+}

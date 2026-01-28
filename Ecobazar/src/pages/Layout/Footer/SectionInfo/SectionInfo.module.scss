@@ -1,0 +1,65 @@
+@use "@styles/variables.module.scss" as *;
+
+.sectionInfo {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: $dark;
+  .sectionInfo__wrapper {
+    width: 68.75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    .sectionInfo__wrapPayment {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      grid-row-gap: 22px;
+      justify-items: center;
+      align-items: start;
+      margin-bottom: 24px;
+      .sectionInfo__line {
+        width: 100%;
+        height: 2px;
+        background-color: #808080;
+      }
+      .sectionInfo__innerPayment {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: space-between;
+        align-items: center;
+        .sectionInfo__subtitle {
+          font-size: 0.875em;
+          font-weight: 500;
+          color: #808080;
+          text-align: start;
+          line-height: 150%;
+        }
+        .sectionInfo__innerIcons {
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(5, auto);
+          grid-template-rows: auto;
+          grid-column-gap: 8px;
+          justify-items: end;
+          align-items: center;
+          .sectionInfo__icon {
+            width: 45px;
+            height: 32px;
+          }
+          .sectionInfo__icon_big {
+            width: 66px;
+            height: 32px;
+          }
+        }
+      }
+    }
+  }
+}

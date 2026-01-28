@@ -1,0 +1,187 @@
+@media (hover: hover) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct
+    .accountWishlist__innerBtn
+    .accountWishlist__btnRemove:hover {
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct
+    .accountWishlist__innerBtn
+    .accountWishlist__btnRemove:active {
+    transform: scale(1.2);
+  }
+}
+@media (min-width: 2000px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent {
+    grid-row-gap: 35px;
+    .accountWishlist__wrapProducts .accountWishlist__innerProduct {
+      .accountWishlist__innerImg .accountWishlist__img {
+        width: 150px;
+        height: 150px;
+      }
+      .accountWishlist__innerPrice {
+        grid-column-gap: 15px;
+      }
+      .accountWishlist__inStore {
+        padding: 8px 12px;
+        border-radius: 8px;
+      }
+      .accountWishlist__innerBtn .btnAddBasket {
+        height: 55px;
+      }
+    }
+  }
+}
+@media (min-width: 2300px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct
+    .accountWishlist__innerBtn
+    .btnAddBasket {
+    height: 60px;
+  }
+}
+@media (min-width: 2700px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent {
+    grid-row-gap: 40px;
+    .accountWishlist__wrapProducts .accountWishlist__innerProduct {
+      .accountWishlist__innerImg .accountWishlist__img {
+        width: 180px;
+        height: 180px;
+      }
+      .accountWishlist__innerBtn {
+        grid-column-gap: 35px;
+        .btnAddBasket {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 3100px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct
+    .accountWishlist__innerBtn
+    .btnAddBasket {
+    height: 80px;
+  }
+}
+@media (min-width: 3300px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct {
+    .accountWishlist__innerImg .accountWishlist__img {
+      width: 220px;
+      height: 220px;
+    }
+    .accountWishlist__inStore {
+      padding: 12px 18px;
+      border-radius: 12px;
+    }
+    .accountWishlist__innerBtn .btnAddBasket {
+      padding: 14px 50px;
+    }
+  }
+}
+@media (min-width: 3700px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent
+    .accountWishlist__wrapProducts
+    .accountWishlist__innerProduct
+    .accountWishlist__innerBtn
+    .btnAddBasket {
+    height: 90px;
+  }
+}
+@media (max-width: 800px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent {
+    grid-template-rows: auto;
+    .accountWishlist__innerSubtitle {
+      display: none;
+    }
+    .accountWishlist__wrapProducts {
+      grid-row-gap: 30px;
+      .accountWishlist__innerProduct {
+        grid-template-columns: 60% auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 15px;
+        justify-items: center;
+        .accountWishlist__innerPrice {
+          justify-content: center;
+        }
+        .accountWishlist__inStore {
+          order: 4;
+        }
+        .accountWishlist__innerBtn {
+          justify-content: start;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  #root
+    .account
+    .account__container
+    .accountWishlist
+    .accountWishlist__wrapContent {
+    .accountWishlist__wrapProducts .accountWishlist__innerProduct {
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      grid-column-gap: 0;
+      grid-row-gap: 20px;
+      justify-items: center;
+      .accountWishlist__innerImg {
+        justify-content: center;
+      }
+      .accountWishlist__inStore {
+        justify-content: center;
+      }
+      .accountWishlist__innerBtn {
+        justify-content: center;
+        order: 4;
+      }
+    }
+  }
+}

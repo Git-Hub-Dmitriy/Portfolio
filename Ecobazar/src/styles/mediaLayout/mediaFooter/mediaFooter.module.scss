@@ -1,0 +1,33 @@
+@use "./mediaSectionInfo.module.scss";
+@use "./mediaSectionSubscribe.module.scss";
+
+@media (min-width: 2000px) {
+  #root .footer {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .footer {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2700px) {
+  #root .footer {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 3100px) {
+  #root .footer {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3400px) {
+  #root .footer {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .footer {
+    font-size: 2.2em;
+  }
+}

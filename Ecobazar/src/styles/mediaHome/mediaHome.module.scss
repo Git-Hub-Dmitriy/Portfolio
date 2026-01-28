@@ -1,0 +1,41 @@
+@use "./mediaAdvertising.module.scss";
+@use "./mediaBanners.module.scss";
+@use "./mediaFeaturedProducts.module.scss";
+@use "./mediaFeaturesStore.module.scss";
+@use "./mediaHoDeals.module.scss";
+@use "./mediaLatestNews.module.scss";
+@use "./mediaPopularCategories.module.scss";
+@use "./mediaPopularProducts.module.scss";
+@use "./mediaSectionInstagram.module.scss";
+@use "./mediaStocks.module.scss";
+
+@media (min-width: 2000px) {
+  #root .home {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .home {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2800px) {
+  #root .home {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 3100px) {
+  #root .home {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3500px) {
+  #root .home {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .home {
+    font-size: 2.2em;
+  }
+}

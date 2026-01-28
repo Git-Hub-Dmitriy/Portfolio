@@ -1,0 +1,47 @@
+@use "@styles/variables.module.scss" as *;
+
+.blogTags {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-items: start;
+  padding: 20px 0 20px 0;
+  grid-row-gap: 20px;
+  .blogTags__title {
+    color: $dark;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.25em;
+    font-weight: 550;
+  }
+  .blogTags__innerTags {
+    width: 90%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: start;
+    grid-gap: 8px;
+    .blogTags__tag {
+      color: $dark;
+      font-size: 0.875em;
+      font-weight: 500;
+      border-radius: 40px;
+      padding: 6px 16px 6px 16px;
+      transition: all 0.2s;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .blogTags__tag_active {
+      background-color: $light-green;
+      color: white;
+    }
+  }
+}

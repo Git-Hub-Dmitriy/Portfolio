@@ -1,0 +1,121 @@
+@use "@styles/variables.module.scss" as *;
+
+.price {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 14.74%;
+  transition: all 0.3s;
+  .price__innerTitle {
+    width: 100%;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: space-between;
+    .price__title {
+      font-size: 1.25em;
+      color: $dark;
+      font-weight: 550;
+      cursor: pointer;
+    }
+    .price__iconArrowUp {
+      width: 15px;
+      height: 10px;
+      transition: all 0.3s;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+  }
+  .slider {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    transition: all 0.3s;
+    overflow: visible;
+    .slider__track {
+      height: 100%;
+      position: absolute;
+      background-color: $light-green;
+      border-radius: 50px;
+    }
+    .slider__input {
+      position: absolute;
+      width: 100%;
+      background: none;
+      pointer-events: none;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 0;
+      margin: 0;
+    }
+    .slider__input[type="range"]::-webkit-slider-thumb {
+      position: relative;
+      top: -50%;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      border: 2px solid $light-green;
+      background: white;
+      pointer-events: auto;
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+    }
+    .slider__input::-webkit-slider-runnable-track {
+      background: none;
+    }
+  }
+  .price__innerValue {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: start;
+    grid-column-gap: 4px;
+    padding-top: 16px;
+    transition: all 0.3s;
+    .price__min {
+      font-size: 1em;
+      color: $dark;
+      font-weight: 550;
+    }
+    .price__separator {
+      background-color: $dark;
+      width: 10px;
+      height: 2px;
+    }
+    .price__max {
+      font-size: 1em;
+      color: $dark;
+      font-weight: 550;
+    }
+  }
+}
+.price_hidden {
+  padding-bottom: 0px;
+  .price__innerTitle {
+    .price__iconArrowUp_rotate {
+      transform: rotate(180deg);
+    }
+  }
+  .slider_hidden {
+    display: none;
+  }
+  .price__innerValue_hidden {
+    padding-top: 0px;
+    display: none;
+  }
+}

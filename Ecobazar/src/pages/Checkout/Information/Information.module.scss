@@ -1,0 +1,30 @@
+@use "@styles/variables.module.scss" as *;
+
+.information {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 20px;
+  justify-items: start;
+  align-items: start;
+  .information__title {
+    width: 100%;
+    font-size: 1.5em;
+    color: $dark;
+    line-height: 150%;
+    font-weight: bold;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+  }
+  .information__form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
+    justify-items: start;
+    align-items: center;
+    grid-row-gap: 16px;
+  }
+}

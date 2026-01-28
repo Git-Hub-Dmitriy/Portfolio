@@ -1,0 +1,246 @@
+@use "./mediaDashboard.module.scss";
+@use "./mediaNav.module.scss";
+@use "./mediaOrderHistory.module.scss";
+@use "./mediaSettings.module.scss";
+@use "./mediaShopping.module.scss";
+@use "./mediaSingleOrder.module.scss";
+@use "./mediaAccountWishlist.module.scss";
+
+@media (hover: hover) {
+  #root .account {
+    .account__container {
+      .nav .nav__wrapLink {
+        a:hover {
+          transform: scale(1.1);
+        }
+        .nav__logOut:hover {
+          transform: scale(1.1);
+        }
+      }
+      .dashboard {
+        .dashboard__gridRow {
+          .dashboard__wrapImg
+            .dashboard__innerUserName
+            .dashboard__linkSettings:hover {
+            transform: scale(1.1);
+          }
+          .dashboard__wrapInfo .dashboard__linkSettings:hover {
+            transform: scale(1.1);
+          }
+        }
+        .dashboard__wrapRecenOrder {
+          .dashboard__innerTitle .dashboard__linkHistory:hover {
+            transform: scale(1.1);
+          }
+          .dashboard__wrapOrders
+            .dashboard__innerOrder
+            .dashboard__innerLink
+            .dashboard__orderLink:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .orderHistory {
+        .orderHistory__wrapper
+          .orderHistory__wrapOrders
+          .orderHistory__innerOrder
+          .orderHistory__innerLink
+          .orderHistory__linkDetail:hover {
+          transform: scale(1.1);
+        }
+        .pagination .pagination__wrapper .pagination__innerPage {
+          .pagination__number:hover {
+            transform: scale(1.2);
+          }
+          .pagination__number_active:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .singleOrder .singleOrder__wrapTitle .singleOrder__btnBack:hover {
+        transform: scale(1.1);
+      }
+      .settings {
+        .sectionUser .sectionUser__wrapForm {
+          .sectionUser__form .sectionUser__changeNameBtn:hover {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .sectionUser__wrapChangeImg .sectionUser__changeImgBtn:hover {
+            transform: scale(1.1);
+          }
+        }
+        .sectionAddress .sectionAddress__form {
+          .sectionAddress__btnSaveAddress:hover {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .choiceCountry__containerGrid
+            .choiceCountry__column
+            .choiceCountry__innerList
+            .choiceCountry__selectedCountry:hover {
+            transform: scale(1.1);
+          }
+        }
+        .sectionPass .sectionPass__form {
+          .sectionPass__btnSavePass:hover {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .sectionPass__wrapPass
+            .sectionPass__innerInput
+            .sectionPass__iconEye:hover {
+            transform: scale(1.2);
+          }
+          .sectionPass__wrapNewPass
+            .sectionPass__column
+            .sectionPass__innerInput
+            .sectionPass__iconEye:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+@media (hover: none) {
+  #root .account {
+    .account__container {
+      .nav .nav__wrapLink {
+        a:active {
+          transform: scale(1.1);
+        }
+        .nav__logOut:active {
+          transform: scale(1.1);
+        }
+      }
+      .dashboard {
+        .dashboard__gridRow {
+          .dashboard__wrapImg
+            .dashboard__innerUserName
+            .dashboard__linkSettings:active {
+            transform: scale(1.1);
+          }
+          .dashboard__wrapInfo .dashboard__linkSettings:active {
+            transform: scale(1.1);
+          }
+        }
+        .dashboard__wrapRecenOrder {
+          .dashboard__innerTitle .dashboard__linkHistory:active {
+            transform: scale(1.1);
+          }
+          .dashboard__wrapOrders
+            .dashboard__innerOrder
+            .dashboard__innerLink
+            .dashboard__orderLink:active {
+            transform: scale(1.1);
+          }
+        }
+      }
+      .orderHistory {
+        .orderHistory__wrapper
+          .orderHistory__wrapOrders
+          .orderHistory__innerOrder
+          .orderHistory__innerLink
+          .orderHistory__linkDetail:active {
+          transform: scale(1.1);
+        }
+        .pagination .pagination__wrapper .pagination__innerPage {
+          .pagination__number:active {
+            transform: scale(1.2);
+          }
+          .pagination__number_active:active {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .singleOrder .singleOrder__wrapTitle .singleOrder__btnBack:active {
+        transform: scale(1.1);
+      }
+      .settings {
+        .sectionUser .sectionUser__wrapForm {
+          .sectionUser__form .sectionUser__changeNameBtn:active {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .sectionUser__wrapChangeImg .sectionUser__changeImgBtn:active {
+            transform: scale(1.1);
+          }
+        }
+        .sectionAddress .sectionAddress__form {
+          .sectionAddress__btnSaveAddress:active {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .choiceCountry__containerGrid
+            .choiceCountry__column
+            .choiceCountry__innerList
+            .choiceCountry__selectedCountry:active {
+            transform: scale(1.1);
+          }
+        }
+        .sectionPass .sectionPass__form {
+          .sectionPass__btnSavePass:active {
+            transform: scale(1.1);
+            background-color: #1a1a1a;
+          }
+          .sectionPass__wrapPass
+            .sectionPass__innerInput
+            .sectionPass__iconEye:active {
+            transform: scale(1.2);
+          }
+          .sectionPass__wrapNewPass
+            .sectionPass__column
+            .sectionPass__innerInput
+            .sectionPass__iconEye:active {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 2000px) {
+  #root .account {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 2300px) {
+  #root .account {
+    font-size: 1.4em;
+  }
+}
+@media (min-width: 2700px) {
+  #root .account {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 3100px) {
+  #root .account {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 3400px) {
+  #root .account {
+    font-size: 2em;
+  }
+}
+@media (min-width: 3700px) {
+  #root .account {
+    font-size: 2.2em;
+  }
+}
+@media (max-width: 1400px) {
+  #root .account .account__container {
+    width: 95%;
+    margin: 20px 0 50px 0;
+  }
+}
+@media (max-width: 1000px) {
+  #root .account .account__container {
+    grid-template-columns: auto;
+    grid-column-gap: 0;
+    grid-template-rows: auto auto;
+    grid-row-gap: 25px;
+  }
+}

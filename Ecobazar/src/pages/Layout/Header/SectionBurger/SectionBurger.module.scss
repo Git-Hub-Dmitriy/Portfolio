@@ -1,0 +1,161 @@
+.sectionBurger {
+  z-index: 110;
+  display: none;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333333;
+  box-shadow: 0 2px 3px #000000;
+  .sectionBurger__burger {
+    border: 2px solid rgb(58, 62, 68);
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    align-items: center;
+    padding: 8px;
+    grid-row-gap: 4px;
+    transition: all 0.3s;
+    cursor: pointer;
+    .sectionBurger__line {
+      width: 100%;
+      height: 3px;
+      background-color: white;
+      border-radius: 8px;
+    }
+  }
+  .sectionBurger__wrapLanguage {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    .sectionBurger__innerLanguage {
+      box-sizing: border-box;
+      width: 100%;
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      outline: none;
+      appearance: none;
+      border-radius: 8px;
+      padding: 5px;
+      .sectionBurger__selectedLang {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .sectionBurger__listLang {
+        z-index: 10;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 60px;
+        border-radius: 5px;
+        left: 0;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        justify-items: center;
+        align-items: center;
+        height: auto;
+        overflow: auto;
+        background-color: #333333;
+        .sectionBurger__langItem {
+          box-sizing: border-box;
+          display: grid;
+          width: 100%;
+          padding: 8px 5px;
+          transition: all 0.3s;
+          cursor: pointer;
+          background-color: #333333;
+          border: 2px solid #333333;
+          font-size: 1em;
+          font-weight: 500;
+          list-style-type: none;
+          justify-items: center;
+          align-items: center;
+          color: white;
+        }
+      }
+      .sectionBurger__listLang_active {
+        display: grid;
+      }
+    }
+    .sectionBurger__innerCurrency {
+      box-sizing: border-box;
+      width: 100%;
+      display: grid;
+      outline: none;
+      appearance: none;
+      justify-items: center;
+      align-items: center;
+      border-radius: 8px;
+      padding: 5px;
+      .sectionBurger__selectedCurrency {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        color: white;
+        font-size: 1.2em;
+        font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      .sectionBurger__listCurrency {
+        z-index: 10;
+        width: 100%;
+        display: none;
+        position: absolute;
+        justify-items: center;
+        align-items: center;
+        border-radius: 5px;
+        top: 60px;
+        left: 0;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
+        height: auto;
+        overflow: auto;
+        background-color: #333333;
+        .sectionBurger__currencyItem {
+          box-sizing: border-box;
+          display: grid;
+          width: 100%;
+          padding: 8px 5px;
+          transition: all 0.3s;
+          cursor: pointer;
+          background-color: #333333;
+          border: 2px solid #333333;
+          font-size: 1em;
+          font-weight: 500;
+          list-style-type: none;
+          justify-items: center;
+          align-items: center;
+          color: white;
+        }
+      }
+      .sectionBurger__listCurrency_active {
+        display: grid;
+      }
+    }
+  }
+}

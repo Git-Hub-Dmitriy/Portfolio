@@ -1,0 +1,34 @@
+@media (max-width: 2700px) {
+  #root .sectionTeam {
+    grid-row-gap: 40px;
+    .sectionTeam__innerTitle {
+      grid-row-gap: 35px;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  #root .sectionTeam .sectionTeam__innerTitle {
+    width: 50%;
+    .sectionTeam__title {
+      font-size: 2.8em;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  #root .sectionTeam {
+    width: 95%;
+    .sectionTeam__innerTitle .sectionTeam__title {
+      font-size: 2.7em;
+    }
+  }
+}
+@media (max-width: 900px) {
+  #root .sectionTeam {
+    grid-row-gap: 30px;
+  }
+}
+@media (max-width: 500px) {
+  #root .sectionTeam .sectionTeam__innerTitle {
+    width: 95%;
+  }
+}
