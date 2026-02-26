@@ -1,0 +1,28 @@
+@layer component {
+  .logo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(7px, 1.3cqw, 10px);
+    .logo__icon {
+      width: clamp(28px, 5.2cqw, 40px);
+      height: clamp(28px, 5.2cqw, 40px);
+    }
+    .logo__title {
+      width: 100%;
+      text-align: start;
+      color: var(--white);
+      font-family: var(--bricolage-grotesque);
+      font-size: clamp(0.968em, 2.86cqw, 1.375em);
+      font-weight: 700;
+    }
+  }
+  @container (min-width: 1440px) {
+    .logo {
+      column-gap: clamp(10px, calc(10px + (100cqw - 1440px) * 0.02), 20px);
+    }
+  }
+}

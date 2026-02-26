@@ -1,0 +1,7 @@
+@layer commonClasses {
+  .gridCenter {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+}

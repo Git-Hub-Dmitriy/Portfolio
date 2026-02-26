@@ -1,6 +1,10 @@
+@layer nullStyle, variables, global, commonClasses, component;
 @import "@styles/_nullstyle.css";
 @import "@styles/_variables.css";
+@import "@styles/commonClasses.css";
 
-body {
-  font-family: var(--my-font);
+@layer global {
+  body {
+    font-family: var(--main-font);
+  }
 }

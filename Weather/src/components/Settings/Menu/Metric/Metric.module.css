@@ -1,0 +1,53 @@
+@layer component {
+  .metric {
+    width: 100%;
+    row-gap: clamp(8px, 1.56cqw, 12px);
+    .metric__title {
+      width: 100%;
+      text-align: start;
+      padding-inline: clamp(8px, 1.56cqw, 12px);
+      padding-top: clamp(8px, 1.56cqw, 12px);
+      font-size: 0.875em;
+      font-weight: 500;
+      line-height: 120%;
+      color: var(--neutral-300);
+    }
+    .metric__innerMetric {
+      width: 100%;
+      row-gap: clamp(4px, 1.04cqw, 8px);
+      .metric__innerSubtitle {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: clamp(8px, 1.56cqw, 12px);
+        padding-block: clamp(10px, 1.82cqw, 14px);
+        border-radius: 8px;
+        background-color: var(--neutral-800);
+        cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+          background-color: var(--neutral-700);
+        }
+        .metric__subtitle {
+          width: 100%;
+          text-align: start;
+          font-size: 1em;
+          line-height: 120%;
+          font-weight: 500;
+          color: var(--white);
+        }
+        .metric__iconMark {
+          display: grid;
+          width: 14px;
+          height: 17px;
+        }
+        .metric__iconMark_hide {
+          display: none;
+        }
+      }
+    }
+  }
+}

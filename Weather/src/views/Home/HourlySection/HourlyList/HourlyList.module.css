@@ -1,0 +1,53 @@
+@layer component {
+  .hourlyList {
+    width: 100%;
+    row-gap: 16px;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    .hourlyList__card {
+      width: 100%;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: space-between;
+      padding: 10px 16px;
+      background-color: var(--neutral-700);
+      border: 1px solid var(--neutral-600);
+      border-radius: 8px;
+      column-gap: 8px;
+      .hourlyList__innerImg {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: center;
+        column-gap: 10px;
+        .hourlyList__icon {
+          width: 38px;
+          height: 38px;
+        }
+        .hourlyList__subtitle {
+          font-size: 1.25em;
+          font-weight: 500;
+          line-height: 120%;
+          text-align: start;
+          color: var(--white);
+        }
+      }
+      .hourlyList__temp {
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 120%;
+        text-align: end;
+        color: var(--white);
+      }
+    }
+  }
+  @container (min-width: 1920px) {
+    .hourlyList {
+      row-gap: 18px;
+      .hourlyList__card {
+        padding: 12px 20px;
+      }
+    }
+  }
+}

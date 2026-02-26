@@ -1,0 +1,77 @@
+@layer component {
+  .skeletonDaily {
+    width: 100%;
+    margin-top: 32px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 20px;
+    .skeletonDaily__title {
+      width: 100%;
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: start;
+      color: var(--white);
+    }
+    .skeletonDaily__wrapCells {
+      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: auto;
+      row-gap: 16px;
+      column-gap: 16px;
+      .skeletonDaily__card {
+        width: 100%;
+        background: linear-gradient(
+          -45deg,
+          var(--neutral-800),
+          #3c3b57,
+          var(--neutral-800),
+          #3c3b57,
+          var(--neutral-800)
+        );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        border: 1px solid var(--neutral-600);
+        border-radius: 12px;
+        padding: 16px 10px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 16px;
+        min-height: 165px;
+      }
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @container (min-width: 768px) {
+    .skeletonDaily .skeletonDaily__wrapCells {
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  @container (min-width: 1440px) {
+    .skeletonDaily {
+      margin-top: 46px;
+    }
+  }
+  @container (min-width: 1920px) {
+    .skeletonDaily {
+      margin-top: 55px;
+      .skeletonDaily__wrapCells {
+        column-gap: 20px;
+        .skeletonDaily__card {
+          padding-inline: 14px;
+        }
+      }
+    }
+  }
+}

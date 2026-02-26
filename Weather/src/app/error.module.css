@@ -1,0 +1,56 @@
+@layer component {
+  .error {
+    min-height: 100lvh;
+    font-size: 1rem;
+    container-type: inline-size;
+    width: 100%;
+    background-color: var(--neutral-900);
+    padding-inline: clamp(16px, 3.125cqw, 24px);
+    padding-top: clamp(16px, 3.125cqw, 24px);
+    padding-bottom: clamp(48px, 10.41cqw, 80px);
+    .error__wrapper {
+      width: 100%;
+      margin-top: 64px;
+      row-gap: 24px;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      .error__iconWentWrong {
+        width: 42px;
+        height: 50px;
+      }
+      .error__title {
+        font-family: var(--bricolage-grotesque);
+        font-size: 3.25em;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: center;
+        color: var(--white);
+      }
+      .error__subtitle {
+        font-size: clamp(1em, 2.6cqw, 1.25em);
+        font-weight: 400;
+        line-height: 120%;
+        text-align: center;
+        color: var(--white);
+      }
+      .error__btn {
+        padding: 12px 16px;
+        border-radius: 8px;
+        background-color: #262540;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        transition: all 0.3s;
+        color: var(--white);
+        cursor: pointer;
+        &:hover {
+          background-color: #393857;
+        }
+        .error__iconRetry {
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+  }
+}

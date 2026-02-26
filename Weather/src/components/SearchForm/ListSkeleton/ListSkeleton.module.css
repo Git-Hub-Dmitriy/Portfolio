@@ -1,0 +1,83 @@
+@layer component {
+  .listSkeleton {
+    width: 100%;
+    position: absolute;
+    display: grid;
+    overflow: hidden;
+    top: 65px;
+    right: 0px;
+    background-color: var(--neutral-800);
+    padding: 8px;
+    border: 1px solid var(--neutral-700);
+    border-radius: 12px;
+    .listSkeleton__loader {
+      width: 100%;
+      padding: 10px 8px;
+      display: grid;
+      justify-content: start;
+      align-items: center;
+      background-color: var(--neutral-800);
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      column-gap: 20px;
+      .listSkeleton__spinner {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+        .listSkeleton__span {
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          top: 50%;
+          left: 50%;
+          margin: -2px 0 0 -2px;
+          background-color: var(--white);
+          border-radius: 50%;
+        }
+      }
+      .listSkeleton__title {
+        width: 100%;
+        text-align: start;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 120%;
+        color: var(--white);
+      }
+      .listSkeleton__spinner span:nth-child(1) {
+        transform: rotate(0deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(2) {
+        transform: rotate(40deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(3) {
+        transform: rotate(80deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(4) {
+        transform: rotate(120deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(5) {
+        transform: rotate(160deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(6) {
+        transform: rotate(200deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(7) {
+        transform: rotate(240deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(8) {
+        transform: rotate(280deg) translate(12px);
+      }
+      .listSkeleton__spinner span:nth-child(9) {
+        display: none;
+      }
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

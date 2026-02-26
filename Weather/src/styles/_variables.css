@@ -1,3 +1,17 @@
-:root {
-  --primary: rgb(241, 10, 222);
+@layer variables {
+  :root {
+    /*Цвета*/
+    --neutral-900: rgb(2, 1, 44);
+    --neutral-800: rgb(38, 37, 64);
+    --neutral-700: rgb(48, 47, 74);
+    --neutral-600: rgb(60, 59, 94);
+    --neutral-300: rgb(172, 172, 183);
+    --neutral-200: rgb(212, 211, 217);
+    --white: rgb(255, 255, 255);
+    --orange: rgb(255, 130, 10);
+    --blue: rgb(70, 88, 217);
+    --blue-700: rgb(43, 27, 156);
+
+    /*Шрифты*/
+  }
 }

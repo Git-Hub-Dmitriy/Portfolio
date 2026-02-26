@@ -1,0 +1,35 @@
+@layer component {
+  .header {
+    width: 100%;
+    font-family: var(--dm-sans);
+    .header__branding {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 44px;
+    }
+    .header__title {
+      width: 100%;
+      font-family: var(--bricolage-grotesque);
+      font-size: 3.25em;
+      line-height: 120%;
+      color: var(--white);
+      font-weight: 700;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  }
+  @container (min-width: 768px) {
+    .header {
+      .header__branding {
+        margin-bottom: clamp(44px, calc(44px + (100cqw - 768px) * 0.029), 64px);
+      }
+      .header__title {
+        margin-bottom: clamp(48px, calc(48px + (100cqw - 768px) * 0.023), 64px);
+      }
+    }
+  }
+}

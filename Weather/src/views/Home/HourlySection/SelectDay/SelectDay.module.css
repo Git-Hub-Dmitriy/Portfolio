@@ -1,0 +1,87 @@
+@layer component {
+  .selectDay {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    position: relative;
+    border-radius: 8px;
+    .selectDay__innerTitle {
+      cursor: pointer;
+      width: 100%;
+      padding: 8px 16px;
+      display: grid;
+      border-radius: 8px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      column-gap: 12px;
+      transition: all 0.3s;
+      background-color: var(--neutral-600);
+      &:hover {
+        background-color: rgb(67, 66, 97);
+      }
+      .selectDay__title {
+        font-size: 1em;
+        font-weight: 500;
+        color: var(--white);
+        user-select: none;
+      }
+      .selectDay__icon {
+        width: 12px;
+        height: 18px;
+        transition: all 0.3s;
+      }
+      .selectDay__icon_active {
+        transform: rotate(180deg);
+      }
+    }
+    .selectDay__listDays {
+      width: 150%;
+      display: grid;
+      overflow: hidden;
+      height: 0px;
+      right: 0px;
+      justify-items: center;
+      align-items: center;
+      position: absolute;
+      top: 50px;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      background-color: var(--neutral-800);
+      border-radius: 12px;
+      transition: all 0.3s;
+      .selectDay__day {
+        width: 100%;
+        height: 0px;
+        background-color: var(--neutral-800);
+        border-radius: 8px;
+        padding: 8px 10px;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 120%;
+        color: var(--white);
+        text-align: start;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+          background-color: var(--neutral-700);
+        }
+      }
+    }
+    .selectDay__listDays_active {
+      height: auto;
+      pointer-events: all;
+      padding: clamp(8px, 1.56cqw, 12px);
+      row-gap: clamp(4px, 1.04cqw, 8px);
+      border: 1px solid var(--neutral-600);
+      .selectDay__day {
+        height: auto;
+      }
+    }
+  }
+  @container (min-width: 1920px) {
+    .selectDay .selectDay__innerTitle {
+      display: grid;
+      align-items: center;
+    }
+  }
+}

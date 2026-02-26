@@ -1,17 +1,5 @@
-import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { DM_SANS, BRICOLAGE_GROTESQUE } from "@fonts/fonts";
 import "@styles/globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-export const metadata: Metadata = {
-  title: "Weather",
-  description: "Weather app",
-  keywords: ["weather", "my app"],
-};
 
 export default function RootLayout({
   children,
@@ -20,7 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable}`}>{children}</body>
+      <body className={`${DM_SANS.variable} ${BRICOLAGE_GROTESQUE.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

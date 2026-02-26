@@ -1,0 +1,75 @@
+@layer component {
+  .listSearch {
+    width: 100%;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    position: absolute;
+    display: grid;
+    transition: all 0.3s;
+    height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    pointer-events: none;
+    top: 65px;
+    right: 0px;
+    background-color: var(--neutral-800);
+    border: 1px solid transparent;
+    .listSearch__li {
+      width: 100%;
+      padding: 10px 8px;
+      cursor: pointer;
+      display: grid;
+      justify-items: start;
+      align-items: center;
+      border-radius: 8px;
+      background-color: var(--neutral-800);
+      border: 1px solid transparent;
+      font-size: 1em;
+      font-weight: 500;
+      line-height: 120%;
+      text-align: start;
+      color: var(--white);
+      &:hover {
+        background-color: var(--neutral-700);
+        border: 1px solid var(--neutral-600);
+      }
+    }
+  }
+  .listSearch_active {
+    height: auto;
+    visibility: visible;
+    padding: 8px;
+    border: 1px solid var(--neutral-700);
+    pointer-events: all;
+    row-gap: 4px;
+    transition: max-height 0.3s;
+    border-radius: 12px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-button,
+    ::-webkit-search-results-button {
+      display: none;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: var(--neutral-800);
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--neutral-600);
+      border-radius: 15px;
+    }
+  }
+  @container (min-width: 768px) {
+    .listSearch_active {
+      row-gap: 8px;
+    }
+  }
+  @container (min-width: 1920px) {
+    .listSearch_active {
+      top: 75px;
+      row-gap: 10px;
+      padding: 12px 12px;
+    }
+  }
+}

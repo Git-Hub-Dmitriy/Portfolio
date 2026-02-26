@@ -1,0 +1,69 @@
+@layer component {
+  .settings {
+    position: relative;
+    width: 100%;
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: clamp(6px, 1.04cqw, 8px);
+    &:focus {
+      border: 2px solid var(--neutral-900);
+      outline: 2px solid var(--white);
+    }
+    .settings__wrapper {
+      width: 100%;
+      display: grid;
+      padding-inline: clamp(8px, 2.08cqw, 16px);
+      padding-block: clamp(8px, 1.56cqw, 12px);
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      column-gap: clamp(6px, 1.3cqw, 10px);
+      justify-content: center;
+      align-items: center;
+      background-color: var(--neutral-800);
+      cursor: pointer;
+      transition: all 0.3s;
+      border-radius: clamp(6px, 1.04cqw, 8px);
+      &:hover {
+        background-color: #393857;
+      }
+      .settings__iconSettings {
+        width: clamp(14px, 2.08cqw, 16px);
+        height: clamp(14px, 2.08cqw, 16px);
+      }
+      .settings__innerText {
+        width: 100%;
+        grid-template-columns: auto auto;
+        column-gap: clamp(6px, 1.3cqw, 10px);
+        .settings__text {
+          font-size: clamp(0.875em, 2.08cqw, 1em);
+          line-height: 120%;
+          color: var(--white);
+          font-weight: 500;
+        }
+        .settings__iconArrowDown {
+          width: clamp(9px, 1.56cqw, 12px);
+          height: clamp(14px, 2.34cqw, 18px);
+          transition: all 0.3s;
+        }
+        .settings__iconArrowDown_active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  @container (min-width: 1440px) {
+    .settings .settings__wrapper {
+      padding-inline: clamp(
+        16px,
+        calc(16px + (100cqw - 1440px) * 0.0125),
+        22px
+      );
+      padding-block: clamp(12px, calc(12px + (100cqw - 1440px) * 0.016), 16px);
+      column-gap: clamp(10px, calc(10px + (100cqw - 1440px) * 0.008), 16px);
+      .settings__iconSettings {
+        width: clamp(16px, calc(16px + (100cqw - 1440px) * 0.008), 20px);
+        height: clamp(16px, calc(16px + (100cqw - 1440px) * 0.008), 20px);
+      }
+    }
+  }
+}

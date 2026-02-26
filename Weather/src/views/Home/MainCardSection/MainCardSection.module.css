@@ -1,0 +1,93 @@
+@layer component {
+  .mainCard {
+    display: grid;
+    width: 100%;
+    height: 286px;
+    margin-top: 32px;
+    border-radius: 20px;
+    padding-inline: 24px;
+    padding-block: 35px;
+    row-gap: 20px;
+    background-image: url("/images/Noise.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: auto;
+    grid-template-rows: 30% auto;
+    .mainCard__wrapTitle {
+      width: 100%;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+      row-gap: 10px;
+      .mainCard__title {
+        font-weight: 600;
+        font-size: 1.75em;
+        text-align: center;
+        color: var(--white);
+      }
+      .mainCard__subtitle {
+        color: var(--white);
+        font-size: 1.125em;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    .mainCard__innerTemp {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 40px;
+      grid-template-rows: auto;
+      align-items: center;
+      justify-content: center;
+      .mainCard__iconWeather {
+        width: 60px;
+        height: 60px;
+      }
+      .mainCard__temp {
+        line-height: 100%;
+        color: var(--white);
+        font-weight: 600;
+        font-size: 6em;
+        letter-spacing: -2%;
+        font-style: italic;
+      }
+    }
+  }
+  @container (min-width: 768px) {
+    .mainCard {
+      margin-top: clamp(32px, calc(32px + (100cqw - 768px) * 0.023), 48px);
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      row-gap: 0;
+      column-gap: 0;
+      justify-content: space-between;
+      .mainCard__wrapTitle {
+        align-content: center;
+        justify-items: start;
+        .mainCard__title,
+        .mainCard__subtitle {
+          text-align: start;
+        }
+      }
+      .mainCard__innerTemp {
+        grid-template-columns: auto 50%;
+        .mainCard__iconWeather {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+  @container (min-width: 1920px) {
+    .mainCard {
+      padding-inline: 40px;
+      .mainCard__innerTemp {
+        grid-template-columns: auto auto;
+        justify-content: start;
+      }
+      .mainCard__wrapTitle {
+        row-gap: 20px;
+      }
+    }
+  }
+}

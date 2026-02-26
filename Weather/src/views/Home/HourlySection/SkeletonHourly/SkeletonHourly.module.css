@@ -1,0 +1,110 @@
+@layer component {
+  .skeletonHourly {
+    margin-top: 32px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    padding-inline: clamp(16px, 3.125cqw, 24px);
+    padding-block: clamp(18px, 3.125cqw, 24px);
+    border-radius: 20px;
+    background-color: var(--neutral-800);
+    row-gap: 16px;
+    .skeletonHourly__wrapTitle {
+      width: 100%;
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      .skeletonHourly__title {
+        font-size: 1.25em;
+        font-weight: 700;
+        line-height: 120%;
+        text-align: start;
+        color: var(--white);
+      }
+      .skeletonHourly__wrapper {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        position: relative;
+        border-radius: 8px;
+        .skeletonHourly__innerIcon {
+          cursor: pointer;
+          width: 100%;
+          padding: 8px 16px;
+          display: grid;
+          border-radius: 8px;
+          grid-template-columns: auto auto;
+          grid-template-rows: auto;
+          column-gap: 12px;
+          background-color: var(--neutral-600);
+          .skeletonHourly__dash {
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--white);
+          }
+          .skeletonHourly__icon {
+            width: 12px;
+            height: 18px;
+          }
+        }
+      }
+    }
+    .skeletonHourly__list {
+      width: 100%;
+      row-gap: 16px;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      .skeletonHourly__card {
+        width: 100%;
+        min-height: 60px;
+        border: 1px solid var(--neutral-600);
+        background: linear-gradient(
+          -45deg,
+          var(--neutral-700),
+          #3c3b57,
+          var(--neutral-700),
+          #3c3b57,
+          var(--neutral-700)
+        );
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+        border-radius: 8px;
+      }
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @container (min-width: 1440px) {
+    .skeletonHourly {
+      margin-top: 44px;
+    }
+  }
+  @container (min-width: 1920px) {
+    .skeletonHourly {
+      .skeletonHourly__wrapTitle
+        .skeletonHourly__wrapper
+        .skeletonHourly__innerIcon {
+        display: grid;
+        align-items: center;
+      }
+      .skeletonHourly__list {
+        row-gap: 18px;
+        .skeletonHourly__card {
+          padding: 12px 20px;
+        }
+      }
+    }
+  }
+}
