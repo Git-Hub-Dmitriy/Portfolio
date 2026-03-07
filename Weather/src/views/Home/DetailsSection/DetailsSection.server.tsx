@@ -1,4 +1,4 @@
-import * as styles from "./DetailsSection.module.css";
+import styles from "./DetailsSection.module.css";
 import classNames from "classnames";
 import { DescriptionApi } from "@interfaces/descriptionApi";
 import { ParamsRequest } from "@interfaces/paramsRequest";

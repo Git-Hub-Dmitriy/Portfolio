@@ -1,4 +1,4 @@
-import * as styles from "./HourlySection.module.css";
+import styles from "./HourlySection.module.css";
 import { DescriptionApi } from "@interfaces/descriptionApi";
 import { ParamsRequest } from "@interfaces/paramsRequest";
 import getWeather from "@services/external/getWeather";

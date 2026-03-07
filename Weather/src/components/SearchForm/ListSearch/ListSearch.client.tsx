@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./ListSearch.module.css";
+import styles from "./ListSearch.module.css";
 import { DescriptionApiCityObject } from "@interfaces/descriptionApi";
 import classNames from "classnames";
 

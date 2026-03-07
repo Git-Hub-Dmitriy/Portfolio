@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./Metric.module.css";
+import styles from "./Metric.module.css";
 import classNames from "classnames";
 import IconMark from "@icons/iconMark.svg";
 

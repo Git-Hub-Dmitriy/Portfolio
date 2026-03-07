@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as styles from "./SkeletonMainCard.module.css";
+import styles from "./SkeletonMainCard.module.css";
 
 export default function MainCardSkeleton() {
   return (

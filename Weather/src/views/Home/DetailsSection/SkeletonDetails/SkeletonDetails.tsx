@@ -1,4 +1,4 @@
-import * as styles from "./SkeletonDetails.module.css";
+import styles from "./SkeletonDetails.module.css";
 import classNames from "classnames";
 
 export default function DetailsSkeleton() {

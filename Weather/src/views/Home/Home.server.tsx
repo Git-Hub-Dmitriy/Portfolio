@@ -1,8 +1,9 @@
 import { Metadata } from "next";
-import * as styles from "./Home.module.css";
+import styles from "./Home.module.css";
 import { ParamsRequest } from "@interfaces/paramsRequest";
 import Header from "@components/Header/Header.server";
 import { Suspense } from "react";
+import classNames from "classnames";
 import MainCardSection from "@views/Home/MainCardSection/MainCardSection";
 import SkeletonMainCard from "@views/Home/MainCardSection/SkeletonMainCard/SkeletonMainCard";
 import DetailsSection from "@views/Home/DetailsSection/DetailsSection.server";
@@ -34,7 +35,7 @@ export default async function Home(props: PropsHome) {
   };
 
   return (
-    <main className={`gridCenter ${styles.home}`}>
+    <main className={classNames("gridCenter", styles.home)}>
       <Header displaySearch="grid" displayTitle="block" />
       <div className={styles.home__wrapper_grid}>
         <div className={styles.home__column_one}>

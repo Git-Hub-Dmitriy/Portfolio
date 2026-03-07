@@ -1,4 +1,4 @@
-import * as styles from "./Logo.module.css";
+import styles from "./Logo.module.css";
 import IconLogo from "@icons/Logo.svg";
 
 export default function Logo() {

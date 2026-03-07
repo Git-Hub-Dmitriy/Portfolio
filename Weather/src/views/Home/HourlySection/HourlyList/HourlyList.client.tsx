@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./HourlyList.module.css";
+import styles from "./HourlyList.module.css";
 import { DescriptionApi } from "@interfaces/descriptionApi";
 import classNames from "classnames";
 import storeSelectedDay from "@store/storeSelectedDay";

@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./error.module.css";
+import styles from "./error.module.css";
 import Header from "@components/Header/Header.server";
 import IconWentWrong from "@icons/iconWentWrong.svg";
 import IconRetry from "@icons/iconRetry.svg";

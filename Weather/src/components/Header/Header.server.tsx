@@ -1,4 +1,4 @@
-import * as styles from "./Header.module.css";
+import styles from "./Header.module.css";
 import Logo from "@components/Logo/Logo.server";
 import Settings from "@components/Settings/Settings.client";
 import classNames from "classnames";

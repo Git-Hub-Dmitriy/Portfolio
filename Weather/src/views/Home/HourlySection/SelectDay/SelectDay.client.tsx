@@ -1,6 +1,6 @@
 "use client";
 import { DescriptionApi } from "@interfaces/descriptionApi";
-import * as styles from "./SelectDay.module.css";
+import styles from "./SelectDay.module.css";
 import toStringDay from "@utils/toStringDay";
 import { useState, useEffect } from "react";
 import IconArrowDown from "@icons/iconArrowDown.svg";

@@ -1,4 +1,4 @@
-import * as styles from "./ListSkeleton.module.css";
+import styles from "./ListSkeleton.module.css";
 import classNames from "classnames";
 
 export default function ListSkeleton() {

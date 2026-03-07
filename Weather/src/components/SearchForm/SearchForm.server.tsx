@@ -1,6 +1,6 @@
 "use client";
 import classNames from "classnames";
-import * as styles from "./SearchForm.module.css";
+import styles from "./SearchForm.module.css";
 import IconSearch from "@icons/iconSearch.svg";
 import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";

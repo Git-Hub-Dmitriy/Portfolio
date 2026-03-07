@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./Settings.module.css";
+import styles from "./Settings.module.css";
 import IconsSettings from "@icons/iconSettings.svg";
 import IconArrowDown from "@icons/iconArrowDown.svg";
 import classNames from "classnames";

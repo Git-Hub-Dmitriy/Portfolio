@@ -1,5 +1,5 @@
 "use client";
-import * as styles from "./Menu.module.css";
+import styles from "./Menu.module.css";
 import storeParams from "@store/storeParams";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import classNames from "classnames";

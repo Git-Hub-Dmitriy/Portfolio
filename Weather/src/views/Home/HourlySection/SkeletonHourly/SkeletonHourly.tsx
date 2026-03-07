@@ -1,4 +1,4 @@
-import * as styles from "./SkeletonHourly.module.css";
+import styles from "./SkeletonHourly.module.css";
 import classNames from "classnames";
 import IconArrowDown from "@icons/iconArrowDown.svg";
 

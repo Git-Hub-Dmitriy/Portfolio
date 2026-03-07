@@ -1,6 +1,6 @@
 import { DescriptionApi } from "@interfaces/descriptionApi";
 import { ParamsRequest } from "@interfaces/paramsRequest";
-import * as styles from "./MainCardSection.module.css";
+import styles from "./MainCardSection.module.css";
 import toStringMonth from "@utils/toStringMonth";
 import toStringDay from "@utils/toStringDay";
 import getIconPath from "@utils/getIconPath";

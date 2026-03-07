@@ -1,4 +1,4 @@
-import * as styles from "./SkeletonDaily.module.css";
+import styles from "./SkeletonDaily.module.css";
 import classNames from "classnames";
 
 export default function DailySkeleton() {
