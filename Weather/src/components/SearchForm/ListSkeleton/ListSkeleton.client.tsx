@@ -3,7 +3,10 @@ import classNames from "classnames";
 
 export default function ListSkeleton() {
   return (
-    <div className={classNames("gridCenter", styles.listSkeleton)}>
+    <div
+      data-testid="list-skeleton"
+      className={classNames("gridCenter", styles.listSkeleton)}
+    >
       <div className={styles.listSkeleton__loader}>
         <div className={classNames("gridCenter", styles.listSkeleton__spinner)}>
           <span className={styles.listSkeleton__span}></span>

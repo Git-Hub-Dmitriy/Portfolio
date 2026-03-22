@@ -40,7 +40,9 @@ export default function SelectDay(props: PropsSelectDay) {
         onClick={() => setActiveList(!activeList)}
         className={styles.selectDay__innerTitle}
       >
-        <h2 className={styles.selectDay__title}>{selectedDay}</h2>
+        <h2 data-testid="selected-day" className={styles.selectDay__title}>
+          {selectedDay}
+        </h2>
         <IconArrowDown
           className={classNames(
             styles.selectDay__icon,
@@ -49,6 +51,7 @@ export default function SelectDay(props: PropsSelectDay) {
         />
       </div>
       <div
+        data-testid="days-list"
         className={classNames(
           styles.selectDay__listDays,
           activeList && styles.selectDay__listDays_active,

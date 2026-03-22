@@ -40,6 +40,8 @@
     }
   },
   "include": [
+    "src",
+    "src/interfaces",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",

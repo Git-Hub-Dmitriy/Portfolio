@@ -1,6 +1,5 @@
 import { create } from "zustand";
 import { persist, devtools } from "zustand/middleware";
-
 interface InitParams {
   temperature: string | null;
   speed: string | null;
@@ -24,9 +23,9 @@ const storeParams = create<InitSetParams>()(
         ...initialState,
         setParamsStore: (object: InitParams) =>
           set({
-            temperature: object.temperature ?? initialState.temperature,
-            speed: object.speed ?? initialState.speed,
-            precipitation: object.precipitation ?? initialState.precipitation,
+            temperature: object.temperature,
+            speed: object.speed,
+            precipitation: object.precipitation,
           }),
         resetParams: () =>
           set({
@@ -35,7 +34,9 @@ const storeParams = create<InitSetParams>()(
             precipitation: initialState.precipitation,
           }),
       }),
-      { name: "params" },
+      {
+        name: "params",
+      },
     ),
     { name: "StoreParams" },
   ),
