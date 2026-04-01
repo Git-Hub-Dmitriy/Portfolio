@@ -55,12 +55,15 @@
   }
   @container (min-width: 768px) {
     .mainCard {
-      margin-top: clamp(32px, calc(32px + (100cqw - 768px) * 0.023), 48px);
+      margin-top: 32px;
       grid-template-columns: auto auto;
       grid-template-rows: auto;
       row-gap: 0;
       column-gap: 0;
       justify-content: space-between;
+      @supports (margin-top: 1cqw) {
+        margin-top: clamp(32px, calc(32px + (100cqw - 768px) * 0.023), 48px);
+      }
       .mainCard__wrapTitle {
         align-content: center;
         justify-items: start;

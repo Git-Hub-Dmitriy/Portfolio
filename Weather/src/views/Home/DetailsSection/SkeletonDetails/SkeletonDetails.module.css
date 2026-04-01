@@ -3,9 +3,12 @@
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    column-gap: clamp(16px, 2.6cqw, 20px);
+    column-gap: 16px;
     row-gap: 16px;
     margin-top: 20px;
+    @supports (column-gap: 1cqw) {
+      column-gap: clamp(16px, 2.6cqw, 20px);
+    }
     .skeletonDetails__cell {
       width: 100%;
       background: linear-gradient(
@@ -56,11 +59,17 @@
   }
   @container (min-width: 768px) {
     .skeletonDetails {
-      margin-top: clamp(20px, calc(20px + (100cqw - 768px) * 0.017), 32px);
+      margin-top: 20px;
       row-gap: 0;
       grid-template-rows: auto;
       grid-template-columns: repeat(4, 1fr);
-      column-gap: clamp(20px, calc(20px + (100cqw - 768px) * 0.005), 24px);
+      column-gap: 20px;
+      @supports (margin-top: 1cqw) {
+        margin-top: clamp(20px, calc(20px + (100cqw - 768px) * 0.017), 32px);
+      }
+      @supports (column-gap: 1cqw) {
+        column-gap: clamp(20px, calc(20px + (100cqw - 768px) * 0.005), 24px);
+      }
     }
   }
   @container (min-width: 1920px) {

@@ -25,10 +25,24 @@
   @container (min-width: 768px) {
     .header {
       .header__branding {
-        margin-bottom: clamp(44px, calc(44px + (100cqw - 768px) * 0.029), 64px);
+        margin-bottom: 44px;
+        @supports (margin-bottom: 1cqw) {
+          margin-bottom: clamp(
+            44px,
+            calc(44px + (100cqw - 768px) * 0.029),
+            64px
+          );
+        }
       }
       .header__title {
-        margin-bottom: clamp(48px, calc(48px + (100cqw - 768px) * 0.023), 64px);
+        margin-bottom: 48px;
+        @supports (margin-bottom: 1cqw) {
+          margin-bottom: clamp(
+            48px,
+            calc(48px + (100cqw - 768px) * 0.023),
+            64px
+          );
+        }
       }
     }
   }

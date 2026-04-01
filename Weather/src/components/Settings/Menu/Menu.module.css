@@ -10,19 +10,25 @@
     display: none;
     justify-items: start;
     align-items: center;
-    padding-inline: clamp(8px, 1.56cqw, 12px);
-    padding-block: clamp(6px, 1.3cqw, 10px);
+    padding-inline: 8px;
+    padding-block: 6px;
     background-color: var(--neutral-800);
     border: 1px solid var(--neutral-600);
     border-radius: 12px;
     row-gap: clamp(4px, 1.04cqw, 8px);
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(8px, 1.56cqw, 12px);
+    }
+    @supports (padding-block: 1cqw) {
+      padding-block: clamp(6px, 1.3cqw, 10px);
+    }
     .menu__button {
       width: 100%;
       display: grid;
       justify-items: start;
       align-items: center;
-      padding-block: clamp(10px, 1.82cqw, 14px);
-      padding-inline: clamp(8px, 1.56cqw, 12px);
+      padding-block: 10px;
+      padding-inline: 8px;
       border-radius: 8px;
       font-size: 1em;
       line-height: 120%;
@@ -38,6 +44,12 @@
       }
       &:focus {
         border: 2px solid var(--white);
+      }
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(8px, 1.56cqw, 12px);
+      }
+      @supports (padding-block: 1cqw) {
+        padding-block: clamp(10px, 1.82cqw, 14px);
       }
     }
     .menu__line {

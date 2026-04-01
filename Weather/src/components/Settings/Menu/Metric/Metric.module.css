@@ -1,20 +1,32 @@
 @layer component {
   .metric {
     width: 100%;
-    row-gap: clamp(8px, 1.56cqw, 12px);
+    row-gap: 8px;
+    @supports (row-gap: 1cqw) {
+      row-gap: clamp(8px, 1.56cqw, 12px);
+    }
     .metric__title {
       width: 100%;
       text-align: start;
-      padding-inline: clamp(8px, 1.56cqw, 12px);
-      padding-top: clamp(8px, 1.56cqw, 12px);
+      padding-inline: 8px;
+      padding-top: 8px;
       font-size: 0.875em;
       font-weight: 500;
       line-height: 120%;
       color: var(--neutral-300);
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(8px, 1.56cqw, 12px);
+      }
+      @supports (padding-top: 1cqw) {
+        padding-top: clamp(8px, 1.56cqw, 12px);
+      }
     }
     .metric__innerMetric {
       width: 100%;
-      row-gap: clamp(4px, 1.04cqw, 8px);
+      row-gap: 4px;
+      @supports (row-gap: 1cqw) {
+        row-gap: clamp(4px, 1.04cqw, 8px);
+      }
       .metric__innerSubtitle {
         width: 100%;
         display: grid;
@@ -22,14 +34,20 @@
         grid-template-rows: auto;
         justify-content: space-between;
         align-items: center;
-        padding-inline: clamp(8px, 1.56cqw, 12px);
-        padding-block: clamp(10px, 1.82cqw, 14px);
+        padding-inline: 8px;
+        padding-block: 10px;
         border-radius: 8px;
         background-color: var(--neutral-800);
         cursor: pointer;
         transition: all 0.3s;
         &:hover {
           background-color: var(--neutral-700);
+        }
+        @supports (padding-inline: 1cqw) {
+          padding-inline: clamp(8px, 1.56cqw, 12px);
+        }
+        @supports (padding-block: 1cqw) {
+          padding-block: clamp(10px, 1.82cqw, 14px);
         }
         .metric__subtitle {
           width: 100%;

@@ -2,12 +2,21 @@
   .home {
     min-height: 100lvh;
     font-size: 1rem;
-    padding-inline: clamp(16px, 3.125cqw, 24px);
-    padding-top: clamp(16px, 3.125cqw, 24px);
-    padding-bottom: clamp(48px, 10.41cqw, 80px);
+    padding-top: 16px;
+    padding-inline: 16px;
+    padding-bottom: 48px;
     width: 100%;
     background-color: var(--neutral-900);
     font-family: var(--dm-sans);
+    @supports (padding-bottom: 1cqw) {
+      padding-bottom: clamp(48px, 10.41cqw, 80px);
+    }
+    @supports (padding-top: 1cqw) {
+      padding-top: clamp(16px, 3.125cqw, 24px);
+    }
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(16px, 3.125cqw, 24px);
+    }
     .home__wrapper_grid {
       width: 100%;
       .home__column_one {
@@ -20,17 +29,30 @@
   }
   @container (min-width: 768px) {
     .home {
-      padding-inline: clamp(24px, calc(24px + (100cqw - 768px) * 0.13), 112px);
-      padding-top: clamp(24px, calc(24px + (100cqw - 768px) * 0.035), 48px);
+      padding-inline: 24px;
+      padding-top: 24px;
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(
+          24px,
+          calc(24px + (100cqw - 768px) * 0.13),
+          112px
+        );
+      }
+      @supports (padding-top: 1cqw) {
+        padding-top: clamp(24px, calc(24px + (100cqw - 768px) * 0.035), 48px);
+      }
     }
   }
   @container (min-width: 1440px) {
     .home {
-      padding-inline: clamp(
-        112px,
-        calc(112px + (100cqw - 1440px) * 0.183),
-        200px
-      );
+      padding-inline: 112px;
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(
+          112px,
+          calc(112px + (100cqw - 1440px) * 0.183),
+          200px
+        );
+      }
       .home__wrapper_grid {
         display: grid;
         grid-template-columns: auto 31.57%;
@@ -42,11 +64,14 @@
   @container (min-width: 1920px) {
     .home {
       font-size: 1.2rem;
-      padding-inline: clamp(
-        200px,
-        calc(200px + (100cqw - 1920px) * 0.156),
-        300px
-      );
+      padding-inline: 200px;
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(
+          200px,
+          calc(200px + (100cqw - 1920px) * 0.156),
+          300px
+        );
+      }
       .home__wrapper_grid {
         column-gap: 60px;
       }

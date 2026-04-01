@@ -5,11 +5,17 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    padding-inline: clamp(16px, 3.125cqw, 24px);
-    padding-block: clamp(18px, 3.125cqw, 24px);
+    padding-inline: 16px;
+    padding-block: 18px;
     border-radius: 20px;
     background-color: var(--neutral-800);
     row-gap: 16px;
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(16px, 3.125cqw, 24px);
+    }
+    @supports (padding-block: 1cqw) {
+      padding-block: clamp(18px, 3.125cqw, 24px);
+    }
     .skeletonHourly__wrapTitle {
       width: 100%;
       display: grid;

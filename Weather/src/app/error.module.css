@@ -5,9 +5,18 @@
     container-type: inline-size;
     width: 100%;
     background-color: var(--neutral-900);
-    padding-inline: clamp(16px, 3.125cqw, 24px);
-    padding-top: clamp(16px, 3.125cqw, 24px);
-    padding-bottom: clamp(48px, 10.41cqw, 80px);
+    padding-inline: 16px;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(16px, 3.125cqw, 24px);
+    }
+    @supports (padding-top: 1cqw) {
+      padding-top: clamp(16px, 3.125cqw, 24px);
+    }
+    @supports (padding-bottom: 1cqw) {
+      padding-bottom: clamp(48px, 10.41cqw, 80px);
+    }
     .error__wrapper {
       width: 100%;
       margin-top: 64px;
@@ -27,11 +36,14 @@
         color: var(--white);
       }
       .error__subtitle {
-        font-size: clamp(1em, 2.6cqw, 1.25em);
+        font-size: 1em;
         font-weight: 400;
         line-height: 120%;
         text-align: center;
         color: var(--white);
+        @supports (font-size: 1cqw) {
+          font-size: clamp(1em, 2.6cqw, 1.25em);
+        }
       }
       .error__btn {
         padding: 12px 16px;

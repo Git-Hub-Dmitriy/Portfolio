@@ -70,9 +70,15 @@
     .selectDay__listDays_active {
       height: auto;
       pointer-events: all;
-      padding: clamp(8px, 1.56cqw, 12px);
-      row-gap: clamp(4px, 1.04cqw, 8px);
+      padding: 8px;
+      row-gap: 4px;
       border: 1px solid var(--neutral-600);
+      @supports (padding: 1cqw) {
+        padding: clamp(8px, 1.56cqw, 12px);
+      }
+      @supports (row-gap: 1cqw) {
+        row-gap: clamp(4px, 1.04cqw, 8px);
+      }
       .selectDay__day {
         height: auto;
       }

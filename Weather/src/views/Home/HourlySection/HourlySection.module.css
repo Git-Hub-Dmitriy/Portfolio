@@ -5,11 +5,17 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    padding-inline: clamp(16px, 3.125cqw, 24px);
-    padding-block: clamp(20px, 3.125cqw, 24px);
+    padding-inline: 16px;
+    padding-block: 20px;
     border-radius: 20px;
     background-color: var(--neutral-800);
     row-gap: 16px;
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(16px, 3.125cqw, 24px);
+    }
+    @supports (padding-block: 1cqw) {
+      padding-block: clamp(20px, 3.125cqw, 24px);
+    }
     .hourly__innerTitle {
       width: 100%;
       display: grid;
