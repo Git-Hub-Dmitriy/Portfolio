@@ -1,11 +1,12 @@
 "use client";
 import { useState } from "react";
 import styles from "./Header.module.css";
-import Burger from "./Burger/Burger.client";
-import Lang from "@components/Lang/Lang.client";
 import { useTranslation } from "@providers/translation-provider";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 
+const Burger = dynamic(() => import("./Burger/Burger.client"));
+const Lang = dynamic(() => import("@components/Lang/Lang.client"));
 interface PropsHeader {
   stringLinks: string;
 }

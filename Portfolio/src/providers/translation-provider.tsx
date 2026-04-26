@@ -1,5 +1,5 @@
 "use client";
-import { useContext, createContext } from "react";
+import { useContext, createContext, useMemo } from "react";
 import { Dictionary } from "@interfaces/dictionary.types";
 
 const ContextTranslation = createContext<Dictionary | null>(null);
@@ -11,8 +11,11 @@ export function TranslationProvider({
   children: React.ReactNode;
   dictionary: Dictionary;
 }) {
+  const cache = useMemo(() => {
+    return dictionary;
+  }, [dictionary]);
   return (
-    <ContextTranslation.Provider value={dictionary}>
+    <ContextTranslation.Provider value={cache}>
       {children}
     </ContextTranslation.Provider>
   );
