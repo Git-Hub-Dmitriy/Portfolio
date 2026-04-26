@@ -1,0 +1,103 @@
+@layer components {
+  .overview {
+    width: 100%;
+    margin-top: 80px;
+    display: grid;
+    justify-items: center;
+    align-content: start;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    row-gap: 30px;
+    @supports (row-gap: 1cqw) {
+      row-gap: clamp(30px, 3.472cqw, 50px);
+    }
+    @supports (margin-top: 1cqw) {
+      margin-top: clamp(60px, 5.55cqw, 80px);
+    }
+    .overview__innerTitle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      column-gap: 15px;
+      justify-content: start;
+      align-items: center;
+      .overview__circle {
+        width: 18px;
+        height: 18px;
+        background-color: var(--pale-green);
+        border-radius: 50%;
+      }
+      .overview__title {
+        font-size: 1.7em;
+        font-weight: 500;
+        color: var(--white);
+        text-align: start;
+      }
+    }
+    .overview__text {
+      color: var(--white);
+      opacity: 48%;
+      font-weight: 500;
+      text-align: start;
+      line-height: 130%;
+      font-size: 1.1em;
+    }
+    .overview__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: top left;
+    }
+    .overview__innerBtn {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 30px;
+      .overview__btn {
+        padding-inline: 20px;
+        padding-block: 16px;
+        border-radius: 8px;
+        background-color: var(--white);
+        color: var(--black);
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: rgb(134, 134, 134);
+        }
+      }
+    }
+  }
+  @container (min-width: 1440px) {
+    .overview {
+      .overview__innerTitle .overview__title {
+        font-size: 2em;
+        @supports (font-size: 1cqw) {
+          font-size: clamp(2em, 1.875cqw, 3em);
+        }
+      }
+      .overview__text {
+        font-size: 1.4em;
+        @supports (font-size: 1cqw) {
+          font-size: clamp(1.4em, 1.25cqw, 2em);
+        }
+      }
+      .overview__image {
+        width: 80%;
+      }
+      .overview__innerBtn {
+        margin-top: 80px;
+        .overview__btn {
+          padding-inline: 24px;
+          padding-block: 16px;
+          border-radius: 10px;
+          font-size: 1.4em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+"use client";
+import { useState } from "react";
+import styles from "./Header.module.css";
+import Burger from "./Burger/Burger.client";
+import Lang from "@components/Lang/Lang.client";
+import { useTranslation } from "@providers/translation-provider";
+import Link from "next/link";
+
+interface PropsHeader {
+  stringLinks: string;
+}
+
+export default function Header(props: PropsHeader) {
+  const [showModal, setShowModal] = useState(false);
+  const [showLang, setShowLang] = useState(false);
+  const { t } = useTranslation();
+
+  return (
+    <header className={styles.header}>
+      <Link href="/">
+        <h1 className={styles.header__title}>{t("components.header.title")}</h1>
+      </Link>
+      <div className={styles.header__container}>
+        <Lang
+          showLang={showLang}
+          setShowLang={setShowLang}
+          setShowLink={setShowModal}
+        />
+        <Burger
+          stringLinks={props.stringLinks}
+          showModal={showModal}
+          setShowModal={setShowModal}
+          setShowLang={setShowLang}
+        />
+      </div>
+    </header>
+  );
+}

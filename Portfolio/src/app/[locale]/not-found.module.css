@@ -1,0 +1,41 @@
+@layer components {
+  .notFound {
+    width: 100%;
+    background-color: var(--black);
+    height: 100lvh;
+    font-size: 1rem;
+    padding-inline: clamp(16px, 3.385cqw, 26px);
+    padding-block: clamp(22px, 3.906cqw, 30px);
+    .notFound__title {
+      margin-top: 140px;
+      font-size: 11.5em;
+      color: var(--white);
+      font-weight: 600;
+      text-align: center;
+    }
+    .notFound__innerBtn {
+      width: 100%;
+      margin-top: 80px;
+      background-color: var(--black);
+      padding-block: 40px;
+      border-radius: 10px;
+      .notFound__btn {
+        background-color: var(--white);
+        color: var(--black);
+        border-radius: clamp(10px, 1.822cqw, 14px);
+        cursor: pointer;
+        transition: background-color 0.3s;
+        padding: clamp(10px, 1.822cqw, 14px);
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+        user-select: none;
+        &:hover {
+          background-color: #464545;
+        }
+      }
+    }
+  }
+  @container (min-width: 768px) {
+  }
+}

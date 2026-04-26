@@ -1,0 +1,31 @@
+@layer components {
+  .header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+    .header__title {
+      font-size: 2em;
+      color: var(--white);
+      letter-spacing: 1px;
+    }
+    .header__container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      justify-content: right;
+      align-items: center;
+      column-gap: 20px;
+    }
+  }
+  @container (min-width: 1440px) {
+    .header .header__title {
+      font-size: 3em;
+      @supports (font-size: 1cqw) {
+        font-size: clamp(2em, 2.5cqw, 4em);
+      }
+    }
+  }
+}

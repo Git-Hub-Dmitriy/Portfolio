@@ -1,0 +1,9 @@
+@layer variables {
+  :root {
+    /*Цвета*/
+    --black: #010101;
+    --white: #ffffff;
+    --grey: #1a1a1a;
+    --pale-green: rgb(119, 172, 119);
+  }
+}

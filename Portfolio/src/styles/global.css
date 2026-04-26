@@ -1,0 +1,27 @@
+@layer nullStyle, variables, global, commonClasses, components;
+@import "@styles/_nullstyles.css";
+@import "@styles/_variables.css";
+@import "@styles/commonClasses.css";
+
+@layer global {
+  body {
+    font-family: var(--syne);
+    &::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track {
+      display: none;
+    }
+  }
+  .revealBox {
+    width: 100%;
+  }
+  .animated-block {
+    transition: transform 0.8s ease;
+    transform: translateX(-1000px) scale(0.5);
+    opacity: 0;
+  }
+  .revealBox.reveal-active .animated-block {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}

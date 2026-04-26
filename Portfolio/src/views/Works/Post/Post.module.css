@@ -1,0 +1,114 @@
+@layer components {
+  .post {
+    width: 100%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: start;
+    row-gap: 80px;
+    .post__container {
+      width: 100%;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      .post__wrapPost {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        row-gap: 30px;
+        .post__link {
+          width: 100%;
+          display: grid;
+          justify-items: center;
+          align-items: center;
+          .post__image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .post__wrapTitle {
+          width: 100%;
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: auto auto;
+          row-gap: 15px;
+          .post__innerTitle {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            column-gap: 15px;
+            justify-content: start;
+            align-items: center;
+            .post__circle {
+              width: 18px;
+              height: 18px;
+              background-color: var(--pale-green);
+              border-radius: 50%;
+            }
+            .post__title {
+              font-size: 1.7em;
+              font-weight: 500;
+              color: var(--white);
+              text-align: start;
+            }
+          }
+          .post__description {
+            color: var(--white);
+            opacity: 48%;
+            font-weight: 500;
+            text-align: start;
+            line-height: 130%;
+            font-size: 1.1em;
+          }
+        }
+      }
+    }
+  }
+  @container (min-width: 1440px) {
+    .post {
+      margin-top: 100px;
+      row-gap: 120px;
+      .post__container .post__wrapPost {
+        row-gap: 60px;
+        .post__link {
+          width: 80%;
+        }
+        .post__wrapTitle {
+          row-gap: 20px;
+          .post__innerTitle {
+            column-gap: 25px;
+            .post__circle {
+              width: 20px;
+              height: 20px;
+              @supports (width: 1cqw) {
+                width: clamp(20px, 0.97cqw, 25px);
+              }
+              @supports (height: 1cqw) {
+                height: clamp(20px, 0.97cqw, 25px);
+              }
+            }
+            .post__title {
+              font-size: 2em;
+              @supports (font-size: 1cqw) {
+                font-size: clamp(2em, 1.875cqw, 3em);
+              }
+            }
+          }
+          .post__description {
+            font-size: 1.3em;
+            @supports (font-size: 1cqw) {
+              font-size: clamp(1.3em, 1.25cqw, 2em);
+            }
+          }
+        }
+      }
+    }
+  }
+}

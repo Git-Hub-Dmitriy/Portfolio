@@ -1,0 +1,50 @@
+@layer components {
+  .works {
+    width: 100%;
+    min-height: 100lvh;
+    background-color: var(--black);
+    padding-inline: 16px;
+    padding-block: 22px;
+    @supports (padding-inline: 1cqw) {
+      padding-inline: clamp(16px, 3.385cqw, 26px);
+    }
+    @supports (padding-block: 1cqw) {
+      padding-block: clamp(22px, 3.906cqw, 30px);
+    }
+    .works__title {
+      display: grid;
+      justify-items: center;
+      margin-block: 60px;
+      font-size: 2.5em;
+      color: var(--white);
+    }
+  }
+  @container (min-width: 768px) {
+    .works {
+      padding-inline: 60px;
+      padding-block: 30px;
+      @supports (padding-inline: 1cqw) {
+        padding-inline: clamp(
+          60px,
+          calc(60px + (100cqw - 768px) * 0.121),
+          200px
+        );
+      }
+    }
+  }
+  @container (min-width: 1440px) {
+    .works {
+      padding-bottom: 60px;
+      @supports (padding-bottom: 1cqw) {
+        padding-bottom: clamp(60px, 3.9cqw, 100px);
+      }
+      .works__title {
+        margin-block: 100px;
+        font-size: 3em;
+        @supports (font-size: 1cqw) {
+          font-size: clamp(3em, 3.125cqw, 5em);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@layer components {
+  .lang {
+    display: grid;
+    user-select: none;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    overscroll-behavior: none;
+    color: var(--white);
+    font-size: 1.4em;
+    height: 40px;
+    background-color: var(--black);
+    border-radius: 8px;
+    border: 1px solid #5f5d5d;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    &:hover {
+      background-color: #474747;
+    }
+    &:hover:has(ul li:hover) {
+      background-color: var(--black);
+    }
+    .lang__list {
+      z-index: 100;
+      position: absolute;
+      top: 130%;
+      right: 0px;
+      width: 100%;
+      display: grid;
+      overflow: hidden;
+      height: 0px;
+      list-style-type: none;
+      grid-template-columns: auto;
+      grid-auto-rows: auto;
+      row-gap: 5px;
+      border-radius: 8px;
+      background-color: var(--black);
+      transition: height 0.3s;
+      .lang__title {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        border-radius: 8px;
+        padding: 4px 8px;
+        cursor: pointer;
+        font-size: 1em;
+        cursor: pointer;
+        color: var(--white);
+        font-weight: 500;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: #474747;
+        }
+      }
+    }
+    .lang__list_active {
+      border: 1px solid #5f5d5d;
+      height: auto;
+      overflow: auto;
+    }
+  }
+  @container (min-width: 1920px) {
+    .lang {
+      width: 80px;
+      height: 50px;
+      font-size: 1.6em;
+      .lang__list .lang__title {
+        padding: 8px 10px;
+      }
+    }
+  }
+  @container (min-width: 2400px) {
+    .lang {
+      width: 90px;
+      height: 55px;
+      .lang__list .lang__title {
+        padding: 10px 12px;
+      }
+    }
+  }
+}
