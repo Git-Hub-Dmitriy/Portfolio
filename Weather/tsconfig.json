@@ -20,23 +20,22 @@
       },
       { "name": "typescript-plugin-css-modules" }
     ],
-    "baseUrl": ".",
     "paths": {
-      "@images/*": ["public/images/*"],
-      "@icons/*": ["public/icons/*"],
-      "@actions/*": ["src/actions/*"],
-      "@app/*": ["src/app/*"],
-      "@api/*": ["/src/app/api/*"],
-      "@components/*": ["src/components/*"],
-      "@data/*": ["src/data/*"],
-      "@fonts/*": ["src/fonts/*"],
-      "@interfaces/*": ["src/interfaces/*"],
-      "@services/*": ["src/services/*"],
-      "@store/*": ["src/store/*"],
-      "@styles/*": ["src/styles/*"],
-      "@utils/*": ["src/utils/*"],
-      "@views/*": ["src/views/*"],
-      "@layout/*": ["src/layout/*"]
+      "@images/*": ["./public/images/*"],
+      "@icons/*": ["./public/icons/*"],
+      "@actions/*": ["./src/actions/*"],
+      "@app/*": ["./src/app/*"],
+      "@api/*": ["./src/app/api/*"],
+      "@components/*": ["./src/components/*"],
+      "@data/*": ["./src/data/*"],
+      "@fonts/*": ["./src/fonts/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@services/*": ["./src/services/*"],
+      "@store/*": ["./src/store/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@views/*": ["./src/views/*"],
+      "@layout/*": ["./src/layout/*"]
     }
   },
   "include": [
