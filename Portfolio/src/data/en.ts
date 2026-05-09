@@ -46,12 +46,6 @@ export const en: Dictionary = {
               the weather for a selected city with visual indicators. Current
               weather in real time with customizable parameters`,
         },
-        {
-          href: "/works/2",
-          imageSrc: "/images/Weather.webp",
-          name: "Empty",
-          text: `Empty`,
-        },
       ],
     },
     skills: {
@@ -118,7 +112,7 @@ export const en: Dictionary = {
       },
       {
         id: 1,
-        name: "Ecobazar",
+        name: "Weather App",
         href: "/works/1",
         image: "/images/Weather.webp",
         gitHub:

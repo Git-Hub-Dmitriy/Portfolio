@@ -22,27 +22,29 @@ export default function RecentWorks(props: PropsRecentWorks) {
       </div>
       <div className={styles.recentWorks__wrapWorks}>
         {works.map((work) => {
-          return (
-            <RevealWrapper key={work.href}>
-              <Link
-                href={work.href}
-                className={classNames("Center", styles.recentWorks__preview)}
-              >
-                <Image
-                  src={work.imageSrc}
-                  width={1920}
-                  height={1080}
-                  priority
-                  alt="work"
-                  className={styles.recentWorks__image}
-                />
-                <div className={styles.recentWorks__description}>
-                  <h1 className={styles.recentWorks__name}>{work.name}</h1>
-                  <h2 className={styles.recentWorks__text}>{work.text}</h2>
-                </div>
-              </Link>
-            </RevealWrapper>
-          );
+          if (works.length <= 4) {
+            return (
+              <RevealWrapper key={work.href}>
+                <Link
+                  href={work.href}
+                  className={classNames("Center", styles.recentWorks__preview)}
+                >
+                  <Image
+                    src={work.imageSrc}
+                    width={1920}
+                    height={1080}
+                    priority
+                    alt="work"
+                    className={styles.recentWorks__image}
+                  />
+                  <div className={styles.recentWorks__description}>
+                    <h1 className={styles.recentWorks__name}>{work.name}</h1>
+                    <h2 className={styles.recentWorks__text}>{work.text}</h2>
+                  </div>
+                </Link>
+              </RevealWrapper>
+            );
+          }
         })}
       </div>
     </section>
