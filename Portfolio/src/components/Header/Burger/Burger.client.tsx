@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useTranslation } from "../../../providers/translation-provider";
 
 interface PropsBurger {
-  stringLinks: string;
+  stringLinks?: string;
   showModal: boolean;
   setShowModal: (state: boolean) => void;
   setShowLang: (state: boolean) => void;
@@ -12,7 +12,9 @@ interface PropsBurger {
 
 export default function Burger(props: PropsBurger) {
   const { t } = useTranslation();
-  const links: { link: string; href: string }[] = t(props.stringLinks);
+  const links: { link: string; href: string }[] = t(
+    props.stringLinks as string,
+  );
 
   return (
     <div

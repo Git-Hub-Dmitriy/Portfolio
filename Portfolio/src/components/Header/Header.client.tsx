@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 const Burger = dynamic(() => import("./Burger/Burger.client"));
 const Lang = dynamic(() => import("@components/Lang/Lang.client"));
 interface PropsHeader {
-  stringLinks: string;
+  stringLinks?: string;
 }
 
 export default function Header(props: PropsHeader) {
