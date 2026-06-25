@@ -19,7 +19,7 @@ module.exports = (env) => {
       maxAssetSize: 512000,
     },
 
-    watch: true,
+    watch: isDev,
 
     entry: path.resolve(__dirname, "index.js"),
     output: {
@@ -65,6 +65,17 @@ module.exports = (env) => {
         failOnError: false,
         allowAsyncCycles: false,
       }),
+
+      !isDev && {
+        apply: (compiler) => {
+          compiler.hooks.done.tap("ForceExitPlugin", () => {
+            console.log(
+              "--- Webpack скомпилирован. Принудительно завершаем процесс для Vercel... ---",
+            );
+            setTimeout(() => process.exit(0), 500);
+          });
+        },
+      },
     ].filter(Boolean),
 
     module: {
@@ -129,7 +140,7 @@ module.exports = (env) => {
       },
     },
 
-    devtool: isDev ? "eval-cheap-module-source-map" : "inline-source-map",
+    devtool: isDev ? "eval-cheap-module-source-map" : false,
 
     devServer: isDev
       ? {
