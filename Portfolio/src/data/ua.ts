@@ -76,7 +76,7 @@ export const ua: Dictionary = {
         image: "/images/ecobazar.webp",
         gitHub:
           "https://github.com/Git-Hub-Dmitriy/Portfolio/tree/main/Ecobazar",
-        demo: "https://vercel.com",
+        demo: "https://portfolio-kt2g.onrender.com/",
         overview: {
           title: "Огляд",
           text: "Це мій перший проект на React, в якому я реалізував архітектуру інтернет-магазину. Основний упор був зроблений на роботу з глобальним станом (Redux), навігацією та створенням логічних корзин без використання реального бекенда. Додаток повністю адаптивно та імітує справжній досвід користувача: від фільтрації товарів до особистого кабінету.",
@@ -109,7 +109,7 @@ export const ua: Dictionary = {
         image: "/images/Weather.webp",
         gitHub:
           "https://github.com/Git-Hub-Dmitriy/Portfolio/tree/main/Weather",
-        demo: "https://vercel.com",
+        demo: "https://my-weather-mu-lime.vercel.app/",
         overview: {
           title: "Огляд",
           text: "Сучасний односторінковий додаток для відстеження погоди, побудований на вістрі технологій Next.js. Основний фокус проекту – максимальна продуктивність та UX. Додаток використовує гібридний рендеринг: критично важливий контент відображається миттєво, а важкі дані динамічно підвантажуються без блокування інтерфейсу.",

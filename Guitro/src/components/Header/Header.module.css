@@ -1,0 +1,8 @@
+@layer components {
+  .header {
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: var(--background-color);
+  }
+}

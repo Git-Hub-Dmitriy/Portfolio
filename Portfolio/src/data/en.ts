@@ -84,7 +84,7 @@ export const en: Dictionary = {
         image: "/images/ecobazar.webp",
         gitHub:
           "https://github.com/Git-Hub-Dmitriy/Portfolio/tree/main/Ecobazar",
-        demo: "",
+        demo: "https://portfolio-kt2g.onrender.com/",
         overview: {
           title: "Overview",
           text: "This is my first project in React, in which I implemented the architecture of an online store. The main emphasis of the project is on working with the global camp (Redux), navigating and creating logical baskets without vikoristan of the real backend. The add-on is completely adaptive and has the necessary confirmation of the customer: by filtering goods to a special account.",
@@ -117,7 +117,7 @@ export const en: Dictionary = {
         image: "/images/Weather.webp",
         gitHub:
           "https://github.com/Git-Hub-Dmitriy/Portfolio/tree/main/Weather",
-        demo: "",
+        demo: "https://my-weather-mu-lime.vercel.app/",
         overview: {
           title: "Overview",
           text: "A modern single-page weather app built on the cutting edge of Next.js. The main focus of the project is maximum performance and UX. The app uses hybrid rendering: critical content is displayed instantly, and heavy data is dynamically loaded without blocking the interface.",

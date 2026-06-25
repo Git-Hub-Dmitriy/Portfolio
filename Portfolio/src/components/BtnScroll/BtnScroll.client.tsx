@@ -4,7 +4,14 @@ import IconArrowUp from "@icons/iconArrowUp.svg";
 
 export default function BtnScroll() {
   return (
-    <article onClick={() => window.scrollTo(0, 0)} className={styles.btnScroll}>
+    <article
+      onClick={() => {
+        const newPath = window.location.pathname + window.location.search;
+        window.scrollTo(0, 0);
+        window.history.replaceState(null, "", newPath);
+      }}
+      className={styles.btnScroll}
+    >
       <IconArrowUp className={styles.btnScroll__arrow} />
     </article>
   );

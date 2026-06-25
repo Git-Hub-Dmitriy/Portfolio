@@ -1,0 +1,10 @@
+@layer variables {
+  :root {
+    --primary-color: #101010;
+    --primary-hover-color: #ffffff;
+    --secondary-color: #d29228;
+    --secondary-light-color: #777777;
+    --background-color: #151515;
+    --border-color: #222222;
+  }
+}

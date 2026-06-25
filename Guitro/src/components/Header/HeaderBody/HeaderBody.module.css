@@ -1,0 +1,19 @@
+@layer components {
+  .headerBody {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    position: relative;
+    align-items: center;
+    .headerBody__row {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      row-gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+  }
+}

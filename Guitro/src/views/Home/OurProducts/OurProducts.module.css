@@ -1,0 +1,7 @@
+@layer components {
+  .ourProducts {
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 20px 15px;
+  }
+}

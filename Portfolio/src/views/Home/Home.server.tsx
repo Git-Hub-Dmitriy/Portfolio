@@ -4,10 +4,12 @@ import About from "./About/About.server";
 import RecentWorks from "./RecentWorks/RecentWorks.server";
 import Skills from "./Skills/Skills.server";
 import Contact from "./Contact/Contact.server";
-import BtnScroll from "@components/BtnScroll/BtnScroll.client";
 import { Dictionary } from "@interfaces/dictionary.types";
 import RevealWrapper from "@providers/RevealWrapper";
-
+import dynamic from "next/dynamic";
+const BtnScroll = dynamic(
+  () => import("@components/BtnScroll/BtnScroll.client"),
+);
 interface PropsHome {
   dictionary: Dictionary;
 }

@@ -1,0 +1,46 @@
+@layer components {
+  .shoppingCart {
+    width: auto;
+    cursor: pointer;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    &:hover {
+      .shoppingCart__wrapper .shoppingCart__icon {
+        fill: var(--secondary-color);
+      }
+    }
+    .shoppingCart__wrapper {
+      width: 100%;
+      position: relative;
+      display: grid;
+      justify-items: end;
+      align-items: center;
+      .shoppingCart__icon {
+        width: 24px;
+        height: 24px;
+        transition: fill 0.3s;
+        fill: var(--primary-hover-color);
+      }
+      .shoppingCart__innerCounter {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        z-index: 10;
+        bottom: -5px;
+        right: -5px;
+        background-color: var(--secondary-color);
+        border-radius: 50%;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        .shoppingCart__counter {
+          font-size: 0.75em;
+          line-height: 1;
+          font-weight: 300;
+          color: var(--primary-hover-color);
+        }
+      }
+    }
+  }
+}
