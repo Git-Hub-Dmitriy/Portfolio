@@ -3,7 +3,6 @@ import { Pool } from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import bcrypt from "bcryptjs";
 import "dotenv/config";
-import { title } from "node:process";
 
 const connectionString = process.env.DATABASE_URL;
 const pool = new Pool({ connectionString });
@@ -196,6 +195,8 @@ Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitu
           title: prod.title,
           price: prod.price,
           image: prod.image,
+          subtitle: prod.subtitle,
+          subtitleTwo: prod.subtitleTwo,
           description: prod.description,
           descriptionTwo: prod.descriptionTwo,
           tags: prod.tags,

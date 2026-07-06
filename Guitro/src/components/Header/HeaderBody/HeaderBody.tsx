@@ -5,6 +5,7 @@ import ShoppingCart from "@components/ShoppingCart/ShoppingCart";
 import Search from "@components/Search/Search";
 import Burger from "@components/Burger/Burger";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
 
 const Lang = dynamic(() => import("@components/Lang/Lang"));
 
@@ -17,7 +18,9 @@ export default function HeaderBody(props: PropsHeaderBody) {
     <div className={styles.headerBody}>
       <div className={styles.headerBody__row}>
         <Logo />
-        <Lang dict={props.dictionary} />
+        <Suspense fallback={null}>
+          <Lang dict={props.dictionary} />
+        </Suspense>
         <ShoppingCart />
         <Burger />
         <Search />

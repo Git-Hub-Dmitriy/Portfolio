@@ -1,0 +1,12 @@
+services:
+  web-app:
+    build:
+      context: .
+      args:
+        - DATABASE_URL=${DATABASE_URL}
+        - NEXTAUTH_SECRET=${ADMIN_INITIAL_PASSWORD}
+    container_name: guitro
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env

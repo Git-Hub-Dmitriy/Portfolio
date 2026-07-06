@@ -1,5 +1,5 @@
 import styles from "./Portfolio.module.css";
-import { Dictionary } from "@src/interfaces/dictionary.types";
+import { Dictionary } from "@interfaces/dictionary.types";
 
 interface PropsPortfolio {
   dict: Dictionary;

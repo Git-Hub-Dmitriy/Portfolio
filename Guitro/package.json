@@ -11,7 +11,9 @@
     "play": "npx playwright test --ui",
     "studio": "npx prisma studio",
     "seed": "npx prisma db seed",
-    "generate": "npx prisma generate"
+    "generate": "npx prisma generate",
+    "docker": "docker compose up --build",
+    "lint": "eslint ."
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.11.2",

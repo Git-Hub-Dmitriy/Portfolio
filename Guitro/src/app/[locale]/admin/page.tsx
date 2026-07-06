@@ -1,6 +1,6 @@
 import { Dictionary } from "@interfaces/dictionary.types";
 import { getDictionary } from "@utils/getDictionary";
-import Dashboard from "@src/views/Dashboard/Dashboard";
+import Dashboard from "@views/Dashboard/Dashboard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
